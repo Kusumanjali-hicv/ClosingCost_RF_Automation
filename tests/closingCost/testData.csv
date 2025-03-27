@@ -1,0 +1,3 @@
+testCase_ID	Description	Expected Results	Actual Results	contractId	purchasePrice	financedAmount	cash	saleType	points	state
+1	abc	abc		1235adfgg	"$100,000 "	"$50,000 "	"$50,000 "	loan refinance	"$7,000 "	TX
+1	whuhe	abcakjeui		1235adfg999	"$100,000 "	"$30,000 "	"$70,000 "	loan refinance	"$7,000 "	WA
