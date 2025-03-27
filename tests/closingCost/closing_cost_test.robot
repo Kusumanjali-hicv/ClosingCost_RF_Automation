@@ -19,6 +19,7 @@ TC012                     100000             Loan Refinance       SC            
 TC013                     85300              Sales Refinance      WI            HICV
 TC014                     450900             Trust Sale           VT            HICV
 TC015                     385000             Loan Refinance       VA            HICV
+TC016                     175200             Sales Refinance      FL            HICV
 
 
 
