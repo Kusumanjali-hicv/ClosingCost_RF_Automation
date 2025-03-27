@@ -1,0 +1,51 @@
+{
+    "Fees":
+    [
+        {
+            "name" : "Guarantee Fee",
+            "saleType" : ["Sales Refinance", "Loan Refinance"],
+            "state" : ["TX", "IL"]                                      
+                    
+        },
+        {
+            "name" : "Escrow Fee",
+            "saleType" : ["Sales Refinance", "Loan Refinance"],
+            "state" : ["AZ"]
+        },
+        {
+            "name" : "Title Search Fee",
+            "saleType" : ["Sales Refinance", "Loan Refinance", "Trust Sale"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+
+        },
+        {
+            "name": "Origination Fee",
+            "saleType": ["Sales Refinance", "Loan Refinance", "Trust Sale"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+        },
+        {
+            "name": "Document Preparation Fee",
+            "saleType": ["Sales Refinance", "Loan Refinance", "Trust Sale"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+
+        },
+        {
+            "name": "Owner's Title Fee",
+            "saleType": ["Sales Refinance", "Loan Refinance", "Trust Sale"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+
+        },
+        {
+            "name": "Intangible Tax - Note",
+            "saleType": ["Sales Refinance", "Loan Refinance"],
+            "state" : ["FL"]
+        },
+        {
+            "name": "Mortgage Recording Fee",
+            "saleType": ["Sales Refinance", "Loan Refinance"],
+            "state" : ["IL", "WI", "MA"]
+        }
+
+
+    ]
+}

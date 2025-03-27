@@ -1,0 +1,9 @@
+pip
+robotframework
+robotframework-tidy
+robotcode-runner
+robotframework-datadriver
+robotframework-requests
+robotframework-jsonlibrary
+robotframework-crypto
+robotframework-excellib

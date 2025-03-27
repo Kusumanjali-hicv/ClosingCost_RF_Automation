@@ -1,0 +1,25 @@
+[project]
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+# Base profile with common settings
+[profiles.base]
+BASE_URL = "https://hicq2180a.olcc.lan:8443"
+log-level = "INFO"
+output-dir = "results"
+
+#Json request default values
+[variables]
+json_path = "config/request_template.json"
+TOKENJSON = "config/tokenGeneration.json"
+
+# Development environment profile
+[profiles.qa]
+inherits = ["base"]
+precedence = 200
+output-dir = "results/qa"
+BASE_URL = "https://hicq2180a.olcc.lan:8443"
+AUTH_BASE_URL = "https://hicq2180a.olcc.lan:8443"
+TOKEN_PATH_URL = "/prweb/PRRestService/oauth2/v1/token"
+CC_PATH_URL ="/prweb/api/CCApi/V1/closingcosts"
