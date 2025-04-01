@@ -6,18 +6,19 @@ KC_siteId = "37"
 HICV_siteId = "9999"
 FINANCED_AMT = ["30000", "40000", "50000", "60000", "70000", "80000"]
 POINTS = ["100000", "100500", "30000", "40000", "50500"]
+NO_OF_PURCHASERS = [3, 4, 5]
 
 def create_input_json(default_json, request_variables):
     
     contractId = set_contractId()
     request_variables['contractId'] = contractId
-
     request_variables = set_siteID(request_variables)
 
-    financedAmount, cash, points = set_variables(int(request_variables['purchasePrice']))
+    financedAmount, cash, points, numberOfPurchasers = set_variables(int(request_variables['purchasePrice']))
     request_variables['financedAmount'] = financedAmount    
     request_variables['cash'] = cash
     request_variables['points'] = points
+    request_variables['numberOfPurchasers'] = numberOfPurchasers
     
     # Parse the JSON string into a dictionary
     default_json = json.loads(default_json)
@@ -43,8 +44,7 @@ def set_siteID(request_variables):
     return request_variables
 
 
-def set_contractId():
-    
+def set_contractId():    
     contractId = ''.join(random.choices(string.ascii_uppercase + string.digits, k=18))
     return contractId
 
@@ -56,17 +56,20 @@ def set_variables(purchasePrice):
     random.shuffle(POINTS)
     points = int(POINTS[0])
 
+    random.shuffle(NO_OF_PURCHASERS)
+    numberOfPurchasers = NO_OF_PURCHASERS[0]
+
     cash = purchasePrice - financedAmount
-    return financedAmount, cash, points
+    return financedAmount, cash, points, numberOfPurchasers
 
 
-""" 
+
 json_body = ''
-with open(r"C:\\Users\\e087261\\VS_Code\\ClosingCost_RF_Automation\\config\\testData\\request_template.json", 'r') as file:
+with open(r"C:\\Users\\e087261\\VS_Code\\ClosingCost_RF_Automation\\config\\request_template.json", 'r') as file:
     json_body = file.read()
 
 
 request_variables = {'purchasePrice': '100000', 'saleType': 'sales refinance', 'state': 'TX', 'brand': 'HICV'}
 
 
-print(create_input_json(json_body, request_variables)) """
+print(create_input_json(json_body, request_variables)) 
