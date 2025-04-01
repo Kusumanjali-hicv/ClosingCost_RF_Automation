@@ -44,7 +44,13 @@
             "name": "Mortgage Recording Fee",
             "saleType": ["Sales Refinance", "Loan Refinance", "Trust Sale"],
             "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+        },
+        {
+            "name": "Documentary Stamps - Deed",
+            "saleType": ["Sales Refinance", "Loan Refinance", "Trust Sale"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
         }
+        
 
 
     ]
