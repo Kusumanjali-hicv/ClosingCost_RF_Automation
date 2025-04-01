@@ -21,6 +21,9 @@ def compute_title_search_fee(request_dict, api_response):
         fee = TRUST_SALE_FEE
     elif sale_type in ["Sales Refinance", "Loan Refinance"] and state not in ["TX", "AZ"]:
         fee = REFINANCE_FEE
+    else: 
+        logger.info(f"{FEE_NAME} is not applicable for sale_type: {sale_type} in state: {state}")
+        return
 
     if fee is not None:
         errors = assert_title_search_fee(amount, description, payableTo, sale_type, fee)
@@ -30,7 +33,7 @@ def compute_title_search_fee(request_dict, api_response):
             raise AssertionError(error_msg)
         logger.info("<span style='color:green'>{} assertion passed</span>".format(FEE_NAME), html=True)
     else:
-        logger.info("Title Search Fee is not applicable for this sale type")
+        logger.warn("{FEE_NAME} is not applicable for this sale type: {sale_type} in state: {state}.", html=True)
         return
 
 @keyword

@@ -7,26 +7,34 @@ PAYABLE_TO = "Orange County Comptroller"
 
 @keyword
 def compute_intangible_tax_note(request_dict, api_response):
-    # get actual fee details from the response
-    amount, description, payableTo = getFeeDetails(FEE_NAME, api_response)
+    state = request_dict['state']
+    sale_type = request_dict['saleType']
 
-    # Intangible Tax Note is calculated as 0.002 * financedAmount
-    expected_amount = 0.002 * request_dict['financedAmount']
+    if (sale_type in ["Sales Refinance", "Loan Refinance"] and state == "FL")  or sale_type == "Trust Sale":
+        
+        # get actual fee details from the response
+        amount, description, payableTo = getFeeDetails(FEE_NAME, api_response)
 
-    # prepare expected vs actual values
-    validations = {
-        "amount": (expected_amount, amount, "amount"),
-        "payableTo": (PAYABLE_TO, payableTo, "payableTo"),
-        "description": (FEE_NAME, description, "description")
-    }
+        # Intangible Tax Note is calculated as 0.002 * financedAmount
+        expected_amount = 0.002 * request_dict['financedAmount']
 
-    # Log errors for any mismatches
-    for key, (expected, actual, label) in validations.items():
-        if actual != expected:
-            logger.error(
-                f"<span style='color:red'>{FEE_NAME} mismatch on {label}: expected {expected}, got {actual}</span>",
-                html=True
-            )
+        # prepare expected vs actual values
+        validations = {
+            "amount": (expected_amount, amount, "amount"),
+            "payableTo": (PAYABLE_TO, payableTo, "payableTo"),
+            "description": (FEE_NAME, description, "description")
+        }
+
+        # Log errors for any mismatches
+        for key, (expected, actual, label) in validations.items():
+            if actual != expected:
+                logger.error(
+                    f"<span style='color:red'>{FEE_NAME} mismatch on {label}: expected {expected}, got {actual}</span>",
+                    html=True
+                )
+    else:
+        logger.info(f"{FEE_NAME} is not applicable for sale_type: {sale_type} in state: {state}")
+        return
 
     errors = []
     if amount != expected_amount:
