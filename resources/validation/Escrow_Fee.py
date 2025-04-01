@@ -10,6 +10,7 @@ PAYABLE_TO = "Wilson Title Agency Services, LLC"
 @keyword("Compute Escrow Fee")
 def compute_escrow_fee(request_dict, api_response):
     state = request_dict['state']
+    sale_type = request_dict['saleType']
     financed_amount = request_dict['financedAmount']
     fee_name = FEE_NAME + state
 
@@ -23,7 +24,7 @@ def compute_escrow_fee(request_dict, api_response):
     exp_amount = FEE_AMT_1 if financed_amount <= 50000 else FEE_AMT_2
     
     if state != "AZ":
-        print("Escrow Fee is not applicable for this state", state)
+        logger.info(f"{FEE_NAME} is not applicable for state: {state} and sale_type: {sale_type}")
         return
 
     # Check amount

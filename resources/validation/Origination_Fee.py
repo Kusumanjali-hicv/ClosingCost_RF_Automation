@@ -10,6 +10,7 @@ TRUST_SALE_PAYABLE_TO = "Wilson Resort Finance, LLC"
 
 def compute_origimation_fee(request_dict, api_response):
     sale_type = request_dict['saleType']
+    state = request_dict['state']
     # Retrieve fee details from response
     amount, description, payableTo = getFeeDetails(FEE_NAME, api_response)
     
@@ -22,7 +23,7 @@ def compute_origimation_fee(request_dict, api_response):
         exp_payableTo = TRUST_SALE_PAYABLE_TO
         fee_name = FEE_NAME
     else:
-        logger.error(f"<span style='color:red'>Unknown sale type: {sale_type}</span>", html=True)
+        logger.info(f"{FEE_NAME} is not applicable for sale_type: {sale_type} in state: {state}")
         return
 
     errors = assert_origination_fee(amount, description, fee_name, payableTo,

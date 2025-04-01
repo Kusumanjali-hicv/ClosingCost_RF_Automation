@@ -3,7 +3,7 @@ from CC_Fee_Util import getFeeDetails
 from robot.api.deco import keyword
 
 FEE_NAME = "Mortgage Recording Fee"
-NO_OF_PAGES = 6
+NO_OF_PAGES = 2
 FIRST_PAGE_FEE = 10.00
 ADDITIONAL_PAGE_FEE = 8.50
 ADDITIONAL_PURCHASERS_FEE = 1.00
@@ -43,13 +43,13 @@ def compute_mortgage_recording_fee(request_dict, api_response):
             exp_fee, exp_payable_To = fee_config[state]
         elif state == "FL":
             #$10.00 for the 1st page, $8.50 for each additional page. If there are more than 4 Purchasers signing the Mortgage, an additional $1.00 will be added for each over 4.
-            exp_fee = FIRST_PAGE_FEE + (NO_OF_PAGES - 1) * ADDITIONAL_PAGE_FEE
+            exp_fee = FIRST_PAGE_FEE + ((NO_OF_PAGES - 1) * ADDITIONAL_PAGE_FEE)
             if request_dict['numberOfPurchasers'] > PURCHASER_LIMIT_REFINANCE:
                 exp_fee += (request_dict['numberOfPurchasers'] - PURCHASER_LIMIT_REFINANCE) * ADDITIONAL_PURCHASERS_FEE
 
             exp_payable_To = PAYABLE_TO_FL
         else:
-            logger.error(f"Mortgage Recording Fee is not applicable for state: {state} and sale_type: {sale_type}")
+            logger.info(f"{FEE_NAME} is not applicable for state: {state} and sale_type: {sale_type}")
             return
 
     # get actual fee details from the response

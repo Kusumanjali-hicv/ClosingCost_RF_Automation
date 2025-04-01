@@ -16,6 +16,7 @@ FEE_CONFIGS = {
 @keyword
 def compute_guarantee_fee(request_dict, api_response):
     state = request_dict['state']
+    sale_type = request_dict['saleType']
     expected_description = FEE_NAME + state
     fee_key = expected_description
 
@@ -29,7 +30,7 @@ def compute_guarantee_fee(request_dict, api_response):
 
     config = FEE_CONFIGS.get(state)
     if not config:
-        errors.append(f"Unsupported state '{state}' encountered")
+        logger.info(f"{FEE_NAME} is not applicable for state: {state} and sale_type: {sale_type}")
     else:
         expected_fee = config["fee"]
         expected_payableTo = config["payableTo"]

@@ -43,7 +43,7 @@ def compute_doc_stamp_deed_fee(request_dict, api_response):
             sale_type, exp_fee, exp_payable_To
         )
     else:
-        logger.error(f"<span style='color:red'>Unknown sale type: {sale_type}</span>", html=True)
+        logger.info(f"{FEE_NAME} is not applicable for sale type: {sale_type} and state: {state}", html=True)
         return
     
 

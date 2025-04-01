@@ -20,7 +20,7 @@ def compute_document_preparation_fee(request_dict, api_response):
         exp_fee = TRUST_SALE_FEE
         exp_payableTo = TRUST_SALE_PAYABLE_TO
     else:
-        logger.error(f"Unknown sale type: {sale_type}")
+        logger.info(f"{FEE_NAME} is not applicable for sale_type: {sale_type}")
         return
     
     amount, description, payableTo = getFeeDetails(fee_name, api_response)

@@ -4,7 +4,8 @@ import string
 
 KC_siteId = "37"
 HICV_siteId = "9999"
-FINANCED_AMT = ["30000", "40000", "50000", "60000", "70000", "80000"]
+#FINANCED_AMT = ["30000", "40000", "50000", "60000", "70000", "80000"]
+FINANCED_AMT = ["10", "20", "40"]
 POINTS = ["100000", "100500", "30000", "40000", "50500"]
 NO_OF_PURCHASERS = [3, 4, 5]
 
@@ -51,7 +52,8 @@ def set_contractId():
 
 def set_variables(purchasePrice):
     random.shuffle(FINANCED_AMT)
-    financedAmount = int(FINANCED_AMT[0])
+    # Get a random financed % from the list & caluculate amount like 10% of purchase price
+    financedAmount = int(FINANCED_AMT[0]) * purchasePrice / 100
 
     random.shuffle(POINTS)
     points = int(POINTS[0])
