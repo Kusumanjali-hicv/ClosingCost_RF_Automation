@@ -66,7 +66,7 @@ def set_variables(purchasePrice):
 
 
 
-json_body = ''
+""" json_body = ''
 with open(r"C:\\Users\\e087261\\VS_Code\\ClosingCost_RF_Automation\\config\\request_template.json", 'r') as file:
     json_body = file.read()
 
@@ -75,3 +75,4 @@ request_variables = {'purchasePrice': '100000', 'saleType': 'sales refinance', '
 
 
 print(create_input_json(json_body, request_variables)) 
+ """

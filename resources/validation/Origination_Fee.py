@@ -8,7 +8,7 @@ LOAN_REFINANCE_FEE = 0.00
 REFINANCE_PAYABLE_TO = "Holiday Inn Club Vacations Incorporated"
 TRUST_SALE_PAYABLE_TO = "Wilson Resort Finance, LLC"
 
-def compute_origimation_fee(request_dict, api_response):
+def compute_origination_fee(request_dict, api_response):
     sale_type = request_dict['saleType']
     state = request_dict['state']
     # Retrieve fee details from response
@@ -20,6 +20,7 @@ def compute_origimation_fee(request_dict, api_response):
         fee_name = FEE_NAME + " - Refinance"
     elif sale_type == "Trust Sale":
         fee = 0.032 * (float(request_dict['purchasePrice']) - float(request_dict['cash']))
+        fee = round(fee, 2)
         exp_payableTo = TRUST_SALE_PAYABLE_TO
         fee_name = FEE_NAME
     else:
