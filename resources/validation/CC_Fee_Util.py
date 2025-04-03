@@ -41,3 +41,16 @@ def getFeeDetails(feeName, json_response):
        
     logger.info("<span style='color:red'>Fee not found: " + str(feeName) + "</span>", html=True)
     return amount, description, payableTo    
+
+def round_up_to_nearest_100(value):
+    # Round up to the nearest 100
+    if value % 100 == 0:
+        return value
+    else:
+        return ((value // 100) + 1) * 100
+""" 
+Round Up To Nearest 100
+    [Arguments]        ${Value}
+    ${REMAINDER}=    Evaluate    ${Value} % 100
+    ${ROUNDED}=    Evaluate    ${Value} + (100 - ${REMAINDER}) if ${REMAINDER} > 0 else ${Value}
+    RETURN    ${ROUNDED} """

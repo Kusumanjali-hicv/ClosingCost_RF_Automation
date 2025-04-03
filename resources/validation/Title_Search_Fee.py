@@ -40,9 +40,9 @@ def compute_title_search_fee(request_dict, api_response):
 def assert_title_search_fee(amount, description, payableTo, sale_type, fee):
     errors = []
     if amount != fee:
-        errors.append("Title Search Fee amount mismatch for {}: expected {}, got {}".format(sale_type, fee, amount))
+        errors.append("{} amount mismatch for {}: expected {}, got {}".format(FEE_NAME, sale_type, fee, amount))
     if description != DESCRIPTION:
-        errors.append("Title Search Fee description mismatch for {}: expected '{}', got '{}'".format(sale_type, DESCRIPTION, description))
+        errors.append("{} description mismatch for {}: expected '{}', got '{}'".format(FEE_NAME, sale_type, DESCRIPTION, description))
     if payableTo != PAYABLE_TO:
-        errors.append("Title Search Fee payableTo mismatch for {}: expected '{}', got '{}'".format(sale_type, PAYABLE_TO, payableTo))
+        errors.append("{} payableTo mismatch for {}: expected '{}', got '{}'".format(FEE_NAME, sale_type, PAYABLE_TO, payableTo))
     return errors

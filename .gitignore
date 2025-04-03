@@ -1,3 +1,14 @@
 results/report.html
 results/log.html
 results/output.xml
+resources/test_data_manager/__pycache__/requestUtils.cpython-312.pyc
+resources/validation/__pycache__/CC_Fee_Manager.cpython-312.pyc
+resources/validation/__pycache__/Doc_Stamp_Deed_Trust_fee.cpython-312.pyc
+resources/validation/__pycache__/Document_Preparation_Fee.cpython-312.pyc
+resources/validation/__pycache__/Escrow_Fee.cpython-312.pyc
+resources/validation/__pycache__/Intangiable_Tax_Note.cpython-312.pyc
+resources/validation/__pycache__/Guarantee_Fee.cpython-312.pyc
+resources/validation/__pycache__/Mortgage_Recording_Fee.cpython-312.pyc
+resources/validation/__pycache__/Origination_Fee.cpython-312.pyc
+resources/validation/__pycache__/Owner_Title_Fee.cpython-312.pyc
+resources/validation/__pycache__/Title_Search_Fee.cpython-312.pyc
