@@ -16,7 +16,7 @@ def compute_intangible_tax_note(request_dict, api_response):
         amount, description, payableTo = getFeeDetails(FEE_NAME, api_response)
 
         # Intangible Tax Note is calculated as 0.002 * financedAmount
-        expected_amount = 0.002 * request_dict['financedAmount']
+        expected_amount = round(0.002 * request_dict['financedAmount'], 2)
 
         # prepare expected vs actual values
         validations = {
