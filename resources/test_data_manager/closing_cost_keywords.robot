@@ -21,7 +21,7 @@ ${request_variables}
 Send CC API Request
     [Arguments]    ${purchasePrice}    ${saleType}    ${state}    ${brand}
     ${request} =     Prepare Request    ${purchasePrice}    ${saleType}    ${state}    ${brand}
-    ${response}=    Send API Request    ${request}    state=${state}    sale_type=${saleType} 
+    ${response}=    Send API Request    ${request}
     RETURN    ${request}    ${response}
 
 Assert Closing Cost Fee  

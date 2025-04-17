@@ -24,6 +24,7 @@ Loan_Refinace_Va                  106500             Loan Refinance       VA    
 Sales_Refinance_NC                100000             Sales Refinance      VA            HICV
 
 
+
 *** Keywords ***
 Validate ClosingCost Fee  
     [Arguments]    ${purchasePrice}    ${SaleType}    ${state}    ${brand}

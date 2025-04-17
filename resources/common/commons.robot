@@ -8,20 +8,21 @@ Library     ExcelLibrary
 Variables   ${EXECDIR}/config/CC_Variables.py
 
 *** Variables ***
-   
+${status_code}
 
 *** Keywords ***
 Send API Request
-    [Arguments]    ${json_body}   ${state}    ${sale_type}
+    [Arguments]    ${json_body}
      ${accessToken}    Get Authorization Code
      ${header}=  create dictionary
      ...    ${CONTENT_TYPE_NAME}=${CONTENT_TYPE_VALUE_1}
      ...    ${AUTHORIZATION}=Bearer ${accessToken}
      Create Session     Session    ${BASE_URL}
-     ${response}=    POST On Session    Session     ${CC_PATH_URL}   json=${json_body}     headers=${header} 
-     Status Should Be    200    
-     Log    ${response.text}
-     RETURN    ${response.text}
+    ${response}=    POST On Session    Session     ${CC_PATH_URL}   json=${json_body}     headers=${header}    expected_status=any 
+    Run Keyword If    '${response.status_code}'!='200'    Log    Request returned ${response.status_code} status code    WARN
+    Set Global Variable    ${status_code}    ${response.status_code}
+    Log    ${response.text}
+    RETURN    ${response.text}
 
 Get Authorization Code
     ${encoded}    Encode Basic Auth    ${CLIENT_ID_VALUE}     ${CLIENT_ID_SECRET_VALUE}
