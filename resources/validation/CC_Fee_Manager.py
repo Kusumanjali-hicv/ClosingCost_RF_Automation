@@ -8,6 +8,7 @@ from Owner_Title_Fee import compute_owner_title_fee
 from Intangiable_Tax_Note import compute_intangible_tax_note
 from Mortgage_Recording_Fee import compute_mortgage_recording_fee
 from Doc_Stamp_Deed_Trust_fee import compute_doc_stamp_deed_fee
+from Mortgage_Release_Fee import compute_mortgage_release_fee
 from robot.api import logger
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
@@ -37,6 +38,7 @@ def  assert_expected_cc_fee(fee_names, request_json, api_response):
         "Intangible Tax - Note": compute_intangible_tax_note,
         "Mortgage Recording Fee": compute_mortgage_recording_fee,
         "Documentary Stamps - Deed": compute_doc_stamp_deed_fee,
+        "Mortgage Release Fee": compute_mortgage_release_fee,
         
     }
 

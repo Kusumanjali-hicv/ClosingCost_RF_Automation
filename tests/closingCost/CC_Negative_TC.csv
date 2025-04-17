@@ -1,0 +1,2 @@
+*** Test Cases ***;${fileName};${expected_responseCode};${expected_response_msg};[Tags];[Documentation]
+Negative_TC_001;CC_request_1.json;400;{"error":[{"code":"PEGA-CC-013","description":"Financed Amount cannot be negative"}]};smoke;Test case for negative financed amt

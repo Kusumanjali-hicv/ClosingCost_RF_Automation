@@ -8,7 +8,7 @@ REFINANCE_FEE = 0.0033333
 REFINANCE_PAYABLE_TO = "York County Circuit Court"
 TRUST_PAYABLE_TO = "Orange County Comptroller"
 
-
+@keyword
 def compute_doc_stamp_deed_fee(request_dict, api_response):
     sale_type = request_dict['saleType']
     state = request_dict['state']

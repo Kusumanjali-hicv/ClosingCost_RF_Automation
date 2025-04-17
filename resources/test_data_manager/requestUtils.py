@@ -7,7 +7,7 @@ HICV_siteId = "9999"
 #FINANCED_AMT = ["30000", "40000", "50000", "60000", "70000", "80000"]
 FINANCED_AMT = ["10", "20", "40"]
 POINTS = ["100000", "100500", "30000", "40000", "50500"]
-NO_OF_PURCHASERS = [3, 4, 5]
+NO_OF_PURCHASERS = [3, 4, 5, 6]
 
 def create_input_json(default_json, request_variables):
     

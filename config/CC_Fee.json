@@ -20,7 +20,7 @@
         },
         {
             "name": "Origination Fee",
-            "saleType": ["Sales Refinance", "Loan Refinance", "Trust Sale"],
+            "saleType": ["Sales Refinance",  "Trust Sale"], 
             "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
         },
         {
@@ -47,6 +47,11 @@
         },
         {
             "name": "Documentary Stamps - Deed",
+            "saleType": ["Sales Refinance", "Loan Refinance", "Trust Sale"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+        },
+        {
+            "name": "Mortgage Release Fee",
             "saleType": ["Sales Refinance", "Loan Refinance", "Trust Sale"],
             "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
         }

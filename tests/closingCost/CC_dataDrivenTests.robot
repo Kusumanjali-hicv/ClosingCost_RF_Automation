@@ -1,7 +1,7 @@
 *** Settings ***
 Resource      ${EXECDIR}/resources/test_data_manager/master.robot 
-Library           DataDriver    file=${CURDIR}\\CC_testData.csv        
-Test Template    Validate ClosingCost Fee
+Library           DataDriver    file=${CURDIR}\\CC_testData.csv      include=refinance      
+Test Template    Validate ClosingCost Fee    
 Test Tags       closingCost
 
 

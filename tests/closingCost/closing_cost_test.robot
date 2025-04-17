@@ -20,6 +20,9 @@ Sales_Refinance_WI                85300              Sales Refinance      WI    
 Trust_Sale_VT                     450900             Trust Sale           VT            HICV
 Loan_Refinance_VA                 385000             Loan Refinance       VA            HICV
 Sales_Refinance_FL                175200             Sales Refinance      FL            HICV
+Loan_Refinace_Va                  106500             Loan Refinance       VA            HICV
+Sales_Refinance_NC                100000             Sales Refinance      VA            HICV
+
 
 
 *** Keywords ***
