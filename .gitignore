@@ -13,3 +13,12 @@ resources/validation/__pycache__/Origination_Fee.cpython-312.pyc
 resources/validation/__pycache__/Owner_Title_Fee.cpython-312.pyc
 resources/validation/__pycache__/Title_Search_Fee.cpython-312.pyc
 resources/test_data_manager/__pycache__/requestUtils.cpython-312.pyc
+resources/test_data_manager/__pycache__/requestUtils.cpython-312.pyc
+resources/validation/__pycache__/CC_Fee_Manager.cpython-312.pyc
+resources/validation/__pycache__/Doc_Stamp_Deed_Trust_fee.cpython-312.pyc
+resources/validation/__pycache__/Mortgage_Release_Fee.cpython-312.pyc
+tests/output.xml
+tests/report.html
+resources/test_data_manager/__pycache__/requestUtils.cpython-312.pyc
+resources/validation/__pycache__/CC_Fee_Manager.cpython-312.pyc
+resources/validation/__pycache__/Doc_Stamp_Deed_Trust_fee.cpython-312.pyc

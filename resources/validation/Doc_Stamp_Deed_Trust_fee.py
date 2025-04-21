@@ -36,7 +36,7 @@ def compute_doc_stamp_deed_fee(request_dict, api_response):
 
     elif sale_type in ["Sales Refinance", "Loan Refinance"] and state == "VA":
         fee_name = f"{FEE_NAME}-{state}"
-        fin_amt = round(request_dict['financedAmount'] / 100) * 100  # round to nearest hundred
+        fin_amt = round_up_to_nearest_100(request_dict['financedAmount'])
         exp_payable_To = REFINANCE_PAYABLE_TO
 
         exp_fee = round(fin_amt, 2) * REFINANCE_FEE

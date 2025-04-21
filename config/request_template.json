@@ -1,5 +1,4 @@
 {
     "pxObjClass": "HICV-Sales-CC-Int-Svc-CCRequest",
-    "roomType": "STANDARD",
-    "location": "ALL"
+    "roomType": "STANDARD"
 }
