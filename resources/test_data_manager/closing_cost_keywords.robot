@@ -15,12 +15,13 @@ ${purchasePrice}
 ${saleType}    
 ${state}   
 ${brand}
+${location}
 ${request_variables}
 
 *** Keywords ***
 Send CC API Request
-    [Arguments]    ${purchasePrice}    ${saleType}    ${state}    ${brand}
-    ${request} =     Prepare Request    ${purchasePrice}    ${saleType}    ${state}    ${brand}
+    [Arguments]    ${purchasePrice}    ${saleType}    ${state}    ${brand}    ${location}
+    ${request} =     Prepare Request    ${purchasePrice}    ${saleType}    ${state}    ${brand}    ${location}
     ${response}=    Send API Request    ${request}
     RETURN    ${request}    ${response}
 
@@ -38,22 +39,23 @@ Validate Expected CC Fee
     
 
 Prepare Request 
-    [Arguments]    ${purchasePrice}    ${saleType}    ${state}    ${brand}
-    Set Global Variables    ${purchasePrice}    ${saleType}    ${state}    ${brand}
+    [Arguments]    ${purchasePrice}    ${saleType}    ${state}    ${brand}    ${location}
+    Set Global Variables    ${purchasePrice}    ${saleType}    ${state}    ${brand}    ${location}
     ${request}=     Generate API Request
     RETURN    ${request}
 
 Set Global Variables
-    [Arguments]    ${purchasePrice}    ${saleType}    ${state}    ${brand}
+    [Arguments]    ${purchasePrice}    ${saleType}    ${state}    ${brand}    ${location}
     Set Global Variable    ${purchasePrice}
     Set Global Variable    ${saleType}    
     Set Global Variable    ${state}    
     Set Global Variable    ${brand}
+    Set Global Variable    ${location}
     Log Variables
 
 Generate API Request
     ${default_json}=    Get File    path=${json_path}
-    ${request_variables}=    Create Dictionary    purchasePrice=${purchasePrice}    saleType=${saleType}    state=${state}    brand=${brand}
+    ${request_variables}=    Create Dictionary    purchasePrice=${purchasePrice}    saleType=${saleType}    state=${state}    brand=${brand}    location=${location}
     ${json_request}=    create_input_json    ${default_json}    ${request_variables}
     Log    ${json_request}
     ${json}=    Convert String To Json    ${json_request}

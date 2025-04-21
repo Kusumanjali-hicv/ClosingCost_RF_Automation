@@ -6,12 +6,12 @@ Test Tags       closingCost
 
 
 *** Test Cases ***
-Validate ClosingCost Fee with    ${purchasePrice}            ${SaleType}        ${state}    ${brand}
+Validate ClosingCost Fee with    ${purchasePrice}            ${SaleType}        ${state}    ${brand}    ${location}
 
 
 *** Keywords ***
 Validate ClosingCost Fee  
-    [Arguments]    ${purchasePrice}    ${SaleType}    ${state}    ${brand}
-    ${request}    ${response}=    Send CC API Request    ${purchasePrice}    ${SaleType}    ${state}    ${brand}
+    [Arguments]    ${purchasePrice}    ${SaleType}    ${state}    ${brand}    ${location}
+    ${request}    ${response}=    Send CC API Request    ${purchasePrice}    ${SaleType}    ${state}    ${brand}    ${location}
     Run Keyword And Continue On Failure    Assert Closing Cost Fee    ${request}    ${response}    ${purchasePrice}    ${SaleType}    ${state}    ${brand}
     
