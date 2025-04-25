@@ -17,7 +17,7 @@ def compute_title_search_fee(request_dict, api_response):
     amount, description, payableTo = getFeeDetails(FEE_NAME, api_response)
 
     fee = None
-    if sale_type == "Trust Sale":
+    if sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
         fee = TRUST_SALE_FEE
     elif sale_type in ["Sales Refinance", "Loan Refinance"] and state not in ["TX", "AZ"]:
         fee = REFINANCE_FEE

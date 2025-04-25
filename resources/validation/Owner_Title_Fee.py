@@ -9,7 +9,6 @@ PAYABLE_TO = "Wilson Title Services, LLC"
 
 def compute_owner_title_fee(request_dict, api_response):
     purchase_price = float(request_dict['purchasePrice'])
-    # round off the purchase price to nearest integer (update below if nearest 100 is intended)
     purchase_price_rounded = round(purchase_price/ 100) * 100
 
     if purchase_price <= 100000:

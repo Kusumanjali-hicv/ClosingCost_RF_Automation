@@ -9,6 +9,8 @@ from Intangiable_Tax_Note import compute_intangible_tax_note
 from Mortgage_Recording_Fee import compute_mortgage_recording_fee
 from Doc_Stamp_Deed_Trust_fee import compute_doc_stamp_deed_fee
 from Mortgage_Release_Fee import compute_mortgage_release_fee
+from Deed_of_Trust_Recording_fee import compute_deed_of_trust_recording_fee
+from Deed_of_Trust_Release_fee import compute_deed_of_trust_release_fee
 from robot.api import logger
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
@@ -39,6 +41,8 @@ def  assert_expected_cc_fee(fee_names, request_json, api_response):
         "Mortgage Recording Fee": compute_mortgage_recording_fee,
         "Documentary Stamps - Deed": compute_doc_stamp_deed_fee,
         "Mortgage Release Fee": compute_mortgage_release_fee,
+        #"Deed of Trust Recording Fee": compute_deed_of_trust_recording_fee,
+        #"Deed of Trust Release Fee": compute_deed_of_trust_release_fee,
         
     }
 

@@ -10,7 +10,7 @@ def compute_intangible_tax_note(request_dict, api_response):
     state = request_dict['state']
     sale_type = request_dict['saleType']
 
-    if (sale_type in ["Sales Refinance", "Loan Refinance"] and state == "FL")  or sale_type == "Trust Sale":
+    if (sale_type in ["Sales Refinance", "Loan Refinance"] and state == "FL")  or sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
         
         # get actual fee details from the response
         amount, description, payableTo = getFeeDetails(FEE_NAME, api_response)

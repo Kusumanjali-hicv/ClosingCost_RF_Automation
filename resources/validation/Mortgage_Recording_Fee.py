@@ -26,23 +26,23 @@ def compute_mortgage_recording_fee(request_dict, api_response):
     
     exp_fee = ""
     exp_payable_To = ""
+    fee_name = FEE_NAME
 
-    if sale_type == "Trust Sale":
-        fee_name =  FEE_NAME
-        #$10.00 for the 1st page, each additional page will be $8.50 , in addition if there are more than 3 purchasers on the contract an additional $1.00 will be added for each additional purchaser. Currently $18.50 [two pages total]
+    if sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
+        # $10.00 for the 1st page, each additional page will be $8.50 , in addition if there are more than 3 purchasers on the contract an additional $1.00 will be added for each additional purchaser. Currently $18.50 [two pages total]
         exp_fee = FIRST_PAGE_FEE + (NO_OF_PAGES - 1) * ADDITIONAL_PAGE_FEE
         if request_dict['numberOfPurchasers'] > PURCHASER_LIMIT_TRUST_SALE:
             exp_fee += (request_dict['numberOfPurchasers'] - PURCHASER_LIMIT_TRUST_SALE) * ADDITIONAL_PURCHASERS_FEE
 
         exp_payable_To = PAYABLE_TO_TRUST_SALE
     
-    if sale_type in ["Sales Refinance", "Loan Refinance"]:
+    elif sale_type in ["Sales Refinance", "Loan Refinance"]:
         
         fee_name = f"{FEE_NAME}-{state}"
         if state in fee_config:
             exp_fee, exp_payable_To = fee_config[state]
         elif state == "FL":
-            #$10.00 for the 1st page, $8.50 for each additional page. If there are more than 4 Purchasers signing the Mortgage, an additional $1.00 will be added for each over 4.
+            # $10.00 for the 1st page, $8.50 for each additional page. If there are more than 4 Purchasers signing the Mortgage, an additional $1.00 will be added for each over 4.
             exp_fee = FIRST_PAGE_FEE + ((NO_OF_PAGES - 1) * ADDITIONAL_PAGE_FEE)
             if request_dict['numberOfPurchasers'] > PURCHASER_LIMIT_REFINANCE:
                 exp_fee += (request_dict['numberOfPurchasers'] - PURCHASER_LIMIT_REFINANCE) * ADDITIONAL_PURCHASERS_FEE
@@ -52,9 +52,13 @@ def compute_mortgage_recording_fee(request_dict, api_response):
             logger.info(f"{FEE_NAME} is not applicable for state: {state} and sale_type: {sale_type}")
             return
 
+    else:
+        logger.info(f"{FEE_NAME} is not applicable for sale_type: {sale_type}")
+        return
+
     # get actual fee details from the response
-    amount, description, payableTo = getFeeDetails(FEE_NAME, api_response)
-    
+    amount, description, payableTo = getFeeDetails(fee_name, api_response)
+    logger.info(f"{fee_name} Actual Values - amount: {amount}, description: {description}, payableTo: {payableTo}", html=True)
     if amount != exp_fee:
         logger.error(
             f"<span style='color:red'>{fee_name} amount mismatch: expected {exp_fee}, got {amount}</span>", 
