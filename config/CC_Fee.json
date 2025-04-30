@@ -64,6 +64,21 @@
             "name" : "Deed of Trust Release Fee",
             "saleType" : ["Sales Refinance", "Loan Refinance",  "New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"],
             "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+        },
+        {
+            "name" : "Club Fee",
+            "saleType" : ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+        },
+        {
+            "name" : "Documentary Stamps - Mortgage",
+            "saleType" : ["Sales Refinance", "Loan Refinance",  "New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+        },
+        {
+            "name" : "Lenders Title Insurance",
+            "saleType" : ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
         }
         
 

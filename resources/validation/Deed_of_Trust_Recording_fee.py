@@ -2,7 +2,7 @@ from robot.api import logger
 from CC_Fee_Util import getFeeDetails
 from robot.api.deco import keyword
 
-FEE_NAME = "Deed of Trust Recording Fee"
+FEE_NAME = "Deed Of Trust Recording Fee"
 
 
 @keyword
@@ -18,10 +18,12 @@ def compute_deed_of_trust_recording_fee(request_dict, api_response):
     
     if sale_type in ["Sales Refinance", "Loan Refinance"]:
         if state == "AZ": 
+            fee = 30.00
             fee_name = FEE_NAME + "-AZ"
             PAYABLE_TO = "Maricopa County Recorder's Office"
              
         elif state == "GA":
+            fee = 25.00
             fee_name = FEE_NAME + "-GA"
             PAYABLE_TO = "Habersham County Recorder's Office"
             
@@ -47,6 +49,7 @@ def compute_deed_of_trust_recording_fee(request_dict, api_response):
                 logger.error(f"Location '{location}' is not recognized for Nevada fees.")
         
         elif state == "SC":
+            fee = 25.00
             fee_name = FEE_NAME + "-SC"
             PAYABLE_TO = "Horry County, SC Registry of Deeds"
             
@@ -72,7 +75,7 @@ def compute_deed_of_trust_recording_fee(request_dict, api_response):
         elif state == "VT":
             PAGES = 1
             fee_name = FEE_NAME + "-VT"
-            fee = 10.00 * no_of_purchasers
+            fee = 10.00 * PAGES
             PAYABLE_TO = "West Windsor Town Clerk"
             
         elif state == "VA":
@@ -82,11 +85,13 @@ def compute_deed_of_trust_recording_fee(request_dict, api_response):
             
         else:
             logger.info(f"No fee configuration for state: {state}")
+            return
     elif sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
         PAGES = 3 #config in pega
         #Assessed on Mortgage accounts only. $10.00 for the 1st page, each additional page will be 8.50 , in addition if there are more than 3 purchasers on the contract an additional $1.00 will be added for each additional purchaser. 
         fee = 10.00 + 8.50 * (PAGES - 1) + 1 * max(0, no_of_purchasers - 3)
-        fee_name = FEE_NAME 
+        fee_name = FEE_NAME+"-Trust"
+        PAYABLE_TO = "Orange County Comptroller"
 
 
     else:
@@ -97,7 +102,7 @@ def compute_deed_of_trust_recording_fee(request_dict, api_response):
     amount, description, payableTo = getFeeDetails(fee_name, api_response)
     #assert the fee & list the errors
     errors = assert_doc_stamp_deed_fee(
-        amount, description, FEE_NAME, payableTo, sale_type,
+        amount, description, fee_name, payableTo, sale_type,
         fee, PAYABLE_TO
     )
     if errors:
