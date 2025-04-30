@@ -1,90 +1,109 @@
 from robot.api import logger
-from CC_Fee_Util import getFeeDetails, round_up_to_nearest_100
+from CC_Fee_Util import getFeeDetails
 from robot.api.deco import keyword
 
-FEE_NAME = "Deed of Trust Recording Fee"
+FEE_NAME = "Deed Of Trust Recording Fee"
+
 
 @keyword
-def compute_doc_stamp_deed_fee(request_dict, api_response):
+def compute_deed_of_trust_recording_fee(request_dict, api_response):
     sale_type = request_dict['saleType']
     state = request_dict['state']
-    pages = request_dict['numberOfPurchasers']
+    no_of_purchasers = request_dict['numberOfPurchasers']
     
     # Initialize fee details with defaults
     fee = 0
     PAYABLE_TO = ""
-    detail = ""
+    fee_name = ""  
     
-    if sale_type in ["Sales refinance", "Loan refinance"]:
+    if sale_type in ["Sales Refinance", "Loan Refinance"]:
         if state == "AZ": 
-            fee = 30.00    #Flat fee of $30 for Arizona.
+            fee = 30.00
+            fee_name = FEE_NAME + "-AZ"
             PAYABLE_TO = "Maricopa County Recorder's Office"
              
         elif state == "GA":
-            fee = 25.00    #Flat fee of $25 for Georgia.
+            fee = 25.00
+            fee_name = FEE_NAME + "-GA"
             PAYABLE_TO = "Habersham County Recorder's Office"
             
-        elif state == "MO":            
-            fee = 24.00 + 3 * (pages - 1)  #Calculated fee: $24 for the first page plus $3 for each additional pages.
+        elif state == "MO":      
+            PAGES = 6     
+            fee_name = FEE_NAME +"-MO" 
+            fee = 24.00 + 3 * (PAGES - 1)  #Calculated fee: $24 for the first page plus $3 for each additional no_of_purchasers.
             PAYABLE_TO = "Taney County Recorder's Office"
             
-        # elif state == "NV":
-        #     # Expecting a location field in the request.
-        #     location = request_dict.get("location", "").upper()
-        #     if "CLARK" in location:
-        #         fee = 42.00
-        #         PAYABLE_TO = "Clark County, Office of the County Recorder"
-        #         detail = "Flat fee of $42 for Clark County (DESERT CLUB) in Nevada."
-        #     elif "DOUGLAS" in location:
-        #         fee = 40.00
-        #         PAYABLE_TO = "Clark County, Office of the County Recorder"
-        #         detail = "Flat fee of $40 for Douglas County (WALLY'S or RIDGE) in Nevada."
-        #     else:
-        #         detail = f"Location '{location}' is not recognized for Nevada fees."
+        elif state == "NV":
+            # Expecting a location field in the request.
+            location = request_dict['location']
+            fee_name = FEE_NAME + "-NV"
+            if "CLARK" in location:
+                fee = 42.00
+                PAYABLE_TO = "Clark County, Office of the County Recorder"
+                logger.info(f"Flat fee of $42 for Clark County (DESERT CLUB) in Nevada.")
+            elif "DOUGLAS" in location:
+                fee = 40.00
+                PAYABLE_TO = "Clark County, Office of the County Recorder"
+                logger.info(f"Flat fee of $40 for Douglas County (WALLY'S or RIDGE) in Nevada.")
+            else:
+                logger.error(f"Location '{location}' is not recognized for Nevada fees.")
         
         elif state == "SC":
-            fee = 25.00    #Flat fee of $25 for South Carolina.
+            fee = 25.00
+            fee_name = FEE_NAME + "-SC"
             PAYABLE_TO = "Horry County, SC Registry of Deeds"
             
         elif state == "TN":
-            # Fee calculated as $12 for first 2 pages, $1 clerk fee, and $5 for each additional page (pages: {pages})."
-            if pages > 2:
-                fee = 12.00 + 1 + 5 * (pages - 2)
+            PAGES = 3
+            fee_name = FEE_NAME + "-TN"
+            if PAGES > 2:
+                fee = 12.00 + 1 + 5 * (PAGES - 2)
             else:
                 fee = 12.00 + 1
             PAYABLE_TO = "Sevier County, Register of Deeds"
             
         elif state == "TX":
-            # Fee calculated with base $25, plus $4 per additional page , and $0.25 per name over 5 .
+            fee_name = FEE_NAME + "-TX"
             base_fee = 25.00
+            PAGES = 4
             #page is configured in Pega
-            names_count = request_dict.get("names_count", 5)
-            additional_page_fee = 4 * max(0, pages - 1)
-            extra_name_fee = 0.25 * max(0, names_count - 5)
+            additional_page_fee = 4 * max(0, PAGES - 1)
+            extra_name_fee = 0.25 * max(0, no_of_purchasers - 5)
             fee = base_fee + additional_page_fee + extra_name_fee
             PAYABLE_TO = "Montogomery County Clerk's Office"
             
         elif state == "VT":
-            #Calculated fee as $10 per page
-            fee = 10.00 * pages
+            PAGES = 1
+            fee_name = FEE_NAME + "-VT"
+            fee = 10.00 * PAGES
             PAYABLE_TO = "West Windsor Town Clerk"
             
         elif state == "VA":
-            fee = 46.00    #Flat fee of $46 for Virginia
+            fee_name = FEE_NAME + "-VA"
             PAYABLE_TO = "York County Circuit Court"
+            fee = 46.00
             
         else:
             logger.info(f"No fee configuration for state: {state}")
+            return
+    elif sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
+        PAGES = 3 #config in pega
+        #Assessed on Mortgage accounts only. $10.00 for the 1st page, each additional page will be 8.50 , in addition if there are more than 3 purchasers on the contract an additional $1.00 will be added for each additional purchaser. 
+        fee = 10.00 + 8.50 * (PAGES - 1) + 1 * max(0, no_of_purchasers - 3)
+        fee_name = FEE_NAME+"-Trust"
+        PAYABLE_TO = "Orange County Comptroller"
+
+
     else:
         logger.info(f"Fee not applicable for sale type: {sale_type}")
+        return
 
     # Retrieve fee details from response
-    amount, description, payableTo = getFeeDetails(FEE_NAME, api_response)
-
+    amount, description, payableTo = getFeeDetails(fee_name, api_response)
     #assert the fee & list the errors
     errors = assert_doc_stamp_deed_fee(
-        amount, description, FEE_NAME, payableTo,
-        sale_type, fee, PAYABLE_TO
+        amount, description, fee_name, payableTo, sale_type,
+        fee, PAYABLE_TO
     )
     if errors:
         for error in errors:

@@ -13,7 +13,7 @@ def compute_doc_stamp_deed_fee(request_dict, api_response):
     sale_type = request_dict['saleType']
     state = request_dict['state']
 
-    if sale_type == "Trust Sale":
+    if sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
         fee_name = FEE_NAME  # assign fee_name for consistency
         purchase_price = float(request_dict['purchasePrice'])
         purchase_price = round_up_to_nearest_100(purchase_price)

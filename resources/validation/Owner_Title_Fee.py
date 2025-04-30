@@ -1,4 +1,4 @@
-from CC_Fee_Util import getFeeDetails
+from CC_Fee_Util import getFeeDetails, round_up_to_nearest_100
 from robot.api.deco import keyword
 from robot.api import logger
 
@@ -6,18 +6,18 @@ FEE_NAME = "Owner's Title Fee"
 MIN_FEE = 60.00
 PAYABLE_TO = "Wilson Title Services, LLC"
 
-
+@keyword
 def compute_owner_title_fee(request_dict, api_response):
     purchase_price = float(request_dict['purchasePrice'])
-    # round off the purchase price to nearest integer (update below if nearest 100 is intended)
-    purchase_price_rounded = round(purchase_price/ 100) * 100
+    purchase_price_rounded = round_up_to_nearest_100(purchase_price)
+    #purchase_price_rounded = round(purchase_price/ 100) * 100
 
     if purchase_price <= 100000:
         
         fee = purchase_price_rounded * 0.00575
         fee = MIN_FEE if fee < MIN_FEE else round(fee * 100) / 100
     else:
-        fee = (100000 * 0.00575) + (round((purchase_price - 100000) / 100 * 100) * 0.0050)
+        fee = (100000 * 0.00575) + ((purchase_price_rounded - 100000)  * 0.0050)
         
 
     # get actual fee details from the response

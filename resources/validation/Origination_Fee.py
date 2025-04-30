@@ -18,7 +18,7 @@ def compute_origination_fee(request_dict, api_response):
         fee = SALES_REFINANCE_FEE if sale_type == "Sales Refinance" else LOAN_REFINANCE_FEE
         exp_payableTo = REFINANCE_PAYABLE_TO
         fee_name = FEE_NAME + " - Refinance"
-    elif sale_type == "Trust Sale":
+    elif sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
         fee = 0.032 * (float(request_dict['purchasePrice']) - float(request_dict['cash']))
         fee = round(fee, 2)
         exp_payableTo = TRUST_SALE_PAYABLE_TO

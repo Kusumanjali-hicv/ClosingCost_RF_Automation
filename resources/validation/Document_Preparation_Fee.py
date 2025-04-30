@@ -15,7 +15,7 @@ def compute_document_preparation_fee(request_dict, api_response):
         fee_name = FEE_NAME + " - Refinance"
         exp_fee = REFINANCE_FEE
         exp_payableTo = REFINANCE_PAYABLE_TO
-    elif sale_type == "Trust Sale":
+    elif sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
         fee_name = FEE_NAME
         exp_fee = TRUST_SALE_FEE
         exp_payableTo = TRUST_SALE_PAYABLE_TO

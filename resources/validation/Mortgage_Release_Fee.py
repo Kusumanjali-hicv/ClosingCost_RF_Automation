@@ -26,9 +26,9 @@ def compute_mortgage_release_fee(request_dict, api_response):
  
     exp_fee = ""
     exp_payable_To = ""
+    fee_name =  FEE_NAME
 
-    if sale_type == "Trust Sale":
-        fee_name =  FEE_NAME
+    if sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
         #$10.00 for the 1st page, each additional page will be $8.50 , in addition if there are more than 3 purchasers on the contract an additional $1.00 will be added for each additional purchaser. Currently $10 [one page total]
         exp_fee = FIRST_PAGE_FEE + (NO_OF_PAGES - 1) * ADDITIONAL_PAGE_FEE
         if request_dict['numberOfPurchasers'] > PURCHASER_LIMIT_TRUST_SALE:
@@ -47,6 +47,7 @@ def compute_mortgage_release_fee(request_dict, api_response):
             exp_payable_To = PAYABLE_TO_FL
         else:
             logger.info(f"{FEE_NAME} is not applicable for state: {state} and sale_type: {sale_type}")
+            logger.info(f"<span style='color:orange'>{FEE_NAME} is not applicable for state: {state} and sale_type: {sale_type}</span>", html=True)
             return
 
     # get actual fee details from the response
