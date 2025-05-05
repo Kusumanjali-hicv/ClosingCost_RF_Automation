@@ -35,12 +35,18 @@ def compute_deed_of_trust_release_fee(request_dict, api_response):
             PAYABLE_TO = "Taney County Recorder's Office"
 
         elif state == "NV":
-            nv_location_config = {
-                "CLARK": (42.00, "Clark County, Office of the County Recorder"),
-                "DOUGLAS": (40.00, "Clark County, Office of the County Recorder"),
+            # Expecting a location field in the request.
+            location = request_dict['location']
+            fee_name = FEE_NAME + "-NV"
+            nevada_fee_config = {
+                "CLARK COUNTY (DESERT CLUB)": (42.00, "Clark County, Office of the County Recorder"),
+                "DOUGLAS COUNTY (WALLY'S)": (40.00, "Clark County, Office of the County Recorder"),
+                "DOUGLAS COUNTY (RIDGE)": (40.00, "Clark County, Office of the County Recorder"),
             }
-            if location in nv_location_config:
-                fee, PAYABLE_TO = nv_location_config[location]
+
+            if location in nevada_fee_config:
+                fee, PAYABLE_TO = nevada_fee_config[location]
+                logger.info(f"Flat fee of ${fee} for {location} in Nevada.")
             else:
                 logger.error(f"Location '{location}' is not recognized for Nevada fees.")
 

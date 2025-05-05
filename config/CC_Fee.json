@@ -79,6 +79,11 @@
             "name" : "Lenders Title Insurance",
             "saleType" : ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"],
             "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+        },
+        {
+            "name" : "Lenders Title Policy",
+            "saleType" : ["Sales Refinance", "Loan Refinance"],
+            "state" : ["AZ","GA","IL","MO","NV","SC","TN","FL","TX","VA"]
         }
         
 
