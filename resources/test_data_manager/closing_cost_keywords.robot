@@ -2,6 +2,7 @@
 Library    OperatingSystem
 Library    json
 Library    JSONLibrary
+Library    String
 Library    ${EXECDIR}/resources/test_data_manager/requestUtils.py
 Library    ${EXECDIR}/resources/validation/CC_Fee_Util.py
 Library   ${EXECDIR}/resources/validation/CC_Fee_Manager.py
@@ -46,6 +47,11 @@ Prepare Request
 
 Set Global Variables
     [Arguments]    ${purchasePrice}    ${saleType}    ${state}    ${brand}    ${location}
+    ${purchasePrice}=    Strip String    ${purchasePrice}
+    ${saleType}=    Strip String    ${saleType}
+    ${state}=    Strip String    ${state}
+    ${brand}=    Strip String    ${brand}
+    ${location}=    Strip String    ${location}
     Set Global Variable    ${purchasePrice}
     Set Global Variable    ${saleType}    
     Set Global Variable    ${state}    

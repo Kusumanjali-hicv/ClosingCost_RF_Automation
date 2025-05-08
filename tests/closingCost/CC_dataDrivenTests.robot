@@ -1,6 +1,6 @@
 *** Settings ***
 Resource      ${EXECDIR}/resources/test_data_manager/master.robot 
-Library           DataDriver    file=${CURDIR}\\CC_testData.csv     include=Sanity  
+Library           DataDriver    file=${CURDIR}\\CC_testData.csv     #include=Refinance    #Sanity  
 Test Template    Validate ClosingCost Fee    
 Test Tags       closingCost
 

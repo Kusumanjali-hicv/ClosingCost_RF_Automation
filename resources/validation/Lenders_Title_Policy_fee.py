@@ -30,7 +30,7 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
             return
 
         # Retrieve fee details from response
-        fee_name = FEE_NAME + f"-{state}"
+        fee_name = FEE_NAME # + f"-{state}"
         amount, description, payableTo = getFeeDetails(fee_name, api_response)
 
         # Assert the fee and list the errors
