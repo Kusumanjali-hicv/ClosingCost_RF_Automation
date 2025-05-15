@@ -37,14 +37,15 @@ def compute_deed_of_trust_recording_fee(request_dict, api_response):
             # Expecting a location field in the request.
             location = request_dict['location']
             fee_name = FEE_NAME + "-NV"
-            if "CLARK" in location:
-                fee = 42.00
-                PAYABLE_TO = "Clark County, Office of the County Recorder"
-                logger.info(f"Flat fee of $42 for Clark County (DESERT CLUB) in Nevada.")
-            elif "DOUGLAS" in location:
-                fee = 40.00
-                PAYABLE_TO = "Clark County, Office of the County Recorder"
-                logger.info(f"Flat fee of $40 for Douglas County (WALLY'S or RIDGE) in Nevada.")
+            nevada_fee_config = {
+                "CLARK COUNTY (DESERT CLUB)": (42.00, "Clark County, Office of the County Recorder"),
+                "DOUGLAS COUNTY (WALLY'S)": (40.00, "Clark County, Office of the County Recorder"),
+                "DOUGLAS COUNTY (RIDGE)": (40.00, "Clark County, Office of the County Recorder"),
+            }
+
+            if location in nevada_fee_config:
+                fee, PAYABLE_TO = nevada_fee_config[location]
+                logger.info(f"Flat fee of ${fee} for {location} in Nevada.")
             else:
                 logger.error(f"Location '{location}' is not recognized for Nevada fees.")
         
