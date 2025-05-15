@@ -22,7 +22,7 @@ Loan_Refinance_VA                 385000             Loan Refinance       VA    
 Sales_Refinance_FL                175200             Sales Refinance      FL            HICV     ALL
 Loan_Refinace_Va                  106500             Loan Refinance       VA            HICV     ALL
 Sales_Refinance_NC                100000             Rewrite              VA            HICV     ALL
-
+Sales_Refinance_NC1               100000             Sales Refinance      SC            Kimpton     ALL
 
 
 *** Keywords ***

@@ -37,7 +37,7 @@ def create_input_json(default_json, request_variables):
 def set_siteID(request_variables):
     if 'brand' in request_variables and request_variables['brand'] == 'HICV':
         request_variables['siteId'] = HICV_siteId        
-    elif 'brand' in request_variables and request_variables['brand'] == 'KIMPTON':
+    elif 'brand' in request_variables and request_variables['brand'].upper() == 'KIMPTON':
         request_variables['siteId'] = KC_siteId
     else:
         print("Brand not found in request_variables")

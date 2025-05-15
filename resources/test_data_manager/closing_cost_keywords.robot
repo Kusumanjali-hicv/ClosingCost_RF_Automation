@@ -5,8 +5,9 @@ Library    JSONLibrary
 Library    String
 Library    ${EXECDIR}/resources/test_data_manager/requestUtils.py
 Library    ${EXECDIR}/resources/validation/CC_Fee_Util.py
-Library   ${EXECDIR}/resources/validation/CC_Fee_Manager.py
-Resource    ${EXECDIR}/resources/common/commons.robot
+Library    ${EXECDIR}/resources/validation/CC_Fee_Manager.py
+Resource   ${EXECDIR}/resources/common/commons.robot
+Library    ${EXECDIR}/resources/validation/kimpton_assertions.py
 #Variables    ${EXECDIR}/config/CC_Variables.py  
 
 
@@ -28,8 +29,11 @@ Send CC API Request
 
 Assert Closing Cost Fee  
     [Arguments]    ${request}    ${response}    ${purchasePrice}    ${saleType}    ${state}    ${brand}
-    Validate Expected CC Fee     ${request}   ${response}    ${purchasePrice}    ${saleType}    ${state}    ${brand}
-    
+    Run Keyword If    '${brand}' == 'Kimpton'    
+    ...    Assert Kimpton Closing Cost Fee    ${request}    ${response}
+    ...    ELSE    
+    ...    Validate Expected CC Fee     ${request}   ${response}    ${purchasePrice}    ${saleType}    ${state}    ${brand}
+
 
 Validate Expected CC Fee 
     [Arguments]    ${request}    ${response}     ${purchasePrice}    ${saleType}    ${state}    ${brand}
@@ -61,7 +65,11 @@ Set Global Variables
 
 Generate API Request
     ${default_json}=    Get File    path=${json_path}
-    ${request_variables}=    Create Dictionary    purchasePrice=${purchasePrice}    saleType=${saleType}    state=${state}    brand=${brand}    location=${location}
+    IF    '${brand}' == 'Kimpton'
+        ${request_variables}=    Create Dictionary    purchasePrice=${purchasePrice}    saleType=${saleType}    brand=${brand}
+    ELSE
+        ${request_variables}=    Create Dictionary    purchasePrice=${purchasePrice}    saleType=${saleType}    state=${state}    brand=${brand}    location=${location}
+    END
     ${json_request}=    create_input_json    ${default_json}    ${request_variables}
     Log    ${json_request}
     ${json}=    Convert String To Json    ${json_request}
