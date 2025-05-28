@@ -42,12 +42,47 @@ def getFeeDetails(feeName, json_response):
     logger.info("<span style='color:red'>Fee not found: " + str(feeName) + "</span>", html=True)
     return amount, description, payableTo    
 
+def get_lenders_title_policy_fee(feeName, json_response):
+    amount = 0
+    payableTo = ""
+    description = ""
+    
+    if isinstance(json_response, dict):
+        json_response = json_response
+    else:
+        json_response = json.loads(json_response)
+
+    for fee in json_response['closingCosts']['fees']:
+        if feeName.lower() in fee['description'].lower():
+            # Skip if amount is 25.0
+            if fee['amount'] == 25.0:
+                continue
+
+            amount = fee['amount']
+            payableTo = fee['payableTo']
+            description = fee['description']
+            
+    
+    if not amount:
+        #logger.info("<span style='color:gray'>" + str(feeName) + " paid by Developer not found  </span>", html=True)
+        return 0, "", ""
+    
+    return amount, description, payableTo 
+
+
 def round_up_to_nearest_100(value):
     # Round up to the nearest 100
     if value % 100 == 0:
         return value
     else:
         return ((value // 100) + 1) * 100
+
+def round_up_to_nearest_1000(value):
+    # Round up to the nearest 1000
+    if value % 1000 == 0:
+        return value
+    else:
+        return ((value // 1000) + 1) * 1000
 """ 
 Round Up To Nearest 100
     [Arguments]        ${Value}

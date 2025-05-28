@@ -5,7 +5,8 @@ import string
 KC_siteId = "37"
 HICV_siteId = "9999"
 #FINANCED_AMT = ["30000", "40000", "50000", "60000", "70000", "80000"]
-FINANCED_AMT = ["10", "20", "40"]
+CASH = ["10000", "20000", "30000"]
+FINANCED_AMT = ["10", "20", "40", "110"]
 POINTS = ["100000", "100500", "30000", "40000", "50500"]
 NO_OF_PURCHASERS = [3, 4, 5, 6]
 
@@ -61,7 +62,10 @@ def set_variables(purchasePrice):
     random.shuffle(NO_OF_PURCHASERS)
     numberOfPurchasers = NO_OF_PURCHASERS[0]
 
-    cash = purchasePrice - financedAmount
+    if financedAmount > purchasePrice:
+        cash = random.choice(CASH)
+    else:
+        cash = purchasePrice - financedAmount
     return financedAmount, cash, points, numberOfPurchasers
 
 

@@ -10,7 +10,7 @@ def compute_deed_of_trust_release_fee(request_dict, api_response):
     state = request_dict['state']
     no_of_purchasers = request_dict['numberOfPurchasers']
     location = request_dict.get('location', "").upper()
-    logger.info(f"State = {state}")
+    
 
     # Initialize fee details with defaults
     fee = 0
@@ -31,7 +31,7 @@ def compute_deed_of_trust_release_fee(request_dict, api_response):
 
         elif state == "MO":
             PAGES = 1
-            fee = 24.00 + 3 * (PAGES - 1) + 5 * (no_of_purchasers - 1)
+            fee = 24.00 + 3 * (PAGES - 1)# + 5 * (no_of_purchasers - 1)
             PAYABLE_TO = "Taney County Recorder's Office"
 
         elif state == "NV":
