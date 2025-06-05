@@ -57,13 +57,13 @@
         },
         {
             "name" : "Deed of Trust Recording Fee",
-            "saleType" : ["Sales Refinance", "Loan Refinance",  "New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"],
-            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+            "saleType" : ["Sales Refinance", "Loan Refinance"],
+            "state" : ["AZ","GA","MO","NV","SC","TN","TX","VT","VA"]
         },
         {
             "name" : "Deed of Trust Release Fee",
-            "saleType" : ["Sales Refinance", "Loan Refinance",  "New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"],
-            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+            "saleType" : ["Sales Refinance", "Loan Refinance"],
+            "state" : ["AZ","GA","MO","NV","SC","TN","TX","VT","VA"]
         },
         {
             "name" : "Club Fee",
@@ -83,7 +83,13 @@
         {
             "name" : "Lenders Title Policy",
             "saleType" : ["Sales Refinance", "Loan Refinance"],
-            "state" : ["AZ","GA","IL"]  
+            "state" : ["AZ","GA","IL", "FL", "MO", "SC", "TN", "VA", "TX"]  
+        },
+        {
+            "name" : "Purchasers Fee",
+            "saleType" : ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"],
+            "state" : ["AZ","GA","IL","MO","MA","NV","SC","TN","FL","WI","TX","VT","VA"]
+
         }
         
 

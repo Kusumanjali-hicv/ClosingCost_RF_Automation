@@ -15,6 +15,7 @@ from Doc_Stamp_Mortgage import compute_doc_stamp_mortgage_fee
 from Club_Fee import compute_club_fee
 from Lenders_Title_Insurance_Fee import compute_lenders_title_insurance_fee
 from Lenders_Title_Policy_fee import compute_lenders_title_policy_fee
+from Purchasers_Fee import compute_purchasers_fee
 from robot.api import logger
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
@@ -51,7 +52,7 @@ def  assert_expected_cc_fee(fee_names, request_json, api_response):
         "Deed of Trust Recording Fee": compute_deed_of_trust_recording_fee,
         "Deed of Trust Release Fee": compute_deed_of_trust_release_fee,
         "Lenders Title Policy": compute_lenders_title_policy_fee,
-        
+        "Purchasers Fee": compute_purchasers_fee,
     }
 
     error_messages = []

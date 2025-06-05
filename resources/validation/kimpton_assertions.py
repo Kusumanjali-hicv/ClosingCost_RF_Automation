@@ -1,5 +1,6 @@
 from robot.api.deco import keyword
 from robot.api import logger
+from CC_Fee_Util import round_up_to_nearest_100
 import json
 
 @keyword()
@@ -13,6 +14,7 @@ def Assert_Kimpton_Closing_Cost_Fee(request, response):
         Intagiable_Fee_Name = "intangibleTax"
         Intagiable_Fee_Amount = 0.002
         expected_fee = float(financed_amount) * Intagiable_Fee_Amount
+        expected_fee = round(expected_fee, 2)
         intagiable_fee = get_fee_from_response(response, Intagiable_Fee_Name)
         if intagiable_fee != expected_fee:
             raise AssertionError(f"Intangible Tax fee mismatch: Expected {expected_fee}, but got {intagiable_fee}")
@@ -33,6 +35,7 @@ def Assert_Kimpton_Closing_Cost_Fee(request, response):
             expected_fee = 30.00
         else:
             expected_fee = 30 + (float(purchase_price) - 75000) / 1000 * 0.75
+            expected_fee = round(expected_fee, 2)
         title_insurance_fee = get_fee_from_response(response, Title_Insurance_Fee_Name)
         if title_insurance_fee != expected_fee:
             raise AssertionError(f"Title Insurance fee mismatch: Expected {expected_fee}, but got {title_insurance_fee}")
@@ -41,8 +44,9 @@ def Assert_Kimpton_Closing_Cost_Fee(request, response):
         
         Documentary_Stamp_Fee_Name = "documentaryStamps"
         if float(financed_amount) > 0:
-            expected_fee = (round(float(financed_amount) / 100) * 0.35)
+            expected_fee = ((round_up_to_nearest_100(financed_amount) / 100) * 0.35)
             documentary_stamp_fee = get_fee_from_response(response, Documentary_Stamp_Fee_Name)
+            expected_fee = round(expected_fee, 2)
             if documentary_stamp_fee != expected_fee:
                 raise AssertionError(f"Documentary Stamp Tax fee mismatch: Expected {expected_fee}, but got {documentary_stamp_fee}")
             else:

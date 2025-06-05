@@ -2,22 +2,22 @@ from CC_Fee_Util import getFeeDetails
 from robot.api.deco import keyword
 from robot.api import logger
 
-FEE_NAME = "Guarantee Fee-"
+FEE_NAME = "Guarantee Fee"
 FEE_TX = 4.00
 FEE_IL = 3.00
 PAYABLE_TO_TX = "Texas Title Guaranty Association"
 PAYABLE_TO_IL = "Fidelity National Title"
 
 FEE_CONFIGS = {
-    "TX": {"fee": FEE_TX, "payableTo": PAYABLE_TO_TX},
-    "IL": {"fee": FEE_IL, "payableTo": PAYABLE_TO_IL},
+    "TX": {"fee": FEE_TX, "payableTo": PAYABLE_TO_TX, "fee_name": "TX Title "+ FEE_NAME},
+    "IL": {"fee": FEE_IL, "payableTo": PAYABLE_TO_IL, "fee_name": FEE_NAME + "-IL"},
 }
 
 @keyword
 def compute_guarantee_fee(request_dict, api_response):
     state = request_dict['state']
     sale_type = request_dict['saleType']
-    expected_description = FEE_NAME + state
+    expected_description = FEE_CONFIGS.get(state, {}).get("fee_name", FEE_NAME)
     fee_key = expected_description
 
     errors = []
