@@ -2,7 +2,7 @@ from CC_Fee_Util import getFeeDetails
 from robot.api.deco import keyword
 from robot.api import logger
 
-FEE_NAME = "Escrow Fee-"
+FEE_NAME = "Escrow Fee"
 FEE_AMT_1 = 25.00
 FEE_AMT_2 = 50.00
 PAYABLE_TO = "Wilson Title Agency Services, LLC"
@@ -12,7 +12,7 @@ def compute_escrow_fee(request_dict, api_response):
     state = request_dict['state']
     sale_type = request_dict['saleType']
     financed_amount = request_dict['financedAmount']
-    fee_name = FEE_NAME + state
+    fee_name = FEE_NAME # + state
 
     # Retrieve fee details from the API response
     amount, description, payable_to = getFeeDetails(fee_name, api_response)

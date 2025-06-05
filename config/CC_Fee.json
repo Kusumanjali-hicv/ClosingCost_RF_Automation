@@ -83,7 +83,7 @@
         {
             "name" : "Lenders Title Policy",
             "saleType" : ["Sales Refinance", "Loan Refinance"],
-            "state" : ["AZ","GA","IL"]  
+            "state" : ["AZ","GA","IL", "FL", "MO", "SC", "TN", "VA", "TX"]  
         },
         {
             "name" : "Purchasers Fee",

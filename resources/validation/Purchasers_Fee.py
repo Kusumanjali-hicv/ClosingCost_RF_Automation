@@ -20,6 +20,7 @@ def compute_purchasers_fee(request_dict, api_response):
     amount, _, _ = get_lenders_title_policy_fee("Lender's Title Insurance", api_response)
     if amount != 0:
         total_amount += float(amount)
+    total_amount = round(total_amount, 2)
     total_amount *= -1  # Convert to negative as per the original logic
     if total_amount == 0:
         logger.info("No applicable fees found for Purchasers Fee calculation.")
