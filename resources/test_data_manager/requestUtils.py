@@ -17,7 +17,6 @@ def create_input_json(default_json, request_variables):
     
     contractId = set_contractId()
     request_variables['contractId'] = contractId
-    request_variables = set_siteID(request_variables)
     sale_type = request_variables.get('saleType', '').lower()
     purchase_price = request_variables.get('purchasePrice', None)
     financedAmount, cash, points, numberOfPurchasers = set_variables(int(request_variables['purchasePrice']))
@@ -26,6 +25,12 @@ def create_input_json(default_json, request_variables):
     request_variables['points'] = points
     request_variables['numberOfPurchasers'] = numberOfPurchasers
     
+    if sale_type in ['sales refinance', 'loan refinance']:        
+        request_variables = set_siteID(request_variables)
+    else:
+        request_variables['siteId'] = HICV_siteId
+
+
     # Parse the JSON string into a dictionary
     default_json = json.loads(default_json)
     
@@ -86,7 +91,8 @@ def set_variables(purchasePrice):
     numberOfPurchasers = NO_OF_PURCHASERS[0]
 
     if financedAmount > purchasePrice:
-        cash = random.choice(CASH)
+        cash_percentages = [5, 8, 9, 10, 12, 13]
+        cash = (random.choice(cash_percentages) * purchasePrice) / 100
     else:
         cash = purchasePrice - financedAmount
     return financedAmount, cash, points, numberOfPurchasers
@@ -111,33 +117,33 @@ def generate_previous_policy_data(purchase_price):
     base_date = today - timedelta(days=random.randint(days_range[0], days_range[1]))
     
     # TSW deeded date - Add parameter to control this
-    include_tsw_date = random.choice([True, False])
+    #include_tsw_date = random.choice([True, False])
     
     # Earlier dates
     purchase_date = base_date - timedelta(days=random.randint(0, 150))
     policy_issue_date = base_date - timedelta(days=random.randint(50, 150))
     
-    if not include_tsw_date:
+    """ if not include_tsw_date:
         return {
-        "id": policy_id,
-        "orgPurchasePrice": org_purchase_price,
+        "contractNumber": policy_id,
+        "purchasePrice": org_purchase_price,
         "purchaseDate": purchase_date.strftime("%Y-%m-%d"),
         "amountFinanced": org_purchase_price,
         "principalBalancePayDown": random.randint(100, 999),
         "policyIssueDate": policy_issue_date.strftime("%Y-%m-%d")
         }
-    else:
-        tsw_deeded_date = base_date.strftime("%Y-%m-%d")       
+    else: """
+    tsw_deeded_date = base_date.strftime("%Y-%m-%d")       
 
-        return {
-            "id": policy_id,
-            "orgPurchasePrice": org_purchase_price,
+    return {
+            "contractNumber": policy_id,
+            "purchasePrice": org_purchase_price,
             "purchaseDate": purchase_date.strftime("%Y-%m-%d"),
             "tswDeededDate": tsw_deeded_date,
             "amountFinanced": org_purchase_price,
-            "principalBalancePayDown": random.randint(100, 999),
+            "principalBalancePayDown": random.randint(100, 9999),
             "policyIssueDate": policy_issue_date.strftime("%Y-%m-%d")
-        }
+    }
 
 def set_previous_policy(request_variables, purchase_price):
     
