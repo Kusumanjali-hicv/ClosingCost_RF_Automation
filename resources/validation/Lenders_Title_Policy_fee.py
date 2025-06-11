@@ -1,5 +1,6 @@
+from decimal import ROUND_HALF_UP, Decimal
 from robot.api import logger
-from CC_Fee_Util import getFeeDetails, round_up_to_nearest_1000, get_amounts_from_rate_chart
+from CC_Fee_Util import getFeeDetails, round_up_to_nearest_1000, get_amounts_from_rate_chart, round_fee
 from robot.api.deco import keyword
 from datetime import datetime
 
@@ -30,6 +31,7 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
         
         elif state == "FL":
             # Florida calculation with reissue/original rate logic
+            purchaseprice = float(round_up_to_nearest_1000(purchase_price))
             loan_amt = float(round_up_to_nearest_1000(financed_amount))
             orig_price = float(request_dict.get("previousPolicy", {}).get("purchasePrice", 0))
             if orig_price:
@@ -38,11 +40,9 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
                 orig_price = 0
             fee = 0
             tsw_deeded_date = request_dict.get("previousPolicy", {}).get("tswDeededDate", None)
-            tsw_deeded_date = datetime.strptime(tsw_deeded_date, "%Y-%m-%d")
-            today = datetime.today()
-            # find the difference in years for tsw deeded date & today 
-            #store the difference in years in a variable
             if tsw_deeded_date:
+                tsw_deeded_date = datetime.strptime(tsw_deeded_date, "%Y-%m-%d")
+                today = datetime.today()
                 years_difference = (today - tsw_deeded_date).days // 365
             else:
                 years_difference = 0
@@ -60,9 +60,7 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
                 upto_100K_fee = 5.75
                 upto_1000k_fee = 5.00
 
-            if  orig_price != 0:
-                #if (today - tsw_deeded_date).days > 1095:         
-                    # --- Reissue Rate Calculation ---
+            if  orig_price != 0:                
                     if loan_amt <= orig_price:
                         # Case 1: Financed Amount < Original Purchase Price
                         if loan_amt <= 100000:
@@ -70,12 +68,12 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
                         elif loan_amt > 100000:
                             fee = (100000 / 1000) * upto_100K_fee + ((loan_amt - 100000) / 1000) * upto_1000k_fee
                     else:
-                        # Case 2: Financed Amount > Original Purchase Price
-                        # First, apply reissue rate up to original purchase price
+                        # Case 2: Financed Amount > Original Purchase Price, use purchase price
+                        
                         if orig_price <= 100000:
                             fee = (purchase_price / 1000) * upto_100K_fee
                         elif orig_price > 100000:
-                            fee = (100000 / 1000) * upto_100K_fee + ((purchase_price - 100000) / 1000) * upto_1000k_fee
+                            fee = (100000 / 1000) * upto_100K_fee + ((purchaseprice - 100000) / 1000) * upto_1000k_fee
                                               
             # Minimum premium
             fee = max(60, fee)     
@@ -192,7 +190,7 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
 
         # Retrieve fee details from response
         fee_name = FEE_NAME # + f"-{state}"
-        fee = round(fee, 2)
+        fee = round_fee(fee)
         amount, description, payableTo = getFeeDetails(fee_name, api_response)
 
         # Assert the fee and list the errors
@@ -210,8 +208,10 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
 
 def assert_lenders_title_policy_fee(amount, description, FEE_NAME, payableTo, sale_type, exp_fee, exp_payableTo):
     errors = []
-
+    amount = Decimal(str(amount)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    #if Decimal(str(amount)) != exp_fee:
     if amount != exp_fee:
+    
         errors.append(
             f"<span style='color:red'>{FEE_NAME} amount mismatch for {sale_type}: "
             f"Expected {exp_fee}, but got {amount}</span>"

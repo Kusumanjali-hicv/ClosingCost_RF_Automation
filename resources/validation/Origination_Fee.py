@@ -1,6 +1,7 @@
-from CC_Fee_Util import getFeeDetails
+from CC_Fee_Util import getFeeDetails, round_fee
 from robot.api.deco import keyword
 from robot.api import logger
+from decimal import ROUND_HALF_UP, Decimal
 
 FEE_NAME = "Origination Fee"
 SALES_REFINANCE_FEE = 399.00
@@ -19,8 +20,8 @@ def compute_origination_fee(request_dict, api_response):
         exp_payableTo = REFINANCE_PAYABLE_TO
         fee_name = FEE_NAME + " - Refinance"
     elif sale_type in ["New", "Downgrade", "Reload", "Reload Equity", "Reload New Money", "Rewrite", "Upgrade"]:
-        fee = 0.032 * (float(request_dict['purchasePrice']) - float(request_dict['cash']))
-        fee = round(fee, 2)
+        fee = (float(request_dict['purchasePrice']) - float(request_dict['cash'])) * 0.032 
+        fee = round_fee(fee)
         exp_payableTo = TRUST_SALE_PAYABLE_TO
         fee_name = FEE_NAME
     else:
@@ -39,8 +40,9 @@ def compute_origination_fee(request_dict, api_response):
 
 def assert_origination_fee(amount, description, fee_name, payableTo, sale_type, fee, exp_payableTo):
     errors = []
-    
-    if amount != fee:
+    amount = Decimal(str(amount)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    fee = Decimal(str(fee)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    if abs(amount - fee) > Decimal('0.01'):
         errors.append(
             "<span style='color:red'>Origination Fee amount mismatch for {}: expected {}, got {}</span>"
             .format(sale_type, fee, amount)

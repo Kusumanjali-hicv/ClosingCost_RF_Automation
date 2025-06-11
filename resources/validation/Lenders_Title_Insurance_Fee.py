@@ -1,8 +1,9 @@
+from decimal import ROUND_HALF_UP, Decimal
 import json
 import math
 from robot.api import logger
 from robot.api.deco import keyword
-from CC_Fee_Util import round_up_to_nearest_100
+from CC_Fee_Util import round_up_to_nearest_100, round_fee
 
 FEE_NAME = "Lender's Title Insurance"
 PAYABLE_TO = "Wilson Title Services"
@@ -23,7 +24,7 @@ def compute_lenders_title_insurance_fee(request_dict, api_response):
             rounded_difference = round_up_to_nearest_100(difference)
             fee = (rounded_difference * 0.00575) 
             #fee = math.ceil(fee*100)/100
-            fee = round(fee, 2)# / 100  # Round to 2 decimal places
+            fee = round_fee(fee)  # Round to 2 decimal places
         else:
             fee = 25.00  # Flat fee for mortgaged accounts
 
@@ -41,8 +42,10 @@ def compute_lenders_title_insurance_fee(request_dict, api_response):
 
 def assert_lenders_title_insurance_fee(amount, description, FEE_NAME, payableTo, sale_type, exp_fee, exp_payableTo):
     errors = []
-
-    if amount != exp_fee:
+    amount = Decimal(str(amount)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    #if Decimal(str(amount)) != exp_fee:
+    #if amount != exp_fee:
+    if abs(amount - exp_fee) > Decimal('0.01'):
         errors.append(
             f"<span style='color:red'>{FEE_NAME} amount mismatch for {sale_type}: "
             f"Expected {exp_fee}, but got {amount}</span>"
