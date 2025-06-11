@@ -1,0 +1,25 @@
+{
+    "pxObjClass": "HICV-Sales-CC-Int-Svc-CCRequest",
+    "roomType": "STANDARD",
+    "purchasePrice": "1000000",
+    "saleType": "Loan Refinance",
+    "state": "SC",
+    "brand": "HICV",
+    "location": "ALL",
+    "contractId": "82HBMB3H89QU6KI7R2",
+    "financedAmount": 100000.0,
+    "cash": 900000.0,
+    "points": 30000,
+    "numberOfPurchasers": 4,
+    "siteId": "6",
+    "hasPreviousPolicy": false,
+    "fundingInstitution": "OLCC",
+    "previousPolicy": {
+        "contractNumber": 7681,   
+        "purchaseDate": "2011-07-17",
+        "tswDeededDate": "2011-10-14",
+        "amountFinanced": "100000",
+        "principalBalancePayDown": 2511,
+        "policyIssueDate": "2011-06-09"
+    }
+}

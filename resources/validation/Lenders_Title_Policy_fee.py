@@ -1,5 +1,5 @@
 from robot.api import logger
-from CC_Fee_Util import getFeeDetails, round_up_to_nearest_100, round_up_to_nearest_1000, get_amount_from_rate_chart
+from CC_Fee_Util import getFeeDetails, round_up_to_nearest_1000, get_amounts_from_rate_chart
 from robot.api.deco import keyword
 from datetime import datetime
 
@@ -22,7 +22,7 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
             if financed_amount <= 100000:
                 fee = 200.00
             elif financed_amount <= 500000:
-                fee = 200.00 + (2.25 * (financed_amount - 100000) / 1000)
+                fee = 200.00 + (2.25 * (round_up_to_nearest_1000(financed_amount) - 100000) / 1000)
                 
         
         elif state == "IL":
@@ -31,7 +31,7 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
         elif state == "FL":
             # Florida calculation with reissue/original rate logic
             loan_amt = float(round_up_to_nearest_1000(financed_amount))
-            orig_price = float(request_dict.get("previousPolicy", {}).get("orgPurchasePrice", 0))
+            orig_price = float(request_dict.get("previousPolicy", {}).get("purchasePrice", 0))
             if orig_price:
                 orig_price = round_up_to_nearest_1000(orig_price)
             else:
@@ -40,6 +40,25 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
             tsw_deeded_date = request_dict.get("previousPolicy", {}).get("tswDeededDate", None)
             tsw_deeded_date = datetime.strptime(tsw_deeded_date, "%Y-%m-%d")
             today = datetime.today()
+            # find the difference in years for tsw deeded date & today 
+            #store the difference in years in a variable
+            if tsw_deeded_date:
+                years_difference = (today - tsw_deeded_date).days // 365
+            else:
+                years_difference = 0
+
+            upto_100K_fee = 0.0
+            upto_1000k_fee = 0.0
+            if years_difference >= 3:
+                # use reissue rate
+                logger.info("Using reissue rate for FL state")
+                upto_100K_fee = 3.30
+                upto_1000k_fee = 3.00
+            else:
+                # use original rate
+                logger.info("Using original rate for FL state")
+                upto_100K_fee = 5.75
+                upto_1000k_fee = 5.00
 
             if  orig_price != 0:
                 #if (today - tsw_deeded_date).days > 1095:         
@@ -47,16 +66,16 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
                     if loan_amt <= orig_price:
                         # Case 1: Financed Amount < Original Purchase Price
                         if loan_amt <= 100000:
-                            fee = (loan_amt / 1000) * 3.30
+                            fee = (loan_amt / 1000) * upto_100K_fee
                         elif loan_amt > 100000:
-                            fee = (100000 / 1000) * 3.30 + ((loan_amt - 100000) / 1000) * 3.00
+                            fee = (100000 / 1000) * upto_100K_fee + ((loan_amt - 100000) / 1000) * upto_1000k_fee
                     else:
                         # Case 2: Financed Amount > Original Purchase Price
                         # First, apply reissue rate up to original purchase price
                         if orig_price <= 100000:
-                            fee = (purchase_price / 1000) * 3.30
+                            fee = (purchase_price / 1000) * upto_100K_fee
                         elif orig_price > 100000:
-                            fee = (100000 / 1000) * 3.30 + ((purchase_price - 100000) / 1000) * 5.75
+                            fee = (100000 / 1000) * upto_100K_fee + ((purchase_price - 100000) / 1000) * upto_1000k_fee
                                               
             # Minimum premium
             fee = max(60, fee)     
@@ -94,7 +113,7 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
 
 
         elif state == "SC":
-            loan_amt = round_up_to_nearest_100(financed_amount)
+            loan_amt = round_up_to_nearest_1000(financed_amount)
             tiers = [
                 (50000, 3.60),
                 (100000, 3.00),
@@ -124,12 +143,14 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
         
         elif state == "TX":
             loan_amt = financed_amount
-            FTP = get_amount_from_rate_chart(request_dict['siteId'], loan_amt)
+            principal_balance = request_dict.get("previousPolicy", {}).get("principalBalancePayDown", 0)
+            FTP, credit = get_amounts_from_rate_chart(request_dict['siteId'], loan_amt, principal_balance)
             if FTP is None:
                 logger.error("Failed to get rate chart amount for loan amount")
                 return
-            principal_balance = request_dict.get("previousPolicy", {}).get("principalBalancePayDown", 0)
-            credit = get_amount_from_rate_chart(request_dict['siteId'], principal_balance) or 0
+            if credit is None:
+                logger.error("Failed to get credit amount from rate chart for loan amount")
+                return
             LTP = FTP - credit
             funding_institution = request_dict.get('fundingInstitution', None)
             if funding_institution != "SL":

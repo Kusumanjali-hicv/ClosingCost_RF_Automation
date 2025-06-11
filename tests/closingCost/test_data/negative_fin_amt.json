@@ -1,0 +1,26 @@
+{
+    "contractId": "2345",
+    "pxObjClass": "HICV-Sales-CC-Int-Svc-CCRequest",
+    "purchasePrice":0,
+    "financedAmount":-60000,
+    "siteId": 9999,
+    "brand": "HICV",
+    "numberOfPurchasers":3,
+    "cash":"50000",
+    "saleType":"sales refinance",
+    "points":10500,
+    "roomType":"STANDARD",
+    "state":"AZ",
+    "location":"ALL",
+	"hasPreviousPolicy": true,
+	"fundingInstitution": "OLCC",
+	"previousPolicy": {
+		"contractNumber": 7383,
+		"purchasePrice": "205000",
+		"purchaseDate": "2022-01-24",
+		"tswDeededDate": "2022-01-26",
+		"amountFinanced": "205000",
+		"principalBalancePayDown": 4207,
+		"policyIssueDate": "2021-11-21"
+	}
+}

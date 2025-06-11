@@ -1,468 +1,7074 @@
 {
-    "8": [
+    "10": [
         {
-            "sale_price": 15000,
-            "amount": 100
+            "sale_price": 25000,
+            "amount": 328
+        },
+        {
+            "sale_price": 25500,
+            "amount": 331
+        },
+        {
+            "sale_price": 26000,
+            "amount": 335
+        },
+        {
+            "sale_price": 26500,
+            "amount": 338
+        },
+        {
+            "sale_price": 27000,
+            "amount": 340
+        },
+        {
+            "sale_price": 27500,
+            "amount": 343
+        },
+        {
+            "sale_price": 28000,
+            "amount": 347
+        },
+        {
+            "sale_price": 28500,
+            "amount": 350
+        },
+        {
+            "sale_price": 29000,
+            "amount": 355
+        },
+        {
+            "sale_price": 29500,
+            "amount": 358
         },
         {
             "sale_price": 30000,
-            "amount": 140
+            "amount": 361
+        },
+        {
+            "sale_price": 30500,
+            "amount": 364
+        },
+        {
+            "sale_price": 31000,
+            "amount": 368
+        },
+        {
+            "sale_price": 31500,
+            "amount": 371
+        },
+        {
+            "sale_price": 32000,
+            "amount": 374
+        },
+        {
+            "sale_price": 32500,
+            "amount": 378
+        },
+        {
+            "sale_price": 33000,
+            "amount": 381
+        },
+        {
+            "sale_price": 33500,
+            "amount": 385
+        },
+        {
+            "sale_price": 34000,
+            "amount": 388
+        },
+        {
+            "sale_price": 34500,
+            "amount": 392
+        },
+        {
+            "sale_price": 35000,
+            "amount": 395
+        },
+        {
+            "sale_price": 35500,
+            "amount": 398
+        },
+        {
+            "sale_price": 36000,
+            "amount": 401
+        },
+        {
+            "sale_price": 36500,
+            "amount": 405
+        },
+        {
+            "sale_price": 37000,
+            "amount": 408
+        },
+        {
+            "sale_price": 37500,
+            "amount": 412
+        },
+        {
+            "sale_price": 38000,
+            "amount": 416
+        },
+        {
+            "sale_price": 38500,
+            "amount": 419
+        },
+        {
+            "sale_price": 39000,
+            "amount": 421
+        },
+        {
+            "sale_price": 39500,
+            "amount": 425
         },
         {
             "sale_price": 40000,
-            "amount": 180
+            "amount": 428
+        },
+        {
+            "sale_price": 40500,
+            "amount": 433
+        },
+        {
+            "sale_price": 41000,
+            "amount": 435
+        },
+        {
+            "sale_price": 41500,
+            "amount": 439
+        },
+        {
+            "sale_price": 42000,
+            "amount": 442
+        },
+        {
+            "sale_price": 42500,
+            "amount": 446
+        },
+        {
+            "sale_price": 43000,
+            "amount": 448
+        },
+        {
+            "sale_price": 43500,
+            "amount": 452
+        },
+        {
+            "sale_price": 44000,
+            "amount": 456
+        },
+        {
+            "sale_price": 44500,
+            "amount": 459
+        },
+        {
+            "sale_price": 45000,
+            "amount": 463
+        },
+        {
+            "sale_price": 45500,
+            "amount": 466
+        },
+        {
+            "sale_price": 46000,
+            "amount": 469
+        },
+        {
+            "sale_price": 46500,
+            "amount": 473
+        },
+        {
+            "sale_price": 47000,
+            "amount": 475
+        },
+        {
+            "sale_price": 47500,
+            "amount": 478
+        },
+        {
+            "sale_price": 48000,
+            "amount": 483
+        },
+        {
+            "sale_price": 48500,
+            "amount": 487
+        },
+        {
+            "sale_price": 49000,
+            "amount": 490
+        },
+        {
+            "sale_price": 49500,
+            "amount": 493
         },
         {
             "sale_price": 50000,
-            "amount": 380
+            "amount": 496
+        },
+        {
+            "sale_price": 50500,
+            "amount": 499
+        },
+        {
+            "sale_price": 51000,
+            "amount": 501
+        },
+        {
+            "sale_price": 51500,
+            "amount": 505
+        },
+        {
+            "sale_price": 52000,
+            "amount": 510
+        },
+        {
+            "sale_price": 52500,
+            "amount": 514
+        },
+        {
+            "sale_price": 53000,
+            "amount": 516
+        },
+        {
+            "sale_price": 53500,
+            "amount": 520
+        },
+        {
+            "sale_price": 54000,
+            "amount": 523
+        },
+        {
+            "sale_price": 54500,
+            "amount": 526
+        },
+        {
+            "sale_price": 55000,
+            "amount": 529
+        },
+        {
+            "sale_price": 55500,
+            "amount": 532
+        },
+        {
+            "sale_price": 56000,
+            "amount": 537
+        },
+        {
+            "sale_price": 56500,
+            "amount": 540
+        },
+        {
+            "sale_price": 57000,
+            "amount": 543
+        },
+        {
+            "sale_price": 57500,
+            "amount": 547
+        },
+        {
+            "sale_price": 58000,
+            "amount": 551
+        },
+        {
+            "sale_price": 58500,
+            "amount": 553
+        },
+        {
+            "sale_price": 59000,
+            "amount": 556
+        },
+        {
+            "sale_price": 59500,
+            "amount": 560
         },
         {
             "sale_price": 60000,
-            "amount": 417.6
+            "amount": 564
         },
         {
-            "sale_price": 70000,
-            "amount": 455.2
-        },
-        {
-            "sale_price": 80000,
-            "amount": 492.8
-        },
-        {
-            "sale_price": 90000,
-            "amount": 530.4
-        },
-        {
-            "sale_price": 100000,
+            "sale_price": 60500,
             "amount": 568
         },
         {
+            "sale_price": 61000,
+            "amount": 571
+        },
+        {
+            "sale_price": 61500,
+            "amount": 573
+        },
+        {
+            "sale_price": 62000,
+            "amount": 577
+        },
+        {
+            "sale_price": 62500,
+            "amount": 581
+        },
+        {
+            "sale_price": 63000,
+            "amount": 583
+        },
+        {
+            "sale_price": 63500,
+            "amount": 587
+        },
+        {
+            "sale_price": 64000,
+            "amount": 591
+        },
+        {
+            "sale_price": 64500,
+            "amount": 594
+        },
+        {
+            "sale_price": 65000,
+            "amount": 597
+        },
+        {
+            "sale_price": 65500,
+            "amount": 600
+        },
+        {
+            "sale_price": 66000,
+            "amount": 604
+        },
+        {
+            "sale_price": 66500,
+            "amount": 609
+        },
+        {
+            "sale_price": 67000,
+            "amount": 612
+        },
+        {
+            "sale_price": 67500,
+            "amount": 613
+        },
+        {
+            "sale_price": 68000,
+            "amount": 617
+        },
+        {
+            "sale_price": 68500,
+            "amount": 621
+        },
+        {
+            "sale_price": 69000,
+            "amount": 624
+        },
+        {
+            "sale_price": 69500,
+            "amount": 627
+        },
+        {
+            "sale_price": 70000,
+            "amount": 631
+        },
+        {
+            "sale_price": 70500,
+            "amount": 635
+        },
+        {
+            "sale_price": 71000,
+            "amount": 639
+        },
+        {
+            "sale_price": 71500,
+            "amount": 641
+        },
+        {
+            "sale_price": 72000,
+            "amount": 644
+        },
+        {
+            "sale_price": 72500,
+            "amount": 648
+        },
+        {
+            "sale_price": 73000,
+            "amount": 651
+        },
+        {
+            "sale_price": 73500,
+            "amount": 654
+        },
+        {
+            "sale_price": 74000,
+            "amount": 658
+        },
+        {
+            "sale_price": 74500,
+            "amount": 662
+        },
+        {
+            "sale_price": 75000,
+            "amount": 666
+        },
+        {
+            "sale_price": 75500,
+            "amount": 668
+        },
+        {
+            "sale_price": 76000,
+            "amount": 671
+        },
+        {
+            "sale_price": 76500,
+            "amount": 674
+        },
+        {
+            "sale_price": 77000,
+            "amount": 678
+        },
+        {
+            "sale_price": 77500,
+            "amount": 681
+        },
+        {
+            "sale_price": 78000,
+            "amount": 685
+        },
+        {
+            "sale_price": 78500,
+            "amount": 689
+        },
+        {
+            "sale_price": 79000,
+            "amount": 693
+        },
+        {
+            "sale_price": 79500,
+            "amount": 694
+        },
+        {
+            "sale_price": 80000,
+            "amount": 698
+        },
+        {
+            "sale_price": 80500,
+            "amount": 702
+        },
+        {
+            "sale_price": 81000,
+            "amount": 706
+        },
+        {
+            "sale_price": 81500,
+            "amount": 708
+        },
+        {
+            "sale_price": 82000,
+            "amount": 711
+        },
+        {
+            "sale_price": 82500,
+            "amount": 716
+        },
+        {
+            "sale_price": 83000,
+            "amount": 720
+        },
+        {
+            "sale_price": 83500,
+            "amount": 722
+        },
+        {
+            "sale_price": 84000,
+            "amount": 725
+        },
+        {
+            "sale_price": 84500,
+            "amount": 729
+        },
+        {
+            "sale_price": 85000,
+            "amount": 732
+        },
+        {
+            "sale_price": 85500,
+            "amount": 735
+        },
+        {
+            "sale_price": 86000,
+            "amount": 738
+        },
+        {
+            "sale_price": 86500,
+            "amount": 743
+        },
+        {
+            "sale_price": 87000,
+            "amount": 747
+        },
+        {
+            "sale_price": 87500,
+            "amount": 749
+        },
+        {
+            "sale_price": 88000,
+            "amount": 752
+        },
+        {
+            "sale_price": 88500,
+            "amount": 756
+        },
+        {
+            "sale_price": 89000,
+            "amount": 760
+        },
+        {
+            "sale_price": 89500,
+            "amount": 762
+        },
+        {
+            "sale_price": 90000,
+            "amount": 765
+        },
+        {
+            "sale_price": 90500,
+            "amount": 769
+        },
+        {
+            "sale_price": 91000,
+            "amount": 773
+        },
+        {
+            "sale_price": 91500,
+            "amount": 777
+        },
+        {
+            "sale_price": 92000,
+            "amount": 779
+        },
+        {
+            "sale_price": 92500,
+            "amount": 783
+        },
+        {
+            "sale_price": 93000,
+            "amount": 786
+        },
+        {
+            "sale_price": 93500,
+            "amount": 790
+        },
+        {
+            "sale_price": 94000,
+            "amount": 791
+        },
+        {
+            "sale_price": 94500,
+            "amount": 796
+        },
+        {
+            "sale_price": 95000,
+            "amount": 801
+        },
+        {
+            "sale_price": 95500,
+            "amount": 804
+        },
+        {
+            "sale_price": 96000,
+            "amount": 805
+        },
+        {
+            "sale_price": 96500,
+            "amount": 809
+        },
+        {
+            "sale_price": 97000,
+            "amount": 813
+        },
+        {
+            "sale_price": 97500,
+            "amount": 817
+        },
+        {
+            "sale_price": 98000,
+            "amount": 820
+        },
+        {
+            "sale_price": 98500,
+            "amount": 824
+        },
+        {
+            "sale_price": 99000,
+            "amount": 827
+        },
+        {
+            "sale_price": 99500,
+            "amount": 830
+        },
+        {
+            "sale_price": 100000,
+            "amount": 832
+        },
+        {
+            "sale_price": 100500,
+            "amount": 878
+        },
+        {
+            "sale_price": 101000,
+            "amount": 881
+        },
+        {
+            "sale_price": 101500,
+            "amount": 883
+        },
+        {
+            "sale_price": 102000,
+            "amount": 886
+        },
+        {
+            "sale_price": 102500,
+            "amount": 889
+        },
+        {
+            "sale_price": 103000,
+            "amount": 892
+        },
+        {
+            "sale_price": 103500,
+            "amount": 894
+        },
+        {
+            "sale_price": 104000,
+            "amount": 897
+        },
+        {
+            "sale_price": 104500,
+            "amount": 900
+        },
+        {
+            "sale_price": 105000,
+            "amount": 903
+        },
+        {
+            "sale_price": 105500,
+            "amount": 905
+        },
+        {
+            "sale_price": 106000,
+            "amount": 908
+        },
+        {
+            "sale_price": 106500,
+            "amount": 911
+        },
+        {
+            "sale_price": 107000,
+            "amount": 914
+        },
+        {
+            "sale_price": 107500,
+            "amount": 917
+        },
+        {
+            "sale_price": 108000,
+            "amount": 919
+        },
+        {
+            "sale_price": 108500,
+            "amount": 922
+        },
+        {
+            "sale_price": 109000,
+            "amount": 925
+        },
+        {
+            "sale_price": 109500,
+            "amount": 928
+        },
+        {
             "sale_price": 110000,
-            "amount": 597.2
+            "amount": 930
         },
         {
-            "sale_price": 120000,
-            "amount": 626.4
+            "sale_price": 110500,
+            "amount": 933
         },
         {
-            "sale_price": 130000,
-            "amount": 655.6
+            "sale_price": 111000,
+            "amount": 936
         },
         {
-            "sale_price": 140000,
-            "amount": 684.8
+            "sale_price": 111500,
+            "amount": 939
         },
         {
-            "sale_price": 150000,
-            "amount": 714
+            "sale_price": 112000,
+            "amount": 941
         },
         {
-            "sale_price": 160000,
-            "amount": 740.8
+            "sale_price": 112500,
+            "amount": 944
         },
         {
-            "sale_price": 170000,
-            "amount": 767.6
+            "sale_price": 113000,
+            "amount": 947
         },
         {
-            "sale_price": 180000,
-            "amount": 794.4
+            "sale_price": 113500,
+            "amount": 950
         },
         {
-            "sale_price": 190000,
-            "amount": 821.2
+            "sale_price": 114000,
+            "amount": 953
         },
         {
-            "sale_price": 200000,
-            "amount": 848
+            "sale_price": 114500,
+            "amount": 955
         },
         {
-            "sale_price": 210000,
-            "amount": 871.2
+            "sale_price": 115000,
+            "amount": 958
         },
         {
-            "sale_price": 220000,
-            "amount": 894.4
+            "sale_price": 115500,
+            "amount": 961
         },
         {
-            "sale_price": 230000,
-            "amount": 917.6
-        },
-        {
-            "sale_price": 240000,
-            "amount": 940.8
-        },
-        {
-            "sale_price": 250000,
+            "sale_price": 116000,
             "amount": 964
         },
         {
-            "sale_price": 260000,
-            "amount": 987.2
+            "sale_price": 116500,
+            "amount": 966
         },
         {
-            "sale_price": 270000,
-            "amount": 1010.4
+            "sale_price": 117000,
+            "amount": 969
         },
         {
-            "sale_price": 280000,
-            "amount": 1033.6
+            "sale_price": 117500,
+            "amount": 972
         },
         {
-            "sale_price": 290000,
-            "amount": 1056.8
+            "sale_price": 118000,
+            "amount": 975
         },
         {
-            "sale_price": 300000,
-            "amount": 1080
+            "sale_price": 118500,
+            "amount": 977
         },
         {
-            "sale_price": 310000,
-            "amount": 1098.4
-        },
-        {
-            "sale_price": 320000,
-            "amount": 1116.8
-        },
-        {
-            "sale_price": 330000,
-            "amount": 1135.2
-        },
-        {
-            "sale_price": 340000,
-            "amount": 1153.6
-        },
-        {
-            "sale_price": 350000,
-            "amount": 1172
-        },
-        {
-            "sale_price": 360000,
-            "amount": 1190.4
-        },
-        {
-            "sale_price": 370000,
-            "amount": 1208.8
-        },
-        {
-            "sale_price": 380000,
-            "amount": 1227.2
-        },
-        {
-            "sale_price": 390000,
-            "amount": 1245.6
-        },
-        {
-            "sale_price": 400000,
-            "amount": 1264
-        },
-        {
-            "sale_price": 410000,
-            "amount": 1282.4
-        },
-        {
-            "sale_price": 420000,
-            "amount": 1300.8
-        },
-        {
-            "sale_price": 430000,
-            "amount": 1319.2
-        },
-        {
-            "sale_price": 440000,
-            "amount": 1337.6
-        },
-        {
-            "sale_price": 450000,
-            "amount": 1356
-        },
-        {
-            "sale_price": 460000,
-            "amount": 1374.4
-        },
-        {
-            "sale_price": 470000,
-            "amount": 1392.8
-        },
-        {
-            "sale_price": 480000,
-            "amount": 1411.2
-        },
-        {
-            "sale_price": 490000,
-            "amount": 1429.6
-        },
-        {
-            "sale_price": 500000,
-            "amount": 1448
-        },
-        {
-            "sale_price": 510000,
-            "amount": 1466.4
-        },
-        {
-            "sale_price": 520000,
-            "amount": 1484.8
-        }
-    ],
-    "30": [
-        {
-            "sale_price": 15000,
-            "amount": 100
-        },
-        {
-            "sale_price": 30000,
-            "amount": 140
-        },
-        {
-            "sale_price": 40000,
-            "amount": 180
-        },
-        {
-            "sale_price": 50000,
-            "amount": 448
-        },
-        {
-            "sale_price": 60000,
-            "amount": 472
-        },
-        {
-            "sale_price": 70000,
-            "amount": 496
-        },
-        {
-            "sale_price": 80000,
-            "amount": 520
-        },
-        {
-            "sale_price": 90000,
-            "amount": 544
-        },
-        {
-            "sale_price": 100000,
-            "amount": 568
-        },
-        {
-            "sale_price": 110000,
-            "amount": 592
-        },
-        {
-            "sale_price": 120000,
-            "amount": 612
-        },
-        {
-            "sale_price": 130000,
-            "amount": 636
-        },
-        {
-            "sale_price": 140000,
-            "amount": 660
-        },
-        {
-            "sale_price": 150000,
-            "amount": 684
-        },
-        {
-            "sale_price": 160000,
-            "amount": 708
-        },
-        {
-            "sale_price": 170000,
-            "amount": 732
-        },
-        {
-            "sale_price": 180000,
-            "amount": 756
-        },
-        {
-            "sale_price": 190000,
-            "amount": 780
-        },
-        {
-            "sale_price": 200000,
-            "amount": 800
-        },
-        {
-            "sale_price": 210000,
-            "amount": 820
-        },
-        {
-            "sale_price": 220000,
-            "amount": 840
-        },
-        {
-            "sale_price": 230000,
-            "amount": 860
-        },
-        {
-            "sale_price": 240000,
-            "amount": 880
-        },
-        {
-            "sale_price": 250000,
-            "amount": 900
-        },
-        {
-            "sale_price": 260000,
-            "amount": 920
-        }
-    ],
-    "28": [
-        {
-            "sale_price": 15000,
-            "amount": 100
-        },
-        {
-            "sale_price": 30000,
-            "amount": 140
-        },
-        {
-            "sale_price": 40000,
-            "amount": 180
-        },
-        {
-            "sale_price": 50000,
-            "amount": 448
-        },
-        {
-            "sale_price": 60000,
-            "amount": 472
-        },
-        {
-            "sale_price": 70000,
-            "amount": 496
-        },
-        {
-            "sale_price": 80000,
-            "amount": 520
-        },
-        {
-            "sale_price": 90000,
-            "amount": 544
-        },
-        {
-            "sale_price": 100000,
-            "amount": 568
-        },
-        {
-            "sale_price": 110000,
-            "amount": 592
-        },
-        {
-            "sale_price": 120000,
-            "amount": 612
-        },
-        {
-            "sale_price": 130000,
-            "amount": 636
-        },
-        {
-            "sale_price": 140000,
-            "amount": 660
-        },
-        {
-            "sale_price": 150000,
-            "amount": 684
-        },
-        {
-            "sale_price": 160000,
-            "amount": 708
-        },
-        {
-            "sale_price": 170000,
-            "amount": 732
-        },
-        {
-            "sale_price": 180000,
-            "amount": 756
-        },
-        {
-            "sale_price": 190000,
-            "amount": 780
-        },
-        {
-            "sale_price": 200000,
-            "amount": 800
-        },
-        {
-            "sale_price": 210000,
-            "amount": 820
-        },
-        {
-            "sale_price": 220000,
-            "amount": 840
-        },
-        {
-            "sale_price": 230000,
-            "amount": 860
-        },
-        {
-            "sale_price": 240000,
-            "amount": 880
-        },
-        {
-            "sale_price": 250000,
-            "amount": 900
-        },
-        {
-            "sale_price": 260000,
-            "amount": 920
-        },
-        {
-            "sale_price": 270000,
-            "amount": 940
-        },
-        {
-            "sale_price": 280000,
-            "amount": 960
-        },
-        {
-            "sale_price": 290000,
+            "sale_price": 119000,
             "amount": 980
         },
         {
-            "sale_price": 300000,
+            "sale_price": 119500,
+            "amount": 983
+        },
+        {
+            "sale_price": 120000,
+            "amount": 986
+        },
+        {
+            "sale_price": 120500,
+            "amount": 989
+        },
+        {
+            "sale_price": 121000,
+            "amount": 991
+        },
+        {
+            "sale_price": 121500,
+            "amount": 994
+        },
+        {
+            "sale_price": 122000,
+            "amount": 997
+        },
+        {
+            "sale_price": 122500,
             "amount": 1000
         },
         {
-            "sale_price": 310000,
-            "amount": 1020
+            "sale_price": 123000,
+            "amount": 1002
         },
         {
-            "sale_price": 320000,
-            "amount": 1040
+            "sale_price": 123500,
+            "amount": 1005
         },
         {
-            "sale_price": 330000,
-            "amount": 1060
+            "sale_price": 124000,
+            "amount": 1008
         },
         {
-            "sale_price": 340000,
+            "sale_price": 124500,
+            "amount": 1011
+        },
+        {
+            "sale_price": 125000,
+            "amount": 1014
+        },
+        {
+            "sale_price": 125500,
+            "amount": 1016
+        },
+        {
+            "sale_price": 126000,
+            "amount": 1019
+        },
+        {
+            "sale_price": 126500,
+            "amount": 1022
+        },
+        {
+            "sale_price": 127000,
+            "amount": 1025
+        },
+        {
+            "sale_price": 127500,
+            "amount": 1027
+        },
+        {
+            "sale_price": 128000,
+            "amount": 1030
+        },
+        {
+            "sale_price": 128500,
+            "amount": 1033
+        },
+        {
+            "sale_price": 129000,
+            "amount": 1036
+        },
+        {
+            "sale_price": 129500,
+            "amount": 1038
+        },
+        {
+            "sale_price": 130000,
+            "amount": 1041
+        },
+        {
+            "sale_price": 130500,
+            "amount": 1044
+        },
+        {
+            "sale_price": 131000,
+            "amount": 1047
+        },
+        {
+            "sale_price": 131500,
+            "amount": 1050
+        },
+        {
+            "sale_price": 132000,
+            "amount": 1052
+        },
+        {
+            "sale_price": 132500,
+            "amount": 1055
+        },
+        {
+            "sale_price": 133000,
+            "amount": 1058
+        },
+        {
+            "sale_price": 133500,
+            "amount": 1061
+        },
+        {
+            "sale_price": 134000,
+            "amount": 1063
+        },
+        {
+            "sale_price": 134500,
+            "amount": 1066
+        },
+        {
+            "sale_price": 135000,
+            "amount": 1069
+        },
+        {
+            "sale_price": 135500,
+            "amount": 1072
+        },
+        {
+            "sale_price": 136000,
+            "amount": 1074
+        },
+        {
+            "sale_price": 136500,
+            "amount": 1077
+        },
+        {
+            "sale_price": 137000,
             "amount": 1080
         },
         {
-            "sale_price": 350000,
-            "amount": 1100
+            "sale_price": 137500,
+            "amount": 1083
         },
         {
-            "sale_price": 360000,
+            "sale_price": 138000,
+            "amount": 1086
+        },
+        {
+            "sale_price": 138500,
+            "amount": 1088
+        },
+        {
+            "sale_price": 139000,
+            "amount": 1091
+        },
+        {
+            "sale_price": 139500,
+            "amount": 1094
+        },
+        {
+            "sale_price": 140000,
+            "amount": 1097
+        },
+        {
+            "sale_price": 140500,
+            "amount": 1099
+        },
+        {
+            "sale_price": 141000,
+            "amount": 1102
+        },
+        {
+            "sale_price": 141500,
+            "amount": 1105
+        },
+        {
+            "sale_price": 142000,
+            "amount": 1108
+        },
+        {
+            "sale_price": 142500,
+            "amount": 1110
+        },
+        {
+            "sale_price": 143000,
+            "amount": 1113
+        },
+        {
+            "sale_price": 143500,
             "amount": 1116
         },
         {
-            "sale_price": 370000,
-            "amount": 1132
+            "sale_price": 144000,
+            "amount": 1119
         },
         {
-            "sale_price": 380000,
-            "amount": 1148
+            "sale_price": 144500,
+            "amount": 1122
         },
         {
-            "sale_price": 390000,
-            "amount": 1164
+            "sale_price": 145000,
+            "amount": 1124
         },
         {
-            "sale_price": 400000,
-            "amount": 1180
+            "sale_price": 145500,
+            "amount": 1127
+        },
+        {
+            "sale_price": 146000,
+            "amount": 1130
+        },
+        {
+            "sale_price": 0,
+            "amount": 0
+        },
+        {
+            "sale_price": 2,
+            "amount": 50
+        },
+        {
+            "sale_price": 3,
+            "amount": 50
+        },
+        {
+            "sale_price": 4,
+            "amount": 50
+        },
+        {
+            "sale_price": 5,
+            "amount": 25
+        },
+        {
+            "sale_price": 6,
+            "amount": 25
+        },
+        {
+            "sale_price": 7,
+            "amount": 25
+        },
+        {
+            "sale_price": 8,
+            "amount": 25
+        }
+    ],
+    "14": [
+        {
+            "sale_price": 7000,
+            "amount": 150
+        },
+        {
+            "sale_price": 60000,
+            "amount": 250
+        },
+        {
+            "sale_price": 100000,
+            "amount": 792
+        },
+        {
+            "sale_price": 105000,
+            "amount": 812
+        },
+        {
+            "sale_price": 110000,
+            "amount": 831
+        },
+        {
+            "sale_price": 115000,
+            "amount": 847
+        },
+        {
+            "sale_price": 120000,
+            "amount": 864
+        },
+        {
+            "sale_price": 125000,
+            "amount": 880
+        },
+        {
+            "sale_price": 130000,
+            "amount": 896
+        },
+        {
+            "sale_price": 135000,
+            "amount": 912
+        },
+        {
+            "sale_price": 140000,
+            "amount": 928
+        },
+        {
+            "sale_price": 145000,
+            "amount": 944
+        }
+    ],
+    "18": [
+        {
+            "sale_price": 25000,
+            "amount": 328
+        },
+        {
+            "sale_price": 25500,
+            "amount": 331
+        },
+        {
+            "sale_price": 26000,
+            "amount": 335
+        },
+        {
+            "sale_price": 26500,
+            "amount": 338
+        },
+        {
+            "sale_price": 27000,
+            "amount": 340
+        },
+        {
+            "sale_price": 27500,
+            "amount": 343
+        },
+        {
+            "sale_price": 28000,
+            "amount": 347
+        },
+        {
+            "sale_price": 28500,
+            "amount": 350
+        },
+        {
+            "sale_price": 29000,
+            "amount": 355
+        },
+        {
+            "sale_price": 29500,
+            "amount": 358
+        },
+        {
+            "sale_price": 30000,
+            "amount": 361
+        },
+        {
+            "sale_price": 30500,
+            "amount": 364
+        },
+        {
+            "sale_price": 31000,
+            "amount": 368
+        },
+        {
+            "sale_price": 31500,
+            "amount": 371
+        },
+        {
+            "sale_price": 32000,
+            "amount": 374
+        },
+        {
+            "sale_price": 32500,
+            "amount": 378
+        },
+        {
+            "sale_price": 33000,
+            "amount": 381
+        },
+        {
+            "sale_price": 33500,
+            "amount": 385
+        },
+        {
+            "sale_price": 34000,
+            "amount": 388
+        },
+        {
+            "sale_price": 34500,
+            "amount": 392
+        },
+        {
+            "sale_price": 35000,
+            "amount": 395
+        },
+        {
+            "sale_price": 35500,
+            "amount": 398
+        },
+        {
+            "sale_price": 36000,
+            "amount": 401
+        },
+        {
+            "sale_price": 36500,
+            "amount": 405
+        },
+        {
+            "sale_price": 37000,
+            "amount": 408
+        },
+        {
+            "sale_price": 37500,
+            "amount": 412
+        },
+        {
+            "sale_price": 38000,
+            "amount": 416
+        },
+        {
+            "sale_price": 38500,
+            "amount": 419
+        },
+        {
+            "sale_price": 39000,
+            "amount": 421
+        },
+        {
+            "sale_price": 39500,
+            "amount": 425
+        },
+        {
+            "sale_price": 40000,
+            "amount": 428
+        },
+        {
+            "sale_price": 40500,
+            "amount": 433
+        },
+        {
+            "sale_price": 41000,
+            "amount": 435
+        },
+        {
+            "sale_price": 41500,
+            "amount": 439
+        },
+        {
+            "sale_price": 42000,
+            "amount": 442
+        },
+        {
+            "sale_price": 42500,
+            "amount": 446
+        },
+        {
+            "sale_price": 43000,
+            "amount": 448
+        },
+        {
+            "sale_price": 43500,
+            "amount": 452
+        },
+        {
+            "sale_price": 44000,
+            "amount": 456
+        },
+        {
+            "sale_price": 44500,
+            "amount": 459
+        },
+        {
+            "sale_price": 45000,
+            "amount": 463
+        },
+        {
+            "sale_price": 45500,
+            "amount": 466
+        },
+        {
+            "sale_price": 46000,
+            "amount": 469
+        },
+        {
+            "sale_price": 46500,
+            "amount": 473
+        },
+        {
+            "sale_price": 47000,
+            "amount": 475
+        },
+        {
+            "sale_price": 47500,
+            "amount": 478
+        },
+        {
+            "sale_price": 48000,
+            "amount": 483
+        },
+        {
+            "sale_price": 48500,
+            "amount": 487
+        },
+        {
+            "sale_price": 49000,
+            "amount": 490
+        },
+        {
+            "sale_price": 49500,
+            "amount": 493
+        },
+        {
+            "sale_price": 50000,
+            "amount": 496
+        },
+        {
+            "sale_price": 50500,
+            "amount": 499
+        },
+        {
+            "sale_price": 51000,
+            "amount": 501
+        },
+        {
+            "sale_price": 51500,
+            "amount": 505
+        },
+        {
+            "sale_price": 52000,
+            "amount": 510
+        },
+        {
+            "sale_price": 52500,
+            "amount": 514
+        },
+        {
+            "sale_price": 53000,
+            "amount": 516
+        },
+        {
+            "sale_price": 53500,
+            "amount": 520
+        },
+        {
+            "sale_price": 54000,
+            "amount": 523
+        },
+        {
+            "sale_price": 54500,
+            "amount": 526
+        },
+        {
+            "sale_price": 55000,
+            "amount": 529
+        },
+        {
+            "sale_price": 55500,
+            "amount": 532
+        },
+        {
+            "sale_price": 56000,
+            "amount": 537
+        },
+        {
+            "sale_price": 56500,
+            "amount": 540
+        },
+        {
+            "sale_price": 57000,
+            "amount": 543
+        },
+        {
+            "sale_price": 57500,
+            "amount": 547
+        },
+        {
+            "sale_price": 58000,
+            "amount": 551
+        },
+        {
+            "sale_price": 58500,
+            "amount": 553
+        },
+        {
+            "sale_price": 59000,
+            "amount": 556
+        },
+        {
+            "sale_price": 59500,
+            "amount": 560
+        },
+        {
+            "sale_price": 60000,
+            "amount": 564
+        },
+        {
+            "sale_price": 60500,
+            "amount": 568
+        },
+        {
+            "sale_price": 61000,
+            "amount": 571
+        },
+        {
+            "sale_price": 61500,
+            "amount": 573
+        },
+        {
+            "sale_price": 62000,
+            "amount": 577
+        },
+        {
+            "sale_price": 62500,
+            "amount": 581
+        },
+        {
+            "sale_price": 63000,
+            "amount": 583
+        },
+        {
+            "sale_price": 63500,
+            "amount": 587
+        },
+        {
+            "sale_price": 64000,
+            "amount": 591
+        },
+        {
+            "sale_price": 64500,
+            "amount": 594
+        },
+        {
+            "sale_price": 65000,
+            "amount": 597
+        },
+        {
+            "sale_price": 65500,
+            "amount": 600
+        },
+        {
+            "sale_price": 66000,
+            "amount": 604
+        },
+        {
+            "sale_price": 66500,
+            "amount": 609
+        },
+        {
+            "sale_price": 67000,
+            "amount": 612
+        },
+        {
+            "sale_price": 67500,
+            "amount": 613
+        },
+        {
+            "sale_price": 68000,
+            "amount": 617
+        },
+        {
+            "sale_price": 68500,
+            "amount": 621
+        },
+        {
+            "sale_price": 69000,
+            "amount": 624
+        },
+        {
+            "sale_price": 69500,
+            "amount": 627
+        },
+        {
+            "sale_price": 70000,
+            "amount": 631
+        },
+        {
+            "sale_price": 70500,
+            "amount": 635
+        },
+        {
+            "sale_price": 71000,
+            "amount": 639
+        },
+        {
+            "sale_price": 71500,
+            "amount": 641
+        },
+        {
+            "sale_price": 72000,
+            "amount": 644
+        },
+        {
+            "sale_price": 72500,
+            "amount": 648
+        },
+        {
+            "sale_price": 73000,
+            "amount": 651
+        },
+        {
+            "sale_price": 73500,
+            "amount": 654
+        },
+        {
+            "sale_price": 74000,
+            "amount": 658
+        },
+        {
+            "sale_price": 74500,
+            "amount": 662
+        },
+        {
+            "sale_price": 75000,
+            "amount": 666
+        },
+        {
+            "sale_price": 75500,
+            "amount": 668
+        },
+        {
+            "sale_price": 76000,
+            "amount": 671
+        },
+        {
+            "sale_price": 76500,
+            "amount": 674
+        },
+        {
+            "sale_price": 77000,
+            "amount": 678
+        },
+        {
+            "sale_price": 77500,
+            "amount": 681
+        },
+        {
+            "sale_price": 78000,
+            "amount": 685
+        },
+        {
+            "sale_price": 78500,
+            "amount": 689
+        },
+        {
+            "sale_price": 79000,
+            "amount": 693
+        },
+        {
+            "sale_price": 79500,
+            "amount": 694
+        },
+        {
+            "sale_price": 80000,
+            "amount": 698
+        },
+        {
+            "sale_price": 80500,
+            "amount": 702
+        },
+        {
+            "sale_price": 81000,
+            "amount": 706
+        },
+        {
+            "sale_price": 81500,
+            "amount": 708
+        },
+        {
+            "sale_price": 82000,
+            "amount": 711
+        },
+        {
+            "sale_price": 82500,
+            "amount": 716
+        },
+        {
+            "sale_price": 83000,
+            "amount": 720
+        },
+        {
+            "sale_price": 83500,
+            "amount": 722
+        },
+        {
+            "sale_price": 84000,
+            "amount": 725
+        },
+        {
+            "sale_price": 84500,
+            "amount": 729
+        },
+        {
+            "sale_price": 85000,
+            "amount": 732
+        },
+        {
+            "sale_price": 85500,
+            "amount": 735
+        },
+        {
+            "sale_price": 86000,
+            "amount": 738
+        },
+        {
+            "sale_price": 86500,
+            "amount": 743
+        },
+        {
+            "sale_price": 87000,
+            "amount": 747
+        },
+        {
+            "sale_price": 87500,
+            "amount": 749
+        },
+        {
+            "sale_price": 88000,
+            "amount": 752
+        },
+        {
+            "sale_price": 88500,
+            "amount": 756
+        },
+        {
+            "sale_price": 89000,
+            "amount": 760
+        },
+        {
+            "sale_price": 89500,
+            "amount": 762
+        },
+        {
+            "sale_price": 90000,
+            "amount": 765
+        },
+        {
+            "sale_price": 90500,
+            "amount": 769
+        },
+        {
+            "sale_price": 91000,
+            "amount": 773
+        },
+        {
+            "sale_price": 91500,
+            "amount": 777
+        },
+        {
+            "sale_price": 92000,
+            "amount": 779
+        },
+        {
+            "sale_price": 92500,
+            "amount": 783
+        },
+        {
+            "sale_price": 93000,
+            "amount": 786
+        },
+        {
+            "sale_price": 93500,
+            "amount": 790
+        },
+        {
+            "sale_price": 94000,
+            "amount": 791
+        },
+        {
+            "sale_price": 94500,
+            "amount": 796
+        },
+        {
+            "sale_price": 95000,
+            "amount": 801
+        },
+        {
+            "sale_price": 95500,
+            "amount": 804
+        },
+        {
+            "sale_price": 96000,
+            "amount": 805
+        },
+        {
+            "sale_price": 96500,
+            "amount": 809
+        },
+        {
+            "sale_price": 97000,
+            "amount": 813
+        },
+        {
+            "sale_price": 97500,
+            "amount": 817
+        },
+        {
+            "sale_price": 98000,
+            "amount": 820
+        },
+        {
+            "sale_price": 98500,
+            "amount": 824
+        },
+        {
+            "sale_price": 99000,
+            "amount": 827
+        },
+        {
+            "sale_price": 99500,
+            "amount": 830
+        },
+        {
+            "sale_price": 100000,
+            "amount": 832
+        },
+        {
+            "sale_price": 100500,
+            "amount": 878
+        },
+        {
+            "sale_price": 101000,
+            "amount": 881
+        },
+        {
+            "sale_price": 101500,
+            "amount": 883
+        },
+        {
+            "sale_price": 102000,
+            "amount": 886
+        },
+        {
+            "sale_price": 102500,
+            "amount": 889
+        },
+        {
+            "sale_price": 103000,
+            "amount": 892
+        },
+        {
+            "sale_price": 103500,
+            "amount": 894
+        },
+        {
+            "sale_price": 104000,
+            "amount": 897
+        },
+        {
+            "sale_price": 104500,
+            "amount": 900
+        },
+        {
+            "sale_price": 105000,
+            "amount": 903
+        },
+        {
+            "sale_price": 105500,
+            "amount": 905
+        },
+        {
+            "sale_price": 106000,
+            "amount": 908
+        },
+        {
+            "sale_price": 106500,
+            "amount": 911
+        },
+        {
+            "sale_price": 107000,
+            "amount": 914
+        },
+        {
+            "sale_price": 107500,
+            "amount": 917
+        },
+        {
+            "sale_price": 108000,
+            "amount": 919
+        },
+        {
+            "sale_price": 108500,
+            "amount": 922
+        },
+        {
+            "sale_price": 109000,
+            "amount": 925
+        },
+        {
+            "sale_price": 109500,
+            "amount": 928
+        },
+        {
+            "sale_price": 110000,
+            "amount": 930
+        },
+        {
+            "sale_price": 110500,
+            "amount": 933
+        },
+        {
+            "sale_price": 111000,
+            "amount": 936
+        },
+        {
+            "sale_price": 111500,
+            "amount": 939
+        },
+        {
+            "sale_price": 112000,
+            "amount": 941
+        },
+        {
+            "sale_price": 112500,
+            "amount": 944
+        },
+        {
+            "sale_price": 113000,
+            "amount": 947
+        },
+        {
+            "sale_price": 113500,
+            "amount": 950
+        },
+        {
+            "sale_price": 114000,
+            "amount": 953
+        },
+        {
+            "sale_price": 114500,
+            "amount": 955
+        },
+        {
+            "sale_price": 115000,
+            "amount": 958
+        },
+        {
+            "sale_price": 115500,
+            "amount": 961
+        },
+        {
+            "sale_price": 116000,
+            "amount": 964
+        },
+        {
+            "sale_price": 116500,
+            "amount": 966
+        },
+        {
+            "sale_price": 117000,
+            "amount": 969
+        },
+        {
+            "sale_price": 117500,
+            "amount": 972
+        },
+        {
+            "sale_price": 118000,
+            "amount": 975
+        },
+        {
+            "sale_price": 118500,
+            "amount": 977
+        },
+        {
+            "sale_price": 119000,
+            "amount": 980
+        },
+        {
+            "sale_price": 119500,
+            "amount": 983
+        },
+        {
+            "sale_price": 120000,
+            "amount": 986
+        },
+        {
+            "sale_price": 120500,
+            "amount": 989
+        },
+        {
+            "sale_price": 121000,
+            "amount": 991
+        },
+        {
+            "sale_price": 121500,
+            "amount": 994
+        },
+        {
+            "sale_price": 122000,
+            "amount": 997
+        },
+        {
+            "sale_price": 122500,
+            "amount": 1000
+        },
+        {
+            "sale_price": 123000,
+            "amount": 1002
+        },
+        {
+            "sale_price": 123500,
+            "amount": 1005
+        },
+        {
+            "sale_price": 124000,
+            "amount": 1008
+        },
+        {
+            "sale_price": 124500,
+            "amount": 1011
+        },
+        {
+            "sale_price": 125000,
+            "amount": 1014
+        },
+        {
+            "sale_price": 125500,
+            "amount": 1016
+        },
+        {
+            "sale_price": 126000,
+            "amount": 1019
+        },
+        {
+            "sale_price": 126500,
+            "amount": 1022
+        },
+        {
+            "sale_price": 127000,
+            "amount": 1025
+        },
+        {
+            "sale_price": 127500,
+            "amount": 1027
+        },
+        {
+            "sale_price": 128000,
+            "amount": 1030
+        },
+        {
+            "sale_price": 128500,
+            "amount": 1033
+        },
+        {
+            "sale_price": 129000,
+            "amount": 1036
+        },
+        {
+            "sale_price": 129500,
+            "amount": 1038
+        },
+        {
+            "sale_price": 130000,
+            "amount": 1041
+        },
+        {
+            "sale_price": 130500,
+            "amount": 1044
+        },
+        {
+            "sale_price": 131000,
+            "amount": 1047
+        },
+        {
+            "sale_price": 131500,
+            "amount": 1050
+        },
+        {
+            "sale_price": 132000,
+            "amount": 1052
+        },
+        {
+            "sale_price": 132500,
+            "amount": 1055
+        },
+        {
+            "sale_price": 133000,
+            "amount": 1058
+        },
+        {
+            "sale_price": 133500,
+            "amount": 1061
+        },
+        {
+            "sale_price": 134000,
+            "amount": 1063
+        },
+        {
+            "sale_price": 134500,
+            "amount": 1066
+        },
+        {
+            "sale_price": 135000,
+            "amount": 1069
+        },
+        {
+            "sale_price": 135500,
+            "amount": 1072
+        },
+        {
+            "sale_price": 136000,
+            "amount": 1074
+        },
+        {
+            "sale_price": 136500,
+            "amount": 1077
+        },
+        {
+            "sale_price": 137000,
+            "amount": 1080
+        },
+        {
+            "sale_price": 137500,
+            "amount": 1083
+        },
+        {
+            "sale_price": 138000,
+            "amount": 1086
+        },
+        {
+            "sale_price": 138500,
+            "amount": 1088
+        },
+        {
+            "sale_price": 139000,
+            "amount": 1091
+        },
+        {
+            "sale_price": 139500,
+            "amount": 1094
+        },
+        {
+            "sale_price": 140000,
+            "amount": 1097
+        },
+        {
+            "sale_price": 140500,
+            "amount": 1099
+        },
+        {
+            "sale_price": 141000,
+            "amount": 1102
+        },
+        {
+            "sale_price": 141500,
+            "amount": 1105
+        },
+        {
+            "sale_price": 142000,
+            "amount": 1108
+        },
+        {
+            "sale_price": 142500,
+            "amount": 1110
+        },
+        {
+            "sale_price": 143000,
+            "amount": 1113
+        },
+        {
+            "sale_price": 143500,
+            "amount": 1116
+        },
+        {
+            "sale_price": 144000,
+            "amount": 1119
+        },
+        {
+            "sale_price": 144500,
+            "amount": 1122
+        },
+        {
+            "sale_price": 145000,
+            "amount": 1124
+        },
+        {
+            "sale_price": 145500,
+            "amount": 1127
+        },
+        {
+            "sale_price": 0,
+            "amount": 0
+        },
+        {
+            "sale_price": 2,
+            "amount": 50
+        },
+        {
+            "sale_price": 3,
+            "amount": 50
+        },
+        {
+            "sale_price": 4,
+            "amount": 50
+        },
+        {
+            "sale_price": 5,
+            "amount": 25
+        },
+        {
+            "sale_price": 6,
+            "amount": 25
+        },
+        {
+            "sale_price": 7,
+            "amount": 25
+        },
+        {
+            "sale_price": 8,
+            "amount": 25
+        }
+    ],
+    "20": [
+        {
+            "sale_price": 25000,
+            "amount": 328
+        },
+        {
+            "sale_price": 25500,
+            "amount": 331
+        },
+        {
+            "sale_price": 26000,
+            "amount": 335
+        },
+        {
+            "sale_price": 26500,
+            "amount": 338
+        },
+        {
+            "sale_price": 27000,
+            "amount": 340
+        },
+        {
+            "sale_price": 27500,
+            "amount": 343
+        },
+        {
+            "sale_price": 28000,
+            "amount": 347
+        },
+        {
+            "sale_price": 28500,
+            "amount": 350
+        },
+        {
+            "sale_price": 29000,
+            "amount": 355
+        },
+        {
+            "sale_price": 29500,
+            "amount": 358
+        },
+        {
+            "sale_price": 30000,
+            "amount": 361
+        },
+        {
+            "sale_price": 30500,
+            "amount": 364
+        },
+        {
+            "sale_price": 31000,
+            "amount": 368
+        },
+        {
+            "sale_price": 31500,
+            "amount": 371
+        },
+        {
+            "sale_price": 32000,
+            "amount": 374
+        },
+        {
+            "sale_price": 32500,
+            "amount": 378
+        },
+        {
+            "sale_price": 33000,
+            "amount": 381
+        },
+        {
+            "sale_price": 33500,
+            "amount": 385
+        },
+        {
+            "sale_price": 34000,
+            "amount": 388
+        },
+        {
+            "sale_price": 34500,
+            "amount": 392
+        },
+        {
+            "sale_price": 35000,
+            "amount": 395
+        },
+        {
+            "sale_price": 35500,
+            "amount": 398
+        },
+        {
+            "sale_price": 36000,
+            "amount": 401
+        },
+        {
+            "sale_price": 36500,
+            "amount": 405
+        },
+        {
+            "sale_price": 37000,
+            "amount": 408
+        },
+        {
+            "sale_price": 37500,
+            "amount": 412
+        },
+        {
+            "sale_price": 38000,
+            "amount": 416
+        },
+        {
+            "sale_price": 38500,
+            "amount": 419
+        },
+        {
+            "sale_price": 39000,
+            "amount": 421
+        },
+        {
+            "sale_price": 39500,
+            "amount": 425
+        },
+        {
+            "sale_price": 40000,
+            "amount": 428
+        },
+        {
+            "sale_price": 40500,
+            "amount": 433
+        },
+        {
+            "sale_price": 41000,
+            "amount": 435
+        },
+        {
+            "sale_price": 41500,
+            "amount": 439
+        },
+        {
+            "sale_price": 42000,
+            "amount": 442
+        },
+        {
+            "sale_price": 42500,
+            "amount": 446
+        },
+        {
+            "sale_price": 43000,
+            "amount": 448
+        },
+        {
+            "sale_price": 43500,
+            "amount": 452
+        },
+        {
+            "sale_price": 44000,
+            "amount": 456
+        },
+        {
+            "sale_price": 44500,
+            "amount": 459
+        },
+        {
+            "sale_price": 45000,
+            "amount": 463
+        },
+        {
+            "sale_price": 45500,
+            "amount": 466
+        },
+        {
+            "sale_price": 46000,
+            "amount": 469
+        },
+        {
+            "sale_price": 46500,
+            "amount": 473
+        },
+        {
+            "sale_price": 47000,
+            "amount": 475
+        },
+        {
+            "sale_price": 47500,
+            "amount": 478
+        },
+        {
+            "sale_price": 48000,
+            "amount": 483
+        },
+        {
+            "sale_price": 48500,
+            "amount": 487
+        },
+        {
+            "sale_price": 49000,
+            "amount": 490
+        },
+        {
+            "sale_price": 49500,
+            "amount": 493
+        },
+        {
+            "sale_price": 50000,
+            "amount": 496
+        },
+        {
+            "sale_price": 50500,
+            "amount": 499
+        },
+        {
+            "sale_price": 51000,
+            "amount": 501
+        },
+        {
+            "sale_price": 51500,
+            "amount": 505
+        },
+        {
+            "sale_price": 52000,
+            "amount": 510
+        },
+        {
+            "sale_price": 52500,
+            "amount": 514
+        },
+        {
+            "sale_price": 53000,
+            "amount": 516
+        },
+        {
+            "sale_price": 53500,
+            "amount": 520
+        },
+        {
+            "sale_price": 54000,
+            "amount": 523
+        },
+        {
+            "sale_price": 54500,
+            "amount": 526
+        },
+        {
+            "sale_price": 55000,
+            "amount": 529
+        },
+        {
+            "sale_price": 55500,
+            "amount": 532
+        },
+        {
+            "sale_price": 56000,
+            "amount": 537
+        },
+        {
+            "sale_price": 56500,
+            "amount": 540
+        },
+        {
+            "sale_price": 57000,
+            "amount": 543
+        },
+        {
+            "sale_price": 57500,
+            "amount": 547
+        },
+        {
+            "sale_price": 58000,
+            "amount": 551
+        },
+        {
+            "sale_price": 58500,
+            "amount": 553
+        },
+        {
+            "sale_price": 59000,
+            "amount": 556
+        },
+        {
+            "sale_price": 59500,
+            "amount": 560
+        },
+        {
+            "sale_price": 60000,
+            "amount": 564
+        },
+        {
+            "sale_price": 60500,
+            "amount": 568
+        },
+        {
+            "sale_price": 61000,
+            "amount": 571
+        },
+        {
+            "sale_price": 61500,
+            "amount": 573
+        },
+        {
+            "sale_price": 62000,
+            "amount": 577
+        },
+        {
+            "sale_price": 62500,
+            "amount": 581
+        },
+        {
+            "sale_price": 63000,
+            "amount": 583
+        },
+        {
+            "sale_price": 63500,
+            "amount": 587
+        },
+        {
+            "sale_price": 64000,
+            "amount": 591
+        },
+        {
+            "sale_price": 64500,
+            "amount": 594
+        },
+        {
+            "sale_price": 65000,
+            "amount": 597
+        },
+        {
+            "sale_price": 65500,
+            "amount": 600
+        },
+        {
+            "sale_price": 66000,
+            "amount": 604
+        },
+        {
+            "sale_price": 66500,
+            "amount": 609
+        },
+        {
+            "sale_price": 67000,
+            "amount": 612
+        },
+        {
+            "sale_price": 67500,
+            "amount": 613
+        },
+        {
+            "sale_price": 68000,
+            "amount": 617
+        },
+        {
+            "sale_price": 68500,
+            "amount": 621
+        },
+        {
+            "sale_price": 69000,
+            "amount": 624
+        },
+        {
+            "sale_price": 69500,
+            "amount": 627
+        },
+        {
+            "sale_price": 70000,
+            "amount": 631
+        },
+        {
+            "sale_price": 70500,
+            "amount": 635
+        },
+        {
+            "sale_price": 71000,
+            "amount": 639
+        },
+        {
+            "sale_price": 71500,
+            "amount": 641
+        },
+        {
+            "sale_price": 72000,
+            "amount": 644
+        },
+        {
+            "sale_price": 72500,
+            "amount": 648
+        },
+        {
+            "sale_price": 73000,
+            "amount": 651
+        },
+        {
+            "sale_price": 73500,
+            "amount": 654
+        },
+        {
+            "sale_price": 74000,
+            "amount": 658
+        },
+        {
+            "sale_price": 74500,
+            "amount": 662
+        },
+        {
+            "sale_price": 75000,
+            "amount": 666
+        },
+        {
+            "sale_price": 75500,
+            "amount": 668
+        },
+        {
+            "sale_price": 76000,
+            "amount": 671
+        },
+        {
+            "sale_price": 76500,
+            "amount": 674
+        },
+        {
+            "sale_price": 77000,
+            "amount": 678
+        },
+        {
+            "sale_price": 77500,
+            "amount": 681
+        },
+        {
+            "sale_price": 78000,
+            "amount": 685
+        },
+        {
+            "sale_price": 78500,
+            "amount": 689
+        },
+        {
+            "sale_price": 79000,
+            "amount": 693
+        },
+        {
+            "sale_price": 79500,
+            "amount": 694
+        },
+        {
+            "sale_price": 80000,
+            "amount": 698
+        },
+        {
+            "sale_price": 80500,
+            "amount": 702
+        },
+        {
+            "sale_price": 81000,
+            "amount": 706
+        },
+        {
+            "sale_price": 81500,
+            "amount": 708
+        },
+        {
+            "sale_price": 82000,
+            "amount": 711
+        },
+        {
+            "sale_price": 82500,
+            "amount": 716
+        },
+        {
+            "sale_price": 83000,
+            "amount": 720
+        },
+        {
+            "sale_price": 83500,
+            "amount": 722
+        },
+        {
+            "sale_price": 84000,
+            "amount": 725
+        },
+        {
+            "sale_price": 84500,
+            "amount": 729
+        },
+        {
+            "sale_price": 85000,
+            "amount": 732
+        },
+        {
+            "sale_price": 85500,
+            "amount": 735
+        },
+        {
+            "sale_price": 86000,
+            "amount": 738
+        },
+        {
+            "sale_price": 86500,
+            "amount": 743
+        },
+        {
+            "sale_price": 87000,
+            "amount": 747
+        },
+        {
+            "sale_price": 87500,
+            "amount": 749
+        },
+        {
+            "sale_price": 88000,
+            "amount": 752
+        },
+        {
+            "sale_price": 88500,
+            "amount": 756
+        },
+        {
+            "sale_price": 89000,
+            "amount": 760
+        },
+        {
+            "sale_price": 89500,
+            "amount": 762
+        },
+        {
+            "sale_price": 90000,
+            "amount": 765
+        },
+        {
+            "sale_price": 90500,
+            "amount": 769
+        },
+        {
+            "sale_price": 91000,
+            "amount": 773
+        },
+        {
+            "sale_price": 91500,
+            "amount": 777
+        },
+        {
+            "sale_price": 92000,
+            "amount": 779
+        },
+        {
+            "sale_price": 92500,
+            "amount": 783
+        },
+        {
+            "sale_price": 93000,
+            "amount": 786
+        },
+        {
+            "sale_price": 93500,
+            "amount": 790
+        },
+        {
+            "sale_price": 94000,
+            "amount": 791
+        },
+        {
+            "sale_price": 94500,
+            "amount": 796
+        },
+        {
+            "sale_price": 95000,
+            "amount": 801
+        },
+        {
+            "sale_price": 95500,
+            "amount": 804
+        },
+        {
+            "sale_price": 96000,
+            "amount": 805
+        },
+        {
+            "sale_price": 96500,
+            "amount": 809
+        },
+        {
+            "sale_price": 97000,
+            "amount": 813
+        },
+        {
+            "sale_price": 97500,
+            "amount": 817
+        },
+        {
+            "sale_price": 98000,
+            "amount": 820
+        },
+        {
+            "sale_price": 98500,
+            "amount": 824
+        },
+        {
+            "sale_price": 99000,
+            "amount": 827
+        },
+        {
+            "sale_price": 99500,
+            "amount": 830
+        },
+        {
+            "sale_price": 100000,
+            "amount": 832
+        },
+        {
+            "sale_price": 100500,
+            "amount": 878
+        },
+        {
+            "sale_price": 101000,
+            "amount": 881
+        },
+        {
+            "sale_price": 101500,
+            "amount": 883
+        },
+        {
+            "sale_price": 102000,
+            "amount": 886
+        },
+        {
+            "sale_price": 102500,
+            "amount": 889
+        },
+        {
+            "sale_price": 103000,
+            "amount": 892
+        },
+        {
+            "sale_price": 103500,
+            "amount": 894
+        },
+        {
+            "sale_price": 104000,
+            "amount": 897
+        },
+        {
+            "sale_price": 104500,
+            "amount": 900
+        },
+        {
+            "sale_price": 105000,
+            "amount": 903
+        },
+        {
+            "sale_price": 105500,
+            "amount": 905
+        },
+        {
+            "sale_price": 106000,
+            "amount": 908
+        },
+        {
+            "sale_price": 106500,
+            "amount": 911
+        },
+        {
+            "sale_price": 107000,
+            "amount": 914
+        },
+        {
+            "sale_price": 107500,
+            "amount": 917
+        },
+        {
+            "sale_price": 108000,
+            "amount": 919
+        },
+        {
+            "sale_price": 108500,
+            "amount": 922
+        },
+        {
+            "sale_price": 109000,
+            "amount": 925
+        },
+        {
+            "sale_price": 109500,
+            "amount": 928
+        },
+        {
+            "sale_price": 110000,
+            "amount": 930
+        },
+        {
+            "sale_price": 110500,
+            "amount": 933
+        },
+        {
+            "sale_price": 111000,
+            "amount": 936
+        },
+        {
+            "sale_price": 111500,
+            "amount": 939
+        },
+        {
+            "sale_price": 112000,
+            "amount": 941
+        },
+        {
+            "sale_price": 112500,
+            "amount": 944
+        },
+        {
+            "sale_price": 113000,
+            "amount": 947
+        },
+        {
+            "sale_price": 113500,
+            "amount": 950
+        },
+        {
+            "sale_price": 114000,
+            "amount": 953
+        },
+        {
+            "sale_price": 114500,
+            "amount": 955
+        },
+        {
+            "sale_price": 115000,
+            "amount": 958
+        },
+        {
+            "sale_price": 115500,
+            "amount": 961
+        },
+        {
+            "sale_price": 116000,
+            "amount": 964
+        },
+        {
+            "sale_price": 116500,
+            "amount": 966
+        },
+        {
+            "sale_price": 117000,
+            "amount": 969
+        },
+        {
+            "sale_price": 117500,
+            "amount": 972
+        },
+        {
+            "sale_price": 118000,
+            "amount": 975
+        },
+        {
+            "sale_price": 118500,
+            "amount": 977
+        },
+        {
+            "sale_price": 119000,
+            "amount": 980
+        },
+        {
+            "sale_price": 119500,
+            "amount": 983
+        },
+        {
+            "sale_price": 120000,
+            "amount": 986
+        },
+        {
+            "sale_price": 120500,
+            "amount": 989
+        },
+        {
+            "sale_price": 121000,
+            "amount": 991
+        },
+        {
+            "sale_price": 121500,
+            "amount": 994
+        },
+        {
+            "sale_price": 122000,
+            "amount": 997
+        },
+        {
+            "sale_price": 122500,
+            "amount": 1000
+        },
+        {
+            "sale_price": 123000,
+            "amount": 1002
+        },
+        {
+            "sale_price": 123500,
+            "amount": 1005
+        },
+        {
+            "sale_price": 124000,
+            "amount": 1008
+        },
+        {
+            "sale_price": 124500,
+            "amount": 1011
+        },
+        {
+            "sale_price": 125000,
+            "amount": 1014
+        },
+        {
+            "sale_price": 125500,
+            "amount": 1016
+        },
+        {
+            "sale_price": 126000,
+            "amount": 1019
+        },
+        {
+            "sale_price": 126500,
+            "amount": 1022
+        },
+        {
+            "sale_price": 127000,
+            "amount": 1025
+        },
+        {
+            "sale_price": 127500,
+            "amount": 1027
+        },
+        {
+            "sale_price": 128000,
+            "amount": 1030
+        },
+        {
+            "sale_price": 128500,
+            "amount": 1033
+        },
+        {
+            "sale_price": 129000,
+            "amount": 1036
+        },
+        {
+            "sale_price": 129500,
+            "amount": 1038
+        },
+        {
+            "sale_price": 130000,
+            "amount": 1041
+        },
+        {
+            "sale_price": 130500,
+            "amount": 1044
+        },
+        {
+            "sale_price": 131000,
+            "amount": 1047
+        },
+        {
+            "sale_price": 131500,
+            "amount": 1050
+        },
+        {
+            "sale_price": 132000,
+            "amount": 1052
+        },
+        {
+            "sale_price": 132500,
+            "amount": 1055
+        },
+        {
+            "sale_price": 133000,
+            "amount": 1058
+        },
+        {
+            "sale_price": 133500,
+            "amount": 1061
+        },
+        {
+            "sale_price": 134000,
+            "amount": 1063
+        },
+        {
+            "sale_price": 134500,
+            "amount": 1066
+        },
+        {
+            "sale_price": 135000,
+            "amount": 1069
+        },
+        {
+            "sale_price": 135500,
+            "amount": 1072
+        },
+        {
+            "sale_price": 136000,
+            "amount": 1074
+        },
+        {
+            "sale_price": 136500,
+            "amount": 1077
+        },
+        {
+            "sale_price": 137000,
+            "amount": 1080
+        },
+        {
+            "sale_price": 137500,
+            "amount": 1083
+        },
+        {
+            "sale_price": 138000,
+            "amount": 1086
+        },
+        {
+            "sale_price": 138500,
+            "amount": 1088
+        },
+        {
+            "sale_price": 139000,
+            "amount": 1091
+        },
+        {
+            "sale_price": 139500,
+            "amount": 1094
+        },
+        {
+            "sale_price": 140000,
+            "amount": 1097
+        },
+        {
+            "sale_price": 140500,
+            "amount": 1099
+        },
+        {
+            "sale_price": 141000,
+            "amount": 1102
+        },
+        {
+            "sale_price": 141500,
+            "amount": 1105
+        },
+        {
+            "sale_price": 142000,
+            "amount": 1108
+        },
+        {
+            "sale_price": 142500,
+            "amount": 1110
+        },
+        {
+            "sale_price": 143000,
+            "amount": 1113
+        },
+        {
+            "sale_price": 143500,
+            "amount": 1116
+        },
+        {
+            "sale_price": 144000,
+            "amount": 1119
+        },
+        {
+            "sale_price": 144500,
+            "amount": 1122
+        },
+        {
+            "sale_price": 145000,
+            "amount": 1124
+        },
+        {
+            "sale_price": 145500,
+            "amount": 1127
+        },
+        {
+            "sale_price": 146000,
+            "amount": 1130
+        },
+        {
+            "sale_price": 0,
+            "amount": 0
+        },
+        {
+            "sale_price": 2,
+            "amount": 50
+        },
+        {
+            "sale_price": 3,
+            "amount": 50
+        },
+        {
+            "sale_price": 4,
+            "amount": 50
+        },
+        {
+            "sale_price": 5,
+            "amount": 25
+        },
+        {
+            "sale_price": 6,
+            "amount": 25
+        },
+        {
+            "sale_price": 7,
+            "amount": 25
+        },
+        {
+            "sale_price": 8,
+            "amount": 25
+        }
+    ],
+    "21": [
+        {
+            "sale_price": 25000,
+            "amount": 328
+        },
+        {
+            "sale_price": 25500,
+            "amount": 331
+        },
+        {
+            "sale_price": 26000,
+            "amount": 335
+        },
+        {
+            "sale_price": 26500,
+            "amount": 338
+        },
+        {
+            "sale_price": 27000,
+            "amount": 340
+        },
+        {
+            "sale_price": 27500,
+            "amount": 343
+        },
+        {
+            "sale_price": 28000,
+            "amount": 347
+        },
+        {
+            "sale_price": 28500,
+            "amount": 350
+        },
+        {
+            "sale_price": 29000,
+            "amount": 355
+        },
+        {
+            "sale_price": 29500,
+            "amount": 358
+        },
+        {
+            "sale_price": 30000,
+            "amount": 361
+        },
+        {
+            "sale_price": 30500,
+            "amount": 364
+        },
+        {
+            "sale_price": 31000,
+            "amount": 368
+        },
+        {
+            "sale_price": 31500,
+            "amount": 371
+        },
+        {
+            "sale_price": 32000,
+            "amount": 374
+        },
+        {
+            "sale_price": 32500,
+            "amount": 378
+        },
+        {
+            "sale_price": 33000,
+            "amount": 381
+        },
+        {
+            "sale_price": 33500,
+            "amount": 385
+        },
+        {
+            "sale_price": 34000,
+            "amount": 388
+        },
+        {
+            "sale_price": 34500,
+            "amount": 392
+        },
+        {
+            "sale_price": 35000,
+            "amount": 395
+        },
+        {
+            "sale_price": 35500,
+            "amount": 398
+        },
+        {
+            "sale_price": 36000,
+            "amount": 401
+        },
+        {
+            "sale_price": 36500,
+            "amount": 405
+        },
+        {
+            "sale_price": 37000,
+            "amount": 408
+        },
+        {
+            "sale_price": 37500,
+            "amount": 412
+        },
+        {
+            "sale_price": 38000,
+            "amount": 416
+        },
+        {
+            "sale_price": 38500,
+            "amount": 419
+        },
+        {
+            "sale_price": 39000,
+            "amount": 421
+        },
+        {
+            "sale_price": 39500,
+            "amount": 425
+        },
+        {
+            "sale_price": 40000,
+            "amount": 428
+        },
+        {
+            "sale_price": 40500,
+            "amount": 433
+        },
+        {
+            "sale_price": 41000,
+            "amount": 435
+        },
+        {
+            "sale_price": 41500,
+            "amount": 439
+        },
+        {
+            "sale_price": 42000,
+            "amount": 442
+        },
+        {
+            "sale_price": 42500,
+            "amount": 446
+        },
+        {
+            "sale_price": 43000,
+            "amount": 448
+        },
+        {
+            "sale_price": 43500,
+            "amount": 452
+        },
+        {
+            "sale_price": 44000,
+            "amount": 456
+        },
+        {
+            "sale_price": 44500,
+            "amount": 459
+        },
+        {
+            "sale_price": 45000,
+            "amount": 463
+        },
+        {
+            "sale_price": 45500,
+            "amount": 466
+        },
+        {
+            "sale_price": 46000,
+            "amount": 469
+        },
+        {
+            "sale_price": 46500,
+            "amount": 473
+        },
+        {
+            "sale_price": 47000,
+            "amount": 475
+        },
+        {
+            "sale_price": 47500,
+            "amount": 478
+        },
+        {
+            "sale_price": 48000,
+            "amount": 483
+        },
+        {
+            "sale_price": 48500,
+            "amount": 487
+        },
+        {
+            "sale_price": 49000,
+            "amount": 490
+        },
+        {
+            "sale_price": 49500,
+            "amount": 493
+        },
+        {
+            "sale_price": 50000,
+            "amount": 496
+        },
+        {
+            "sale_price": 50500,
+            "amount": 499
+        },
+        {
+            "sale_price": 51000,
+            "amount": 501
+        },
+        {
+            "sale_price": 51500,
+            "amount": 505
+        },
+        {
+            "sale_price": 52000,
+            "amount": 510
+        },
+        {
+            "sale_price": 52500,
+            "amount": 514
+        },
+        {
+            "sale_price": 53000,
+            "amount": 516
+        },
+        {
+            "sale_price": 53500,
+            "amount": 520
+        },
+        {
+            "sale_price": 54000,
+            "amount": 523
+        },
+        {
+            "sale_price": 54500,
+            "amount": 526
+        },
+        {
+            "sale_price": 55000,
+            "amount": 529
+        },
+        {
+            "sale_price": 55500,
+            "amount": 532
+        },
+        {
+            "sale_price": 56000,
+            "amount": 537
+        },
+        {
+            "sale_price": 56500,
+            "amount": 540
+        },
+        {
+            "sale_price": 57000,
+            "amount": 543
+        },
+        {
+            "sale_price": 57500,
+            "amount": 547
+        },
+        {
+            "sale_price": 58000,
+            "amount": 551
+        },
+        {
+            "sale_price": 58500,
+            "amount": 553
+        },
+        {
+            "sale_price": 59000,
+            "amount": 556
+        },
+        {
+            "sale_price": 59500,
+            "amount": 560
+        },
+        {
+            "sale_price": 60000,
+            "amount": 564
+        },
+        {
+            "sale_price": 60500,
+            "amount": 568
+        },
+        {
+            "sale_price": 61000,
+            "amount": 571
+        },
+        {
+            "sale_price": 61500,
+            "amount": 573
+        },
+        {
+            "sale_price": 62000,
+            "amount": 577
+        },
+        {
+            "sale_price": 62500,
+            "amount": 581
+        },
+        {
+            "sale_price": 63000,
+            "amount": 583
+        },
+        {
+            "sale_price": 63500,
+            "amount": 587
+        },
+        {
+            "sale_price": 64000,
+            "amount": 591
+        },
+        {
+            "sale_price": 64500,
+            "amount": 594
+        },
+        {
+            "sale_price": 65000,
+            "amount": 597
+        },
+        {
+            "sale_price": 65500,
+            "amount": 600
+        },
+        {
+            "sale_price": 66000,
+            "amount": 604
+        },
+        {
+            "sale_price": 66500,
+            "amount": 609
+        },
+        {
+            "sale_price": 67000,
+            "amount": 612
+        },
+        {
+            "sale_price": 67500,
+            "amount": 613
+        },
+        {
+            "sale_price": 68000,
+            "amount": 617
+        },
+        {
+            "sale_price": 68500,
+            "amount": 621
+        },
+        {
+            "sale_price": 69000,
+            "amount": 624
+        },
+        {
+            "sale_price": 69500,
+            "amount": 627
+        },
+        {
+            "sale_price": 70000,
+            "amount": 631
+        },
+        {
+            "sale_price": 70500,
+            "amount": 635
+        },
+        {
+            "sale_price": 71000,
+            "amount": 639
+        },
+        {
+            "sale_price": 71500,
+            "amount": 641
+        },
+        {
+            "sale_price": 72000,
+            "amount": 644
+        },
+        {
+            "sale_price": 72500,
+            "amount": 648
+        },
+        {
+            "sale_price": 73000,
+            "amount": 651
+        },
+        {
+            "sale_price": 73500,
+            "amount": 654
+        },
+        {
+            "sale_price": 74000,
+            "amount": 658
+        },
+        {
+            "sale_price": 74500,
+            "amount": 662
+        },
+        {
+            "sale_price": 75000,
+            "amount": 666
+        },
+        {
+            "sale_price": 75500,
+            "amount": 668
+        },
+        {
+            "sale_price": 76000,
+            "amount": 671
+        },
+        {
+            "sale_price": 76500,
+            "amount": 674
+        },
+        {
+            "sale_price": 77000,
+            "amount": 678
+        },
+        {
+            "sale_price": 77500,
+            "amount": 681
+        },
+        {
+            "sale_price": 78000,
+            "amount": 685
+        },
+        {
+            "sale_price": 78500,
+            "amount": 689
+        },
+        {
+            "sale_price": 79000,
+            "amount": 693
+        },
+        {
+            "sale_price": 79500,
+            "amount": 694
+        },
+        {
+            "sale_price": 80000,
+            "amount": 698
+        },
+        {
+            "sale_price": 80500,
+            "amount": 702
+        },
+        {
+            "sale_price": 81000,
+            "amount": 706
+        },
+        {
+            "sale_price": 81500,
+            "amount": 708
+        },
+        {
+            "sale_price": 82000,
+            "amount": 711
+        },
+        {
+            "sale_price": 82500,
+            "amount": 716
+        },
+        {
+            "sale_price": 83000,
+            "amount": 720
+        },
+        {
+            "sale_price": 83500,
+            "amount": 722
+        },
+        {
+            "sale_price": 84000,
+            "amount": 725
+        },
+        {
+            "sale_price": 84500,
+            "amount": 729
+        },
+        {
+            "sale_price": 85000,
+            "amount": 732
+        },
+        {
+            "sale_price": 85500,
+            "amount": 735
+        },
+        {
+            "sale_price": 86000,
+            "amount": 738
+        },
+        {
+            "sale_price": 86500,
+            "amount": 743
+        },
+        {
+            "sale_price": 87000,
+            "amount": 747
+        },
+        {
+            "sale_price": 87500,
+            "amount": 749
+        },
+        {
+            "sale_price": 88000,
+            "amount": 752
+        },
+        {
+            "sale_price": 88500,
+            "amount": 756
+        },
+        {
+            "sale_price": 89000,
+            "amount": 760
+        },
+        {
+            "sale_price": 89500,
+            "amount": 762
+        },
+        {
+            "sale_price": 90000,
+            "amount": 765
+        },
+        {
+            "sale_price": 90500,
+            "amount": 769
+        },
+        {
+            "sale_price": 91000,
+            "amount": 773
+        },
+        {
+            "sale_price": 91500,
+            "amount": 777
+        },
+        {
+            "sale_price": 92000,
+            "amount": 779
+        },
+        {
+            "sale_price": 92500,
+            "amount": 783
+        },
+        {
+            "sale_price": 93000,
+            "amount": 786
+        },
+        {
+            "sale_price": 93500,
+            "amount": 790
+        },
+        {
+            "sale_price": 94000,
+            "amount": 791
+        },
+        {
+            "sale_price": 94500,
+            "amount": 796
+        },
+        {
+            "sale_price": 95000,
+            "amount": 801
+        },
+        {
+            "sale_price": 95500,
+            "amount": 804
+        },
+        {
+            "sale_price": 96000,
+            "amount": 805
+        },
+        {
+            "sale_price": 96500,
+            "amount": 809
+        },
+        {
+            "sale_price": 97000,
+            "amount": 813
+        },
+        {
+            "sale_price": 97500,
+            "amount": 817
+        },
+        {
+            "sale_price": 98000,
+            "amount": 820
+        },
+        {
+            "sale_price": 98500,
+            "amount": 824
+        },
+        {
+            "sale_price": 99000,
+            "amount": 827
+        },
+        {
+            "sale_price": 99500,
+            "amount": 830
+        },
+        {
+            "sale_price": 100000,
+            "amount": 832
+        },
+        {
+            "sale_price": 100500,
+            "amount": 878
+        },
+        {
+            "sale_price": 101000,
+            "amount": 881
+        },
+        {
+            "sale_price": 101500,
+            "amount": 883
+        },
+        {
+            "sale_price": 102000,
+            "amount": 886
+        },
+        {
+            "sale_price": 102500,
+            "amount": 889
+        },
+        {
+            "sale_price": 103000,
+            "amount": 892
+        },
+        {
+            "sale_price": 103500,
+            "amount": 894
+        },
+        {
+            "sale_price": 104000,
+            "amount": 897
+        },
+        {
+            "sale_price": 104500,
+            "amount": 900
+        },
+        {
+            "sale_price": 105000,
+            "amount": 903
+        },
+        {
+            "sale_price": 105500,
+            "amount": 905
+        },
+        {
+            "sale_price": 106000,
+            "amount": 908
+        },
+        {
+            "sale_price": 106500,
+            "amount": 911
+        },
+        {
+            "sale_price": 107000,
+            "amount": 914
+        },
+        {
+            "sale_price": 107500,
+            "amount": 917
+        },
+        {
+            "sale_price": 108000,
+            "amount": 919
+        },
+        {
+            "sale_price": 108500,
+            "amount": 922
+        },
+        {
+            "sale_price": 109000,
+            "amount": 925
+        },
+        {
+            "sale_price": 109500,
+            "amount": 928
+        },
+        {
+            "sale_price": 110000,
+            "amount": 930
+        },
+        {
+            "sale_price": 110500,
+            "amount": 933
+        },
+        {
+            "sale_price": 111000,
+            "amount": 936
+        },
+        {
+            "sale_price": 111500,
+            "amount": 939
+        },
+        {
+            "sale_price": 112000,
+            "amount": 941
+        },
+        {
+            "sale_price": 112500,
+            "amount": 944
+        },
+        {
+            "sale_price": 113000,
+            "amount": 947
+        },
+        {
+            "sale_price": 113500,
+            "amount": 950
+        },
+        {
+            "sale_price": 114000,
+            "amount": 953
+        },
+        {
+            "sale_price": 114500,
+            "amount": 955
+        },
+        {
+            "sale_price": 115000,
+            "amount": 958
+        },
+        {
+            "sale_price": 115500,
+            "amount": 961
+        },
+        {
+            "sale_price": 116000,
+            "amount": 964
+        },
+        {
+            "sale_price": 116500,
+            "amount": 966
+        },
+        {
+            "sale_price": 117000,
+            "amount": 969
+        },
+        {
+            "sale_price": 117500,
+            "amount": 972
+        },
+        {
+            "sale_price": 118000,
+            "amount": 975
+        },
+        {
+            "sale_price": 118500,
+            "amount": 977
+        },
+        {
+            "sale_price": 119000,
+            "amount": 980
+        },
+        {
+            "sale_price": 119500,
+            "amount": 983
+        },
+        {
+            "sale_price": 120000,
+            "amount": 986
+        },
+        {
+            "sale_price": 120500,
+            "amount": 989
+        },
+        {
+            "sale_price": 121000,
+            "amount": 991
+        },
+        {
+            "sale_price": 121500,
+            "amount": 994
+        },
+        {
+            "sale_price": 122000,
+            "amount": 997
+        },
+        {
+            "sale_price": 122500,
+            "amount": 1000
+        },
+        {
+            "sale_price": 123000,
+            "amount": 1002
+        },
+        {
+            "sale_price": 123500,
+            "amount": 1005
+        },
+        {
+            "sale_price": 124000,
+            "amount": 1008
+        },
+        {
+            "sale_price": 124500,
+            "amount": 1011
+        },
+        {
+            "sale_price": 125000,
+            "amount": 1014
+        },
+        {
+            "sale_price": 125500,
+            "amount": 1016
+        },
+        {
+            "sale_price": 126000,
+            "amount": 1019
+        },
+        {
+            "sale_price": 126500,
+            "amount": 1022
+        },
+        {
+            "sale_price": 127000,
+            "amount": 1025
+        },
+        {
+            "sale_price": 127500,
+            "amount": 1027
+        },
+        {
+            "sale_price": 128000,
+            "amount": 1030
+        },
+        {
+            "sale_price": 128500,
+            "amount": 1033
+        },
+        {
+            "sale_price": 129000,
+            "amount": 1036
+        },
+        {
+            "sale_price": 129500,
+            "amount": 1038
+        },
+        {
+            "sale_price": 130000,
+            "amount": 1041
+        },
+        {
+            "sale_price": 130500,
+            "amount": 1044
+        },
+        {
+            "sale_price": 131000,
+            "amount": 1047
+        },
+        {
+            "sale_price": 131500,
+            "amount": 1050
+        },
+        {
+            "sale_price": 132000,
+            "amount": 1052
+        },
+        {
+            "sale_price": 132500,
+            "amount": 1055
+        },
+        {
+            "sale_price": 133000,
+            "amount": 1058
+        },
+        {
+            "sale_price": 133500,
+            "amount": 1061
+        },
+        {
+            "sale_price": 134000,
+            "amount": 1063
+        },
+        {
+            "sale_price": 134500,
+            "amount": 1066
+        },
+        {
+            "sale_price": 135000,
+            "amount": 1069
+        },
+        {
+            "sale_price": 135500,
+            "amount": 1072
+        },
+        {
+            "sale_price": 136000,
+            "amount": 1074
+        },
+        {
+            "sale_price": 136500,
+            "amount": 1077
+        },
+        {
+            "sale_price": 137000,
+            "amount": 1080
+        },
+        {
+            "sale_price": 137500,
+            "amount": 1083
+        },
+        {
+            "sale_price": 138000,
+            "amount": 1086
+        },
+        {
+            "sale_price": 138500,
+            "amount": 1088
+        },
+        {
+            "sale_price": 139000,
+            "amount": 1091
+        },
+        {
+            "sale_price": 139500,
+            "amount": 1094
+        },
+        {
+            "sale_price": 140000,
+            "amount": 1097
+        },
+        {
+            "sale_price": 140500,
+            "amount": 1099
+        },
+        {
+            "sale_price": 141000,
+            "amount": 1102
+        },
+        {
+            "sale_price": 141500,
+            "amount": 1105
+        },
+        {
+            "sale_price": 142000,
+            "amount": 1108
+        },
+        {
+            "sale_price": 142500,
+            "amount": 1110
+        },
+        {
+            "sale_price": 143000,
+            "amount": 1113
+        },
+        {
+            "sale_price": 143500,
+            "amount": 1116
+        },
+        {
+            "sale_price": 144000,
+            "amount": 1119
+        },
+        {
+            "sale_price": 144500,
+            "amount": 1122
+        },
+        {
+            "sale_price": 145000,
+            "amount": 1124
+        },
+        {
+            "sale_price": 145500,
+            "amount": 1127
+        },
+        {
+            "sale_price": 0,
+            "amount": 0
+        },
+        {
+            "sale_price": 2,
+            "amount": 50
+        },
+        {
+            "sale_price": 3,
+            "amount": 50
+        },
+        {
+            "sale_price": 4,
+            "amount": 50
+        },
+        {
+            "sale_price": 5,
+            "amount": 25
+        },
+        {
+            "sale_price": 6,
+            "amount": 25
+        },
+        {
+            "sale_price": 7,
+            "amount": 25
+        },
+        {
+            "sale_price": 8,
+            "amount": 25
+        }
+    ],
+    "22": [
+        {
+            "sale_price": 25000,
+            "amount": 328
+        },
+        {
+            "sale_price": 25500,
+            "amount": 331
+        },
+        {
+            "sale_price": 26000,
+            "amount": 335
+        },
+        {
+            "sale_price": 26500,
+            "amount": 338
+        },
+        {
+            "sale_price": 27000,
+            "amount": 340
+        },
+        {
+            "sale_price": 27500,
+            "amount": 343
+        },
+        {
+            "sale_price": 28000,
+            "amount": 347
+        },
+        {
+            "sale_price": 28500,
+            "amount": 350
+        },
+        {
+            "sale_price": 29000,
+            "amount": 355
+        },
+        {
+            "sale_price": 29500,
+            "amount": 358
+        },
+        {
+            "sale_price": 30000,
+            "amount": 361
+        },
+        {
+            "sale_price": 30500,
+            "amount": 364
+        },
+        {
+            "sale_price": 31000,
+            "amount": 368
+        },
+        {
+            "sale_price": 31500,
+            "amount": 371
+        },
+        {
+            "sale_price": 32000,
+            "amount": 374
+        },
+        {
+            "sale_price": 32500,
+            "amount": 378
+        },
+        {
+            "sale_price": 33000,
+            "amount": 381
+        },
+        {
+            "sale_price": 33500,
+            "amount": 385
+        },
+        {
+            "sale_price": 34000,
+            "amount": 388
+        },
+        {
+            "sale_price": 34500,
+            "amount": 392
+        },
+        {
+            "sale_price": 35000,
+            "amount": 395
+        },
+        {
+            "sale_price": 35500,
+            "amount": 398
+        },
+        {
+            "sale_price": 36000,
+            "amount": 401
+        },
+        {
+            "sale_price": 36500,
+            "amount": 405
+        },
+        {
+            "sale_price": 37000,
+            "amount": 408
+        },
+        {
+            "sale_price": 37500,
+            "amount": 412
+        },
+        {
+            "sale_price": 38000,
+            "amount": 416
+        },
+        {
+            "sale_price": 38500,
+            "amount": 419
+        },
+        {
+            "sale_price": 39000,
+            "amount": 421
+        },
+        {
+            "sale_price": 39500,
+            "amount": 425
+        },
+        {
+            "sale_price": 40000,
+            "amount": 428
+        },
+        {
+            "sale_price": 40500,
+            "amount": 433
+        },
+        {
+            "sale_price": 41000,
+            "amount": 435
+        },
+        {
+            "sale_price": 41500,
+            "amount": 439
+        },
+        {
+            "sale_price": 42000,
+            "amount": 442
+        },
+        {
+            "sale_price": 42500,
+            "amount": 446
+        },
+        {
+            "sale_price": 43000,
+            "amount": 448
+        },
+        {
+            "sale_price": 43500,
+            "amount": 452
+        },
+        {
+            "sale_price": 44000,
+            "amount": 456
+        },
+        {
+            "sale_price": 44500,
+            "amount": 459
+        },
+        {
+            "sale_price": 45000,
+            "amount": 463
+        },
+        {
+            "sale_price": 45500,
+            "amount": 466
+        },
+        {
+            "sale_price": 46000,
+            "amount": 469
+        },
+        {
+            "sale_price": 46500,
+            "amount": 473
+        },
+        {
+            "sale_price": 47000,
+            "amount": 475
+        },
+        {
+            "sale_price": 47500,
+            "amount": 478
+        },
+        {
+            "sale_price": 48000,
+            "amount": 483
+        },
+        {
+            "sale_price": 48500,
+            "amount": 487
+        },
+        {
+            "sale_price": 49000,
+            "amount": 490
+        },
+        {
+            "sale_price": 49500,
+            "amount": 493
+        },
+        {
+            "sale_price": 50000,
+            "amount": 496
+        },
+        {
+            "sale_price": 50500,
+            "amount": 499
+        },
+        {
+            "sale_price": 51000,
+            "amount": 501
+        },
+        {
+            "sale_price": 51500,
+            "amount": 505
+        },
+        {
+            "sale_price": 52000,
+            "amount": 510
+        },
+        {
+            "sale_price": 52500,
+            "amount": 514
+        },
+        {
+            "sale_price": 53000,
+            "amount": 516
+        },
+        {
+            "sale_price": 53500,
+            "amount": 520
+        },
+        {
+            "sale_price": 54000,
+            "amount": 523
+        },
+        {
+            "sale_price": 54500,
+            "amount": 526
+        },
+        {
+            "sale_price": 55000,
+            "amount": 529
+        },
+        {
+            "sale_price": 55500,
+            "amount": 532
+        },
+        {
+            "sale_price": 56000,
+            "amount": 537
+        },
+        {
+            "sale_price": 56500,
+            "amount": 540
+        },
+        {
+            "sale_price": 57000,
+            "amount": 543
+        },
+        {
+            "sale_price": 57500,
+            "amount": 547
+        },
+        {
+            "sale_price": 58000,
+            "amount": 551
+        },
+        {
+            "sale_price": 58500,
+            "amount": 553
+        },
+        {
+            "sale_price": 59000,
+            "amount": 556
+        },
+        {
+            "sale_price": 59500,
+            "amount": 560
+        },
+        {
+            "sale_price": 60000,
+            "amount": 564
+        },
+        {
+            "sale_price": 60500,
+            "amount": 568
+        },
+        {
+            "sale_price": 61000,
+            "amount": 571
+        },
+        {
+            "sale_price": 61500,
+            "amount": 573
+        },
+        {
+            "sale_price": 62000,
+            "amount": 577
+        },
+        {
+            "sale_price": 62500,
+            "amount": 581
+        },
+        {
+            "sale_price": 63000,
+            "amount": 583
+        },
+        {
+            "sale_price": 63500,
+            "amount": 587
+        },
+        {
+            "sale_price": 64000,
+            "amount": 591
+        },
+        {
+            "sale_price": 64500,
+            "amount": 594
+        },
+        {
+            "sale_price": 65000,
+            "amount": 597
+        },
+        {
+            "sale_price": 65500,
+            "amount": 600
+        },
+        {
+            "sale_price": 66000,
+            "amount": 604
+        },
+        {
+            "sale_price": 66500,
+            "amount": 609
+        },
+        {
+            "sale_price": 67000,
+            "amount": 612
+        },
+        {
+            "sale_price": 67500,
+            "amount": 613
+        },
+        {
+            "sale_price": 68000,
+            "amount": 617
+        },
+        {
+            "sale_price": 68500,
+            "amount": 621
+        },
+        {
+            "sale_price": 69000,
+            "amount": 624
+        },
+        {
+            "sale_price": 69500,
+            "amount": 627
+        },
+        {
+            "sale_price": 70000,
+            "amount": 631
+        },
+        {
+            "sale_price": 70500,
+            "amount": 635
+        },
+        {
+            "sale_price": 71000,
+            "amount": 639
+        },
+        {
+            "sale_price": 71500,
+            "amount": 641
+        },
+        {
+            "sale_price": 72000,
+            "amount": 644
+        },
+        {
+            "sale_price": 72500,
+            "amount": 648
+        },
+        {
+            "sale_price": 73000,
+            "amount": 651
+        },
+        {
+            "sale_price": 73500,
+            "amount": 654
+        },
+        {
+            "sale_price": 74000,
+            "amount": 658
+        },
+        {
+            "sale_price": 74500,
+            "amount": 662
+        },
+        {
+            "sale_price": 75000,
+            "amount": 666
+        },
+        {
+            "sale_price": 75500,
+            "amount": 668
+        },
+        {
+            "sale_price": 76000,
+            "amount": 671
+        },
+        {
+            "sale_price": 76500,
+            "amount": 674
+        },
+        {
+            "sale_price": 77000,
+            "amount": 678
+        },
+        {
+            "sale_price": 77500,
+            "amount": 681
+        },
+        {
+            "sale_price": 78000,
+            "amount": 685
+        },
+        {
+            "sale_price": 78500,
+            "amount": 689
+        },
+        {
+            "sale_price": 79000,
+            "amount": 693
+        },
+        {
+            "sale_price": 79500,
+            "amount": 694
+        },
+        {
+            "sale_price": 80000,
+            "amount": 698
+        },
+        {
+            "sale_price": 80500,
+            "amount": 702
+        },
+        {
+            "sale_price": 81000,
+            "amount": 706
+        },
+        {
+            "sale_price": 81500,
+            "amount": 708
+        },
+        {
+            "sale_price": 82000,
+            "amount": 711
+        },
+        {
+            "sale_price": 82500,
+            "amount": 716
+        },
+        {
+            "sale_price": 83000,
+            "amount": 720
+        },
+        {
+            "sale_price": 83500,
+            "amount": 722
+        },
+        {
+            "sale_price": 84000,
+            "amount": 725
+        },
+        {
+            "sale_price": 84500,
+            "amount": 729
+        },
+        {
+            "sale_price": 85000,
+            "amount": 732
+        },
+        {
+            "sale_price": 85500,
+            "amount": 735
+        },
+        {
+            "sale_price": 86000,
+            "amount": 738
+        },
+        {
+            "sale_price": 86500,
+            "amount": 743
+        },
+        {
+            "sale_price": 87000,
+            "amount": 747
+        },
+        {
+            "sale_price": 87500,
+            "amount": 749
+        },
+        {
+            "sale_price": 88000,
+            "amount": 752
+        },
+        {
+            "sale_price": 88500,
+            "amount": 756
+        },
+        {
+            "sale_price": 89000,
+            "amount": 760
+        },
+        {
+            "sale_price": 89500,
+            "amount": 762
+        },
+        {
+            "sale_price": 90000,
+            "amount": 765
+        },
+        {
+            "sale_price": 90500,
+            "amount": 769
+        },
+        {
+            "sale_price": 91000,
+            "amount": 773
+        },
+        {
+            "sale_price": 91500,
+            "amount": 777
+        },
+        {
+            "sale_price": 92000,
+            "amount": 779
+        },
+        {
+            "sale_price": 92500,
+            "amount": 783
+        },
+        {
+            "sale_price": 93000,
+            "amount": 786
+        },
+        {
+            "sale_price": 93500,
+            "amount": 790
+        },
+        {
+            "sale_price": 94000,
+            "amount": 791
+        },
+        {
+            "sale_price": 94500,
+            "amount": 796
+        },
+        {
+            "sale_price": 95000,
+            "amount": 801
+        },
+        {
+            "sale_price": 95500,
+            "amount": 804
+        },
+        {
+            "sale_price": 96000,
+            "amount": 805
+        },
+        {
+            "sale_price": 96500,
+            "amount": 809
+        },
+        {
+            "sale_price": 97000,
+            "amount": 813
+        },
+        {
+            "sale_price": 97500,
+            "amount": 817
+        },
+        {
+            "sale_price": 98000,
+            "amount": 820
+        },
+        {
+            "sale_price": 98500,
+            "amount": 824
+        },
+        {
+            "sale_price": 99000,
+            "amount": 827
+        },
+        {
+            "sale_price": 99500,
+            "amount": 830
+        },
+        {
+            "sale_price": 100000,
+            "amount": 832
+        },
+        {
+            "sale_price": 100500,
+            "amount": 878
+        },
+        {
+            "sale_price": 101000,
+            "amount": 881
+        },
+        {
+            "sale_price": 101500,
+            "amount": 883
+        },
+        {
+            "sale_price": 102000,
+            "amount": 886
+        },
+        {
+            "sale_price": 102500,
+            "amount": 889
+        },
+        {
+            "sale_price": 103000,
+            "amount": 892
+        },
+        {
+            "sale_price": 103500,
+            "amount": 894
+        },
+        {
+            "sale_price": 104000,
+            "amount": 897
+        },
+        {
+            "sale_price": 104500,
+            "amount": 900
+        },
+        {
+            "sale_price": 105000,
+            "amount": 903
+        },
+        {
+            "sale_price": 105500,
+            "amount": 905
+        },
+        {
+            "sale_price": 106000,
+            "amount": 908
+        },
+        {
+            "sale_price": 106500,
+            "amount": 911
+        },
+        {
+            "sale_price": 107000,
+            "amount": 914
+        },
+        {
+            "sale_price": 107500,
+            "amount": 917
+        },
+        {
+            "sale_price": 108000,
+            "amount": 919
+        },
+        {
+            "sale_price": 108500,
+            "amount": 922
+        },
+        {
+            "sale_price": 109000,
+            "amount": 925
+        },
+        {
+            "sale_price": 109500,
+            "amount": 928
+        },
+        {
+            "sale_price": 110000,
+            "amount": 930
+        },
+        {
+            "sale_price": 110500,
+            "amount": 933
+        },
+        {
+            "sale_price": 111000,
+            "amount": 936
+        },
+        {
+            "sale_price": 111500,
+            "amount": 939
+        },
+        {
+            "sale_price": 112000,
+            "amount": 941
+        },
+        {
+            "sale_price": 112500,
+            "amount": 944
+        },
+        {
+            "sale_price": 113000,
+            "amount": 947
+        },
+        {
+            "sale_price": 113500,
+            "amount": 950
+        },
+        {
+            "sale_price": 114000,
+            "amount": 953
+        },
+        {
+            "sale_price": 114500,
+            "amount": 955
+        },
+        {
+            "sale_price": 115000,
+            "amount": 958
+        },
+        {
+            "sale_price": 115500,
+            "amount": 961
+        },
+        {
+            "sale_price": 116000,
+            "amount": 964
+        },
+        {
+            "sale_price": 116500,
+            "amount": 966
+        },
+        {
+            "sale_price": 117000,
+            "amount": 969
+        },
+        {
+            "sale_price": 117500,
+            "amount": 972
+        },
+        {
+            "sale_price": 118000,
+            "amount": 975
+        },
+        {
+            "sale_price": 118500,
+            "amount": 977
+        },
+        {
+            "sale_price": 119000,
+            "amount": 980
+        },
+        {
+            "sale_price": 119500,
+            "amount": 983
+        },
+        {
+            "sale_price": 120000,
+            "amount": 986
+        },
+        {
+            "sale_price": 120500,
+            "amount": 989
+        },
+        {
+            "sale_price": 121000,
+            "amount": 991
+        },
+        {
+            "sale_price": 121500,
+            "amount": 994
+        },
+        {
+            "sale_price": 122000,
+            "amount": 997
+        },
+        {
+            "sale_price": 122500,
+            "amount": 1000
+        },
+        {
+            "sale_price": 123000,
+            "amount": 1002
+        },
+        {
+            "sale_price": 123500,
+            "amount": 1005
+        },
+        {
+            "sale_price": 124000,
+            "amount": 1008
+        },
+        {
+            "sale_price": 124500,
+            "amount": 1011
+        },
+        {
+            "sale_price": 125000,
+            "amount": 1014
+        },
+        {
+            "sale_price": 125500,
+            "amount": 1016
+        },
+        {
+            "sale_price": 126000,
+            "amount": 1019
+        },
+        {
+            "sale_price": 126500,
+            "amount": 1022
+        },
+        {
+            "sale_price": 127000,
+            "amount": 1025
+        },
+        {
+            "sale_price": 127500,
+            "amount": 1027
+        },
+        {
+            "sale_price": 128000,
+            "amount": 1030
+        },
+        {
+            "sale_price": 128500,
+            "amount": 1033
+        },
+        {
+            "sale_price": 129000,
+            "amount": 1036
+        },
+        {
+            "sale_price": 129500,
+            "amount": 1038
+        },
+        {
+            "sale_price": 130000,
+            "amount": 1041
+        },
+        {
+            "sale_price": 130500,
+            "amount": 1044
+        },
+        {
+            "sale_price": 131000,
+            "amount": 1047
+        },
+        {
+            "sale_price": 131500,
+            "amount": 1050
+        },
+        {
+            "sale_price": 132000,
+            "amount": 1052
+        },
+        {
+            "sale_price": 132500,
+            "amount": 1055
+        },
+        {
+            "sale_price": 133000,
+            "amount": 1058
+        },
+        {
+            "sale_price": 133500,
+            "amount": 1061
+        },
+        {
+            "sale_price": 134000,
+            "amount": 1063
+        },
+        {
+            "sale_price": 134500,
+            "amount": 1066
+        },
+        {
+            "sale_price": 135000,
+            "amount": 1069
+        },
+        {
+            "sale_price": 135500,
+            "amount": 1072
+        },
+        {
+            "sale_price": 136000,
+            "amount": 1074
+        },
+        {
+            "sale_price": 136500,
+            "amount": 1077
+        },
+        {
+            "sale_price": 137000,
+            "amount": 1080
+        },
+        {
+            "sale_price": 137500,
+            "amount": 1083
+        },
+        {
+            "sale_price": 138000,
+            "amount": 1086
+        },
+        {
+            "sale_price": 138500,
+            "amount": 1088
+        },
+        {
+            "sale_price": 139000,
+            "amount": 1091
+        },
+        {
+            "sale_price": 139500,
+            "amount": 1094
+        },
+        {
+            "sale_price": 140000,
+            "amount": 1097
+        },
+        {
+            "sale_price": 140500,
+            "amount": 1099
+        },
+        {
+            "sale_price": 141000,
+            "amount": 1102
+        },
+        {
+            "sale_price": 141500,
+            "amount": 1105
+        },
+        {
+            "sale_price": 142000,
+            "amount": 1108
+        },
+        {
+            "sale_price": 142500,
+            "amount": 1110
+        },
+        {
+            "sale_price": 143000,
+            "amount": 1113
+        },
+        {
+            "sale_price": 143500,
+            "amount": 1116
+        },
+        {
+            "sale_price": 144000,
+            "amount": 1119
+        },
+        {
+            "sale_price": 144500,
+            "amount": 1122
+        },
+        {
+            "sale_price": 145000,
+            "amount": 1124
+        },
+        {
+            "sale_price": 145500,
+            "amount": 1127
+        },
+        {
+            "sale_price": 0,
+            "amount": 0
+        },
+        {
+            "sale_price": 2,
+            "amount": 50
+        },
+        {
+            "sale_price": 3,
+            "amount": 50
+        },
+        {
+            "sale_price": 4,
+            "amount": 50
+        },
+        {
+            "sale_price": 5,
+            "amount": 25
+        },
+        {
+            "sale_price": 6,
+            "amount": 25
+        },
+        {
+            "sale_price": 7,
+            "amount": 25
+        },
+        {
+            "sale_price": 8,
+            "amount": 25
+        }
+    ],
+    "23": [
+        {
+            "sale_price": 25000,
+            "amount": 328
+        },
+        {
+            "sale_price": 25500,
+            "amount": 331
+        },
+        {
+            "sale_price": 26000,
+            "amount": 335
+        },
+        {
+            "sale_price": 26500,
+            "amount": 338
+        },
+        {
+            "sale_price": 27000,
+            "amount": 340
+        },
+        {
+            "sale_price": 27500,
+            "amount": 343
+        },
+        {
+            "sale_price": 28000,
+            "amount": 347
+        },
+        {
+            "sale_price": 28500,
+            "amount": 350
+        },
+        {
+            "sale_price": 29000,
+            "amount": 355
+        },
+        {
+            "sale_price": 29500,
+            "amount": 358
+        },
+        {
+            "sale_price": 30000,
+            "amount": 361
+        },
+        {
+            "sale_price": 30500,
+            "amount": 364
+        },
+        {
+            "sale_price": 31000,
+            "amount": 368
+        },
+        {
+            "sale_price": 31500,
+            "amount": 371
+        },
+        {
+            "sale_price": 32000,
+            "amount": 374
+        },
+        {
+            "sale_price": 32500,
+            "amount": 378
+        },
+        {
+            "sale_price": 33000,
+            "amount": 381
+        },
+        {
+            "sale_price": 33500,
+            "amount": 385
+        },
+        {
+            "sale_price": 34000,
+            "amount": 388
+        },
+        {
+            "sale_price": 34500,
+            "amount": 392
+        },
+        {
+            "sale_price": 35000,
+            "amount": 395
+        },
+        {
+            "sale_price": 35500,
+            "amount": 398
+        },
+        {
+            "sale_price": 36000,
+            "amount": 401
+        },
+        {
+            "sale_price": 36500,
+            "amount": 405
+        },
+        {
+            "sale_price": 37000,
+            "amount": 408
+        },
+        {
+            "sale_price": 37500,
+            "amount": 412
+        },
+        {
+            "sale_price": 38000,
+            "amount": 416
+        },
+        {
+            "sale_price": 38500,
+            "amount": 419
+        },
+        {
+            "sale_price": 39000,
+            "amount": 421
+        },
+        {
+            "sale_price": 39500,
+            "amount": 425
+        },
+        {
+            "sale_price": 40000,
+            "amount": 428
+        },
+        {
+            "sale_price": 40500,
+            "amount": 433
+        },
+        {
+            "sale_price": 41000,
+            "amount": 435
+        },
+        {
+            "sale_price": 41500,
+            "amount": 439
+        },
+        {
+            "sale_price": 42000,
+            "amount": 442
+        },
+        {
+            "sale_price": 42500,
+            "amount": 446
+        },
+        {
+            "sale_price": 43000,
+            "amount": 448
+        },
+        {
+            "sale_price": 43500,
+            "amount": 452
+        },
+        {
+            "sale_price": 44000,
+            "amount": 456
+        },
+        {
+            "sale_price": 44500,
+            "amount": 459
+        },
+        {
+            "sale_price": 45000,
+            "amount": 463
+        },
+        {
+            "sale_price": 45500,
+            "amount": 466
+        },
+        {
+            "sale_price": 46000,
+            "amount": 469
+        },
+        {
+            "sale_price": 46500,
+            "amount": 473
+        },
+        {
+            "sale_price": 47000,
+            "amount": 475
+        },
+        {
+            "sale_price": 47500,
+            "amount": 478
+        },
+        {
+            "sale_price": 48000,
+            "amount": 483
+        },
+        {
+            "sale_price": 48500,
+            "amount": 487
+        },
+        {
+            "sale_price": 49000,
+            "amount": 490
+        },
+        {
+            "sale_price": 49500,
+            "amount": 493
+        },
+        {
+            "sale_price": 50000,
+            "amount": 496
+        },
+        {
+            "sale_price": 50500,
+            "amount": 499
+        },
+        {
+            "sale_price": 51000,
+            "amount": 501
+        },
+        {
+            "sale_price": 51500,
+            "amount": 505
+        },
+        {
+            "sale_price": 52000,
+            "amount": 510
+        },
+        {
+            "sale_price": 52500,
+            "amount": 514
+        },
+        {
+            "sale_price": 53000,
+            "amount": 516
+        },
+        {
+            "sale_price": 53500,
+            "amount": 520
+        },
+        {
+            "sale_price": 54000,
+            "amount": 523
+        },
+        {
+            "sale_price": 54500,
+            "amount": 526
+        },
+        {
+            "sale_price": 55000,
+            "amount": 529
+        },
+        {
+            "sale_price": 55500,
+            "amount": 532
+        },
+        {
+            "sale_price": 56000,
+            "amount": 537
+        },
+        {
+            "sale_price": 56500,
+            "amount": 540
+        },
+        {
+            "sale_price": 57000,
+            "amount": 543
+        },
+        {
+            "sale_price": 57500,
+            "amount": 547
+        },
+        {
+            "sale_price": 58000,
+            "amount": 551
+        },
+        {
+            "sale_price": 58500,
+            "amount": 553
+        },
+        {
+            "sale_price": 59000,
+            "amount": 556
+        },
+        {
+            "sale_price": 59500,
+            "amount": 560
+        },
+        {
+            "sale_price": 60000,
+            "amount": 564
+        },
+        {
+            "sale_price": 60500,
+            "amount": 568
+        },
+        {
+            "sale_price": 61000,
+            "amount": 571
+        },
+        {
+            "sale_price": 61500,
+            "amount": 573
+        },
+        {
+            "sale_price": 62000,
+            "amount": 577
+        },
+        {
+            "sale_price": 62500,
+            "amount": 581
+        },
+        {
+            "sale_price": 63000,
+            "amount": 583
+        },
+        {
+            "sale_price": 63500,
+            "amount": 587
+        },
+        {
+            "sale_price": 64000,
+            "amount": 591
+        },
+        {
+            "sale_price": 64500,
+            "amount": 594
+        },
+        {
+            "sale_price": 65000,
+            "amount": 597
+        },
+        {
+            "sale_price": 65500,
+            "amount": 600
+        },
+        {
+            "sale_price": 66000,
+            "amount": 604
+        },
+        {
+            "sale_price": 66500,
+            "amount": 609
+        },
+        {
+            "sale_price": 67000,
+            "amount": 612
+        },
+        {
+            "sale_price": 67500,
+            "amount": 613
+        },
+        {
+            "sale_price": 68000,
+            "amount": 617
+        },
+        {
+            "sale_price": 68500,
+            "amount": 621
+        },
+        {
+            "sale_price": 69000,
+            "amount": 624
+        },
+        {
+            "sale_price": 69500,
+            "amount": 627
+        },
+        {
+            "sale_price": 70000,
+            "amount": 631
+        },
+        {
+            "sale_price": 70500,
+            "amount": 635
+        },
+        {
+            "sale_price": 71000,
+            "amount": 639
+        },
+        {
+            "sale_price": 71500,
+            "amount": 641
+        },
+        {
+            "sale_price": 72000,
+            "amount": 644
+        },
+        {
+            "sale_price": 72500,
+            "amount": 648
+        },
+        {
+            "sale_price": 73000,
+            "amount": 651
+        },
+        {
+            "sale_price": 73500,
+            "amount": 654
+        },
+        {
+            "sale_price": 74000,
+            "amount": 658
+        },
+        {
+            "sale_price": 74500,
+            "amount": 662
+        },
+        {
+            "sale_price": 75000,
+            "amount": 666
+        },
+        {
+            "sale_price": 75500,
+            "amount": 668
+        },
+        {
+            "sale_price": 76000,
+            "amount": 671
+        },
+        {
+            "sale_price": 76500,
+            "amount": 674
+        },
+        {
+            "sale_price": 77000,
+            "amount": 678
+        },
+        {
+            "sale_price": 77500,
+            "amount": 681
+        },
+        {
+            "sale_price": 78000,
+            "amount": 685
+        },
+        {
+            "sale_price": 78500,
+            "amount": 689
+        },
+        {
+            "sale_price": 79000,
+            "amount": 693
+        },
+        {
+            "sale_price": 79500,
+            "amount": 694
+        },
+        {
+            "sale_price": 80000,
+            "amount": 698
+        },
+        {
+            "sale_price": 80500,
+            "amount": 702
+        },
+        {
+            "sale_price": 81000,
+            "amount": 706
+        },
+        {
+            "sale_price": 81500,
+            "amount": 708
+        },
+        {
+            "sale_price": 82000,
+            "amount": 711
+        },
+        {
+            "sale_price": 82500,
+            "amount": 716
+        },
+        {
+            "sale_price": 83000,
+            "amount": 720
+        },
+        {
+            "sale_price": 83500,
+            "amount": 722
+        },
+        {
+            "sale_price": 84000,
+            "amount": 725
+        },
+        {
+            "sale_price": 84500,
+            "amount": 729
+        },
+        {
+            "sale_price": 85000,
+            "amount": 732
+        },
+        {
+            "sale_price": 85500,
+            "amount": 735
+        },
+        {
+            "sale_price": 86000,
+            "amount": 738
+        },
+        {
+            "sale_price": 86500,
+            "amount": 743
+        },
+        {
+            "sale_price": 87000,
+            "amount": 747
+        },
+        {
+            "sale_price": 87500,
+            "amount": 749
+        },
+        {
+            "sale_price": 88000,
+            "amount": 752
+        },
+        {
+            "sale_price": 88500,
+            "amount": 756
+        },
+        {
+            "sale_price": 89000,
+            "amount": 760
+        },
+        {
+            "sale_price": 89500,
+            "amount": 762
+        },
+        {
+            "sale_price": 90000,
+            "amount": 765
+        },
+        {
+            "sale_price": 90500,
+            "amount": 769
+        },
+        {
+            "sale_price": 91000,
+            "amount": 773
+        },
+        {
+            "sale_price": 91500,
+            "amount": 777
+        },
+        {
+            "sale_price": 92000,
+            "amount": 779
+        },
+        {
+            "sale_price": 92500,
+            "amount": 783
+        },
+        {
+            "sale_price": 93000,
+            "amount": 786
+        },
+        {
+            "sale_price": 93500,
+            "amount": 790
+        },
+        {
+            "sale_price": 94000,
+            "amount": 791
+        },
+        {
+            "sale_price": 94500,
+            "amount": 796
+        },
+        {
+            "sale_price": 95000,
+            "amount": 801
+        },
+        {
+            "sale_price": 95500,
+            "amount": 804
+        },
+        {
+            "sale_price": 96000,
+            "amount": 805
+        },
+        {
+            "sale_price": 96500,
+            "amount": 809
+        },
+        {
+            "sale_price": 97000,
+            "amount": 813
+        },
+        {
+            "sale_price": 97500,
+            "amount": 817
+        },
+        {
+            "sale_price": 98000,
+            "amount": 820
+        },
+        {
+            "sale_price": 98500,
+            "amount": 824
+        },
+        {
+            "sale_price": 99000,
+            "amount": 827
+        },
+        {
+            "sale_price": 99500,
+            "amount": 830
+        },
+        {
+            "sale_price": 100000,
+            "amount": 832
+        },
+        {
+            "sale_price": 100500,
+            "amount": 878
+        },
+        {
+            "sale_price": 101000,
+            "amount": 881
+        },
+        {
+            "sale_price": 101500,
+            "amount": 883
+        },
+        {
+            "sale_price": 102000,
+            "amount": 886
+        },
+        {
+            "sale_price": 102500,
+            "amount": 889
+        },
+        {
+            "sale_price": 103000,
+            "amount": 892
+        },
+        {
+            "sale_price": 103500,
+            "amount": 894
+        },
+        {
+            "sale_price": 104000,
+            "amount": 897
+        },
+        {
+            "sale_price": 104500,
+            "amount": 900
+        },
+        {
+            "sale_price": 105000,
+            "amount": 903
+        },
+        {
+            "sale_price": 105500,
+            "amount": 905
+        },
+        {
+            "sale_price": 106000,
+            "amount": 908
+        },
+        {
+            "sale_price": 106500,
+            "amount": 911
+        },
+        {
+            "sale_price": 107000,
+            "amount": 914
+        },
+        {
+            "sale_price": 107500,
+            "amount": 917
+        },
+        {
+            "sale_price": 108000,
+            "amount": 919
+        },
+        {
+            "sale_price": 108500,
+            "amount": 922
+        },
+        {
+            "sale_price": 109000,
+            "amount": 925
+        },
+        {
+            "sale_price": 109500,
+            "amount": 928
+        },
+        {
+            "sale_price": 110000,
+            "amount": 930
+        },
+        {
+            "sale_price": 110500,
+            "amount": 933
+        },
+        {
+            "sale_price": 111000,
+            "amount": 936
+        },
+        {
+            "sale_price": 111500,
+            "amount": 939
+        },
+        {
+            "sale_price": 112000,
+            "amount": 941
+        },
+        {
+            "sale_price": 112500,
+            "amount": 944
+        },
+        {
+            "sale_price": 113000,
+            "amount": 947
+        },
+        {
+            "sale_price": 113500,
+            "amount": 950
+        },
+        {
+            "sale_price": 114000,
+            "amount": 953
+        },
+        {
+            "sale_price": 114500,
+            "amount": 955
+        },
+        {
+            "sale_price": 115000,
+            "amount": 958
+        },
+        {
+            "sale_price": 115500,
+            "amount": 961
+        },
+        {
+            "sale_price": 116000,
+            "amount": 964
+        },
+        {
+            "sale_price": 116500,
+            "amount": 966
+        },
+        {
+            "sale_price": 117000,
+            "amount": 969
+        },
+        {
+            "sale_price": 117500,
+            "amount": 972
+        },
+        {
+            "sale_price": 118000,
+            "amount": 975
+        },
+        {
+            "sale_price": 118500,
+            "amount": 977
+        },
+        {
+            "sale_price": 119000,
+            "amount": 980
+        },
+        {
+            "sale_price": 119500,
+            "amount": 983
+        },
+        {
+            "sale_price": 120000,
+            "amount": 986
+        },
+        {
+            "sale_price": 120500,
+            "amount": 989
+        },
+        {
+            "sale_price": 121000,
+            "amount": 991
+        },
+        {
+            "sale_price": 121500,
+            "amount": 994
+        },
+        {
+            "sale_price": 122000,
+            "amount": 997
+        },
+        {
+            "sale_price": 122500,
+            "amount": 1000
+        },
+        {
+            "sale_price": 123000,
+            "amount": 1002
+        },
+        {
+            "sale_price": 123500,
+            "amount": 1005
+        },
+        {
+            "sale_price": 124000,
+            "amount": 1008
+        },
+        {
+            "sale_price": 124500,
+            "amount": 1011
+        },
+        {
+            "sale_price": 125000,
+            "amount": 1014
+        },
+        {
+            "sale_price": 125500,
+            "amount": 1016
+        },
+        {
+            "sale_price": 126000,
+            "amount": 1019
+        },
+        {
+            "sale_price": 126500,
+            "amount": 1022
+        },
+        {
+            "sale_price": 127000,
+            "amount": 1025
+        },
+        {
+            "sale_price": 127500,
+            "amount": 1027
+        },
+        {
+            "sale_price": 128000,
+            "amount": 1030
+        },
+        {
+            "sale_price": 128500,
+            "amount": 1033
+        },
+        {
+            "sale_price": 129000,
+            "amount": 1036
+        },
+        {
+            "sale_price": 129500,
+            "amount": 1038
+        },
+        {
+            "sale_price": 130000,
+            "amount": 1041
+        },
+        {
+            "sale_price": 130500,
+            "amount": 1044
+        },
+        {
+            "sale_price": 131000,
+            "amount": 1047
+        },
+        {
+            "sale_price": 131500,
+            "amount": 1050
+        },
+        {
+            "sale_price": 132000,
+            "amount": 1052
+        },
+        {
+            "sale_price": 132500,
+            "amount": 1055
+        },
+        {
+            "sale_price": 133000,
+            "amount": 1058
+        },
+        {
+            "sale_price": 133500,
+            "amount": 1061
+        },
+        {
+            "sale_price": 134000,
+            "amount": 1063
+        },
+        {
+            "sale_price": 134500,
+            "amount": 1066
+        },
+        {
+            "sale_price": 135000,
+            "amount": 1069
+        },
+        {
+            "sale_price": 135500,
+            "amount": 1072
+        },
+        {
+            "sale_price": 136000,
+            "amount": 1074
+        },
+        {
+            "sale_price": 136500,
+            "amount": 1077
+        },
+        {
+            "sale_price": 137000,
+            "amount": 1080
+        },
+        {
+            "sale_price": 137500,
+            "amount": 1083
+        },
+        {
+            "sale_price": 138000,
+            "amount": 1086
+        },
+        {
+            "sale_price": 138500,
+            "amount": 1088
+        },
+        {
+            "sale_price": 139000,
+            "amount": 1091
+        },
+        {
+            "sale_price": 139500,
+            "amount": 1094
+        },
+        {
+            "sale_price": 140000,
+            "amount": 1097
+        },
+        {
+            "sale_price": 140500,
+            "amount": 1099
+        },
+        {
+            "sale_price": 141000,
+            "amount": 1102
+        },
+        {
+            "sale_price": 141500,
+            "amount": 1105
+        },
+        {
+            "sale_price": 142000,
+            "amount": 1108
+        },
+        {
+            "sale_price": 142500,
+            "amount": 1110
+        },
+        {
+            "sale_price": 143000,
+            "amount": 1113
+        },
+        {
+            "sale_price": 143500,
+            "amount": 1116
+        },
+        {
+            "sale_price": 144000,
+            "amount": 1119
+        },
+        {
+            "sale_price": 144500,
+            "amount": 1122
+        },
+        {
+            "sale_price": 145000,
+            "amount": 1124
+        },
+        {
+            "sale_price": 145500,
+            "amount": 1127
+        },
+        {
+            "sale_price": 0,
+            "amount": 0
+        },
+        {
+            "sale_price": 2,
+            "amount": 50
+        },
+        {
+            "sale_price": 3,
+            "amount": 50
+        },
+        {
+            "sale_price": 4,
+            "amount": 50
+        },
+        {
+            "sale_price": 5,
+            "amount": 25
+        },
+        {
+            "sale_price": 6,
+            "amount": 25
+        },
+        {
+            "sale_price": 7,
+            "amount": 25
+        },
+        {
+            "sale_price": 8,
+            "amount": 25
+        }
+    ],
+    "26": [
+        {
+            "sale_price": 25000,
+            "amount": 328
+        },
+        {
+            "sale_price": 25500,
+            "amount": 331
+        },
+        {
+            "sale_price": 26000,
+            "amount": 335
+        },
+        {
+            "sale_price": 26500,
+            "amount": 338
+        },
+        {
+            "sale_price": 27000,
+            "amount": 340
+        },
+        {
+            "sale_price": 27500,
+            "amount": 343
+        },
+        {
+            "sale_price": 28000,
+            "amount": 347
+        },
+        {
+            "sale_price": 28500,
+            "amount": 350
+        },
+        {
+            "sale_price": 29000,
+            "amount": 355
+        },
+        {
+            "sale_price": 29500,
+            "amount": 358
+        },
+        {
+            "sale_price": 30000,
+            "amount": 361
+        },
+        {
+            "sale_price": 30500,
+            "amount": 364
+        },
+        {
+            "sale_price": 31000,
+            "amount": 368
+        },
+        {
+            "sale_price": 31500,
+            "amount": 371
+        },
+        {
+            "sale_price": 32000,
+            "amount": 374
+        },
+        {
+            "sale_price": 32500,
+            "amount": 378
+        },
+        {
+            "sale_price": 33000,
+            "amount": 381
+        },
+        {
+            "sale_price": 33500,
+            "amount": 385
+        },
+        {
+            "sale_price": 34000,
+            "amount": 388
+        },
+        {
+            "sale_price": 34500,
+            "amount": 392
+        },
+        {
+            "sale_price": 35000,
+            "amount": 395
+        },
+        {
+            "sale_price": 35500,
+            "amount": 398
+        },
+        {
+            "sale_price": 36000,
+            "amount": 401
+        },
+        {
+            "sale_price": 36500,
+            "amount": 405
+        },
+        {
+            "sale_price": 37000,
+            "amount": 408
+        },
+        {
+            "sale_price": 37500,
+            "amount": 412
+        },
+        {
+            "sale_price": 38000,
+            "amount": 416
+        },
+        {
+            "sale_price": 38500,
+            "amount": 419
+        },
+        {
+            "sale_price": 39000,
+            "amount": 421
+        },
+        {
+            "sale_price": 39500,
+            "amount": 425
+        },
+        {
+            "sale_price": 40000,
+            "amount": 428
+        },
+        {
+            "sale_price": 40500,
+            "amount": 433
+        },
+        {
+            "sale_price": 41000,
+            "amount": 435
+        },
+        {
+            "sale_price": 41500,
+            "amount": 439
+        },
+        {
+            "sale_price": 42000,
+            "amount": 442
+        },
+        {
+            "sale_price": 42500,
+            "amount": 446
+        },
+        {
+            "sale_price": 43000,
+            "amount": 448
+        },
+        {
+            "sale_price": 43500,
+            "amount": 452
+        },
+        {
+            "sale_price": 44000,
+            "amount": 456
+        },
+        {
+            "sale_price": 44500,
+            "amount": 459
+        },
+        {
+            "sale_price": 45000,
+            "amount": 463
+        },
+        {
+            "sale_price": 45500,
+            "amount": 466
+        },
+        {
+            "sale_price": 46000,
+            "amount": 469
+        },
+        {
+            "sale_price": 46500,
+            "amount": 473
+        },
+        {
+            "sale_price": 47000,
+            "amount": 475
+        },
+        {
+            "sale_price": 47500,
+            "amount": 478
+        },
+        {
+            "sale_price": 48000,
+            "amount": 483
+        },
+        {
+            "sale_price": 48500,
+            "amount": 487
+        },
+        {
+            "sale_price": 49000,
+            "amount": 490
+        },
+        {
+            "sale_price": 49500,
+            "amount": 493
+        },
+        {
+            "sale_price": 50000,
+            "amount": 496
+        },
+        {
+            "sale_price": 50500,
+            "amount": 499
+        },
+        {
+            "sale_price": 51000,
+            "amount": 501
+        },
+        {
+            "sale_price": 51500,
+            "amount": 505
+        },
+        {
+            "sale_price": 52000,
+            "amount": 510
+        },
+        {
+            "sale_price": 52500,
+            "amount": 514
+        },
+        {
+            "sale_price": 53000,
+            "amount": 516
+        },
+        {
+            "sale_price": 53500,
+            "amount": 520
+        },
+        {
+            "sale_price": 54000,
+            "amount": 523
+        },
+        {
+            "sale_price": 54500,
+            "amount": 526
+        },
+        {
+            "sale_price": 55000,
+            "amount": 529
+        },
+        {
+            "sale_price": 55500,
+            "amount": 532
+        },
+        {
+            "sale_price": 56000,
+            "amount": 537
+        },
+        {
+            "sale_price": 56500,
+            "amount": 540
+        },
+        {
+            "sale_price": 57000,
+            "amount": 543
+        },
+        {
+            "sale_price": 57500,
+            "amount": 547
+        },
+        {
+            "sale_price": 58000,
+            "amount": 551
+        },
+        {
+            "sale_price": 58500,
+            "amount": 553
+        },
+        {
+            "sale_price": 59000,
+            "amount": 556
+        },
+        {
+            "sale_price": 59500,
+            "amount": 560
+        },
+        {
+            "sale_price": 60000,
+            "amount": 564
+        },
+        {
+            "sale_price": 60500,
+            "amount": 568
+        },
+        {
+            "sale_price": 61000,
+            "amount": 571
+        },
+        {
+            "sale_price": 61500,
+            "amount": 573
+        },
+        {
+            "sale_price": 62000,
+            "amount": 577
+        },
+        {
+            "sale_price": 62500,
+            "amount": 581
+        },
+        {
+            "sale_price": 63000,
+            "amount": 583
+        },
+        {
+            "sale_price": 63500,
+            "amount": 587
+        },
+        {
+            "sale_price": 64000,
+            "amount": 591
+        },
+        {
+            "sale_price": 64500,
+            "amount": 594
+        },
+        {
+            "sale_price": 65000,
+            "amount": 597
+        },
+        {
+            "sale_price": 65500,
+            "amount": 600
+        },
+        {
+            "sale_price": 66000,
+            "amount": 604
+        },
+        {
+            "sale_price": 66500,
+            "amount": 609
+        },
+        {
+            "sale_price": 67000,
+            "amount": 612
+        },
+        {
+            "sale_price": 67500,
+            "amount": 613
+        },
+        {
+            "sale_price": 68000,
+            "amount": 617
+        },
+        {
+            "sale_price": 68500,
+            "amount": 621
+        },
+        {
+            "sale_price": 69000,
+            "amount": 624
+        },
+        {
+            "sale_price": 69500,
+            "amount": 627
+        },
+        {
+            "sale_price": 70000,
+            "amount": 631
+        },
+        {
+            "sale_price": 70500,
+            "amount": 635
+        },
+        {
+            "sale_price": 71000,
+            "amount": 639
+        },
+        {
+            "sale_price": 71500,
+            "amount": 641
+        },
+        {
+            "sale_price": 72000,
+            "amount": 644
+        },
+        {
+            "sale_price": 72500,
+            "amount": 648
+        },
+        {
+            "sale_price": 73000,
+            "amount": 651
+        },
+        {
+            "sale_price": 73500,
+            "amount": 654
+        },
+        {
+            "sale_price": 74000,
+            "amount": 658
+        },
+        {
+            "sale_price": 74500,
+            "amount": 662
+        },
+        {
+            "sale_price": 75000,
+            "amount": 666
+        },
+        {
+            "sale_price": 75500,
+            "amount": 668
+        },
+        {
+            "sale_price": 76000,
+            "amount": 671
+        },
+        {
+            "sale_price": 76500,
+            "amount": 674
+        },
+        {
+            "sale_price": 77000,
+            "amount": 678
+        },
+        {
+            "sale_price": 77500,
+            "amount": 681
+        },
+        {
+            "sale_price": 78000,
+            "amount": 685
+        },
+        {
+            "sale_price": 78500,
+            "amount": 689
+        },
+        {
+            "sale_price": 79000,
+            "amount": 693
+        },
+        {
+            "sale_price": 79500,
+            "amount": 694
+        },
+        {
+            "sale_price": 80000,
+            "amount": 698
+        },
+        {
+            "sale_price": 80500,
+            "amount": 702
+        },
+        {
+            "sale_price": 81000,
+            "amount": 706
+        },
+        {
+            "sale_price": 81500,
+            "amount": 708
+        },
+        {
+            "sale_price": 82000,
+            "amount": 711
+        },
+        {
+            "sale_price": 82500,
+            "amount": 716
+        },
+        {
+            "sale_price": 83000,
+            "amount": 720
+        },
+        {
+            "sale_price": 83500,
+            "amount": 722
+        },
+        {
+            "sale_price": 84000,
+            "amount": 725
+        },
+        {
+            "sale_price": 84500,
+            "amount": 729
+        },
+        {
+            "sale_price": 85000,
+            "amount": 732
+        },
+        {
+            "sale_price": 85500,
+            "amount": 735
+        },
+        {
+            "sale_price": 86000,
+            "amount": 738
+        },
+        {
+            "sale_price": 86500,
+            "amount": 743
+        },
+        {
+            "sale_price": 87000,
+            "amount": 747
+        },
+        {
+            "sale_price": 87500,
+            "amount": 749
+        },
+        {
+            "sale_price": 88000,
+            "amount": 752
+        },
+        {
+            "sale_price": 88500,
+            "amount": 756
+        },
+        {
+            "sale_price": 89000,
+            "amount": 760
+        },
+        {
+            "sale_price": 89500,
+            "amount": 762
+        },
+        {
+            "sale_price": 90000,
+            "amount": 765
+        },
+        {
+            "sale_price": 90500,
+            "amount": 769
+        },
+        {
+            "sale_price": 91000,
+            "amount": 773
+        },
+        {
+            "sale_price": 91500,
+            "amount": 777
+        },
+        {
+            "sale_price": 92000,
+            "amount": 779
+        },
+        {
+            "sale_price": 92500,
+            "amount": 783
+        },
+        {
+            "sale_price": 93000,
+            "amount": 786
+        },
+        {
+            "sale_price": 93500,
+            "amount": 790
+        },
+        {
+            "sale_price": 94000,
+            "amount": 791
+        },
+        {
+            "sale_price": 94500,
+            "amount": 796
+        },
+        {
+            "sale_price": 95000,
+            "amount": 801
+        },
+        {
+            "sale_price": 95500,
+            "amount": 804
+        },
+        {
+            "sale_price": 96000,
+            "amount": 805
+        },
+        {
+            "sale_price": 96500,
+            "amount": 809
+        },
+        {
+            "sale_price": 97000,
+            "amount": 813
+        },
+        {
+            "sale_price": 97500,
+            "amount": 817
+        },
+        {
+            "sale_price": 98000,
+            "amount": 820
+        },
+        {
+            "sale_price": 98500,
+            "amount": 824
+        },
+        {
+            "sale_price": 99000,
+            "amount": 827
+        },
+        {
+            "sale_price": 99500,
+            "amount": 830
+        },
+        {
+            "sale_price": 100000,
+            "amount": 832
+        },
+        {
+            "sale_price": 100500,
+            "amount": 878
+        },
+        {
+            "sale_price": 101000,
+            "amount": 881
+        },
+        {
+            "sale_price": 101500,
+            "amount": 883
+        },
+        {
+            "sale_price": 102000,
+            "amount": 886
+        },
+        {
+            "sale_price": 102500,
+            "amount": 889
+        },
+        {
+            "sale_price": 103000,
+            "amount": 892
+        },
+        {
+            "sale_price": 103500,
+            "amount": 894
+        },
+        {
+            "sale_price": 104000,
+            "amount": 897
+        },
+        {
+            "sale_price": 104500,
+            "amount": 900
+        },
+        {
+            "sale_price": 105000,
+            "amount": 903
+        },
+        {
+            "sale_price": 105500,
+            "amount": 905
+        },
+        {
+            "sale_price": 106000,
+            "amount": 908
+        },
+        {
+            "sale_price": 106500,
+            "amount": 911
+        },
+        {
+            "sale_price": 107000,
+            "amount": 914
+        },
+        {
+            "sale_price": 107500,
+            "amount": 917
+        },
+        {
+            "sale_price": 108000,
+            "amount": 919
+        },
+        {
+            "sale_price": 108500,
+            "amount": 922
+        },
+        {
+            "sale_price": 109000,
+            "amount": 925
+        },
+        {
+            "sale_price": 109500,
+            "amount": 928
+        },
+        {
+            "sale_price": 110000,
+            "amount": 930
+        },
+        {
+            "sale_price": 110500,
+            "amount": 933
+        },
+        {
+            "sale_price": 111000,
+            "amount": 936
+        },
+        {
+            "sale_price": 111500,
+            "amount": 939
+        },
+        {
+            "sale_price": 112000,
+            "amount": 941
+        },
+        {
+            "sale_price": 112500,
+            "amount": 944
+        },
+        {
+            "sale_price": 113000,
+            "amount": 947
+        },
+        {
+            "sale_price": 113500,
+            "amount": 950
+        },
+        {
+            "sale_price": 114000,
+            "amount": 953
+        },
+        {
+            "sale_price": 114500,
+            "amount": 955
+        },
+        {
+            "sale_price": 115000,
+            "amount": 958
+        },
+        {
+            "sale_price": 115500,
+            "amount": 961
+        },
+        {
+            "sale_price": 116000,
+            "amount": 964
+        },
+        {
+            "sale_price": 116500,
+            "amount": 966
+        },
+        {
+            "sale_price": 117000,
+            "amount": 969
+        },
+        {
+            "sale_price": 117500,
+            "amount": 972
+        },
+        {
+            "sale_price": 118000,
+            "amount": 975
+        },
+        {
+            "sale_price": 118500,
+            "amount": 977
+        },
+        {
+            "sale_price": 119000,
+            "amount": 980
+        },
+        {
+            "sale_price": 119500,
+            "amount": 983
+        },
+        {
+            "sale_price": 120000,
+            "amount": 986
+        },
+        {
+            "sale_price": 120500,
+            "amount": 989
+        },
+        {
+            "sale_price": 121000,
+            "amount": 991
+        },
+        {
+            "sale_price": 121500,
+            "amount": 994
+        },
+        {
+            "sale_price": 122000,
+            "amount": 997
+        },
+        {
+            "sale_price": 122500,
+            "amount": 1000
+        },
+        {
+            "sale_price": 123000,
+            "amount": 1002
+        },
+        {
+            "sale_price": 123500,
+            "amount": 1005
+        },
+        {
+            "sale_price": 124000,
+            "amount": 1008
+        },
+        {
+            "sale_price": 124500,
+            "amount": 1011
+        },
+        {
+            "sale_price": 125000,
+            "amount": 1014
+        },
+        {
+            "sale_price": 125500,
+            "amount": 1016
+        },
+        {
+            "sale_price": 126000,
+            "amount": 1019
+        },
+        {
+            "sale_price": 126500,
+            "amount": 1022
+        },
+        {
+            "sale_price": 127000,
+            "amount": 1025
+        },
+        {
+            "sale_price": 127500,
+            "amount": 1027
+        },
+        {
+            "sale_price": 128000,
+            "amount": 1030
+        },
+        {
+            "sale_price": 128500,
+            "amount": 1033
+        },
+        {
+            "sale_price": 129000,
+            "amount": 1036
+        },
+        {
+            "sale_price": 129500,
+            "amount": 1038
+        },
+        {
+            "sale_price": 130000,
+            "amount": 1041
+        },
+        {
+            "sale_price": 130500,
+            "amount": 1044
+        },
+        {
+            "sale_price": 131000,
+            "amount": 1047
+        },
+        {
+            "sale_price": 131500,
+            "amount": 1050
+        },
+        {
+            "sale_price": 132000,
+            "amount": 1052
+        },
+        {
+            "sale_price": 132500,
+            "amount": 1055
+        },
+        {
+            "sale_price": 133000,
+            "amount": 1058
+        },
+        {
+            "sale_price": 133500,
+            "amount": 1061
+        },
+        {
+            "sale_price": 134000,
+            "amount": 1063
+        },
+        {
+            "sale_price": 134500,
+            "amount": 1066
+        },
+        {
+            "sale_price": 135000,
+            "amount": 1069
+        },
+        {
+            "sale_price": 135500,
+            "amount": 1072
+        },
+        {
+            "sale_price": 136000,
+            "amount": 1074
+        },
+        {
+            "sale_price": 136500,
+            "amount": 1077
+        },
+        {
+            "sale_price": 137000,
+            "amount": 1080
+        },
+        {
+            "sale_price": 137500,
+            "amount": 1083
+        },
+        {
+            "sale_price": 138000,
+            "amount": 1086
+        },
+        {
+            "sale_price": 138500,
+            "amount": 1088
+        },
+        {
+            "sale_price": 139000,
+            "amount": 1091
+        },
+        {
+            "sale_price": 139500,
+            "amount": 1094
+        },
+        {
+            "sale_price": 140000,
+            "amount": 1097
+        },
+        {
+            "sale_price": 140500,
+            "amount": 1099
+        },
+        {
+            "sale_price": 141000,
+            "amount": 1102
+        },
+        {
+            "sale_price": 141500,
+            "amount": 1105
+        },
+        {
+            "sale_price": 142000,
+            "amount": 1108
+        },
+        {
+            "sale_price": 142500,
+            "amount": 1110
+        },
+        {
+            "sale_price": 143000,
+            "amount": 1113
+        },
+        {
+            "sale_price": 143500,
+            "amount": 1116
+        },
+        {
+            "sale_price": 144000,
+            "amount": 1119
+        },
+        {
+            "sale_price": 144500,
+            "amount": 1122
+        },
+        {
+            "sale_price": 145000,
+            "amount": 1124
+        },
+        {
+            "sale_price": 145500,
+            "amount": 1127
+        },
+        {
+            "sale_price": 0,
+            "amount": 0
+        },
+        {
+            "sale_price": 2,
+            "amount": 50
+        },
+        {
+            "sale_price": 3,
+            "amount": 50
+        },
+        {
+            "sale_price": 4,
+            "amount": 50
+        },
+        {
+            "sale_price": 5,
+            "amount": 25
+        },
+        {
+            "sale_price": 6,
+            "amount": 25
+        },
+        {
+            "sale_price": 7,
+            "amount": 25
+        },
+        {
+            "sale_price": 8,
+            "amount": 25
         }
     ]
 }
