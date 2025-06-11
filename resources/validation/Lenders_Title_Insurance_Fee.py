@@ -1,4 +1,5 @@
 import json
+import math
 from robot.api import logger
 from robot.api.deco import keyword
 from CC_Fee_Util import round_up_to_nearest_100
@@ -21,7 +22,8 @@ def compute_lenders_title_insurance_fee(request_dict, api_response):
             difference = financed_amount - purchase_price
             rounded_difference = round_up_to_nearest_100(difference)
             fee = (rounded_difference * 0.00575) 
-            fee = round(fee, 2)  # Round to 2 decimal places
+            #fee = math.ceil(fee*100)/100
+            fee = round(fee, 2)# / 100  # Round to 2 decimal places
         else:
             fee = 25.00  # Flat fee for mortgaged accounts
 

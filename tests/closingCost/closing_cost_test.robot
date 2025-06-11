@@ -8,7 +8,7 @@ Sales_Refinance_TX                100000             Sales Refinance      TX    
 Trust_Sale_FL                     205000             New                  FL            HICV     ALL
 Loan_Refinance_IL                 100000             Loan Refinance       IL            HICV     ALL
 Sales_Refinance_AZ                205000             Upgrade              AZ            HICV     ALL
-Trust_Sale_TN                     90000              Downgrade            TN            HICV     ALL
+Trust_Sale_TN                     125287              Downgrade            TN            HICV     ALL
 Loan_Refinance_FL                 105000             Loan Refinance       FL            HICV     ALL
 Sales_Refinance_AZ                104589             Sales Refinance      AZ            HICV     ALL
 Trust_Sale_GA                     205114             Reload               GA            HICV     ALL

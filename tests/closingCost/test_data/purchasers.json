@@ -1,0 +1,15 @@
+{
+    "contractId": "2345",
+    "pxObjClass": "HICV-Sales-CC-Int-Svc-CCRequest",
+    "purchasePrice": 150910,
+    "financedAmount": 120000,
+    "siteId": 9999,
+    "brand": "HICV",
+    "numberOfPurchasers": 8.5,
+    "cash": "30910",
+    "saleType": "Rewrite",
+    "points": 10500,
+    "roomType": "STANDARD",
+    "state": "WI",
+    "location": "ALL"
+}
