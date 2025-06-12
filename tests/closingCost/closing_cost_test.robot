@@ -23,11 +23,12 @@ Sales_Refinance_FL                175200             Sales Refinance      FL    
 Loan_Refinace_Va                  106500             Loan Refinance       VA            HICV     ALL
 Sales_Refinance_NC                100000             Rewrite              VA            HICV     ALL
 Sales_Refinance_NC1               100000             Sales Refinance      SC            Kimpton     ALL
-
+loan_refinance_TX                 273687             Loan Refinance       TX            HICV     ALL
 
 *** Keywords ***
 Validate ClosingCost Fee  
     [Arguments]    ${purchasePrice}    ${SaleType}    ${state}    ${brand}    ${location}
     ${request}    ${response}=    Send CC API Request    ${purchasePrice}    ${SaleType}    ${state}    ${brand}    ${location}
+    Set Log Level    DEBUG
     Run Keyword And Continue On Failure    Assert Closing Cost Fee    ${request}    ${response}    ${purchasePrice}    ${SaleType}    ${state}    ${brand}
     

@@ -31,19 +31,23 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
         
         elif state == "FL":
             # Florida calculation with reissue/original rate logic
+            logger.debug(f"FL calculation: financed_amount={financed_amount}, purchase_price={purchase_price}")
             purchaseprice = float(round_up_to_nearest_1000(purchase_price))
             loan_amt = float(round_up_to_nearest_1000(financed_amount))
             orig_price = float(request_dict.get("previousPolicy", {}).get("purchasePrice", 0))
+            logger.debug(f"FL calculation: purchaseprice={purchaseprice}, loan_amt={loan_amt}, orig_price={orig_price}")
             if orig_price:
                 orig_price = round_up_to_nearest_1000(orig_price)
             else:
                 orig_price = 0
             fee = 0
             tsw_deeded_date = request_dict.get("previousPolicy", {}).get("tswDeededDate", None)
+            logger.debug(f"FL calculation: tsw_deeded_date={tsw_deeded_date}")
             if tsw_deeded_date:
                 tsw_deeded_date = datetime.strptime(tsw_deeded_date, "%Y-%m-%d")
                 today = datetime.today()
                 years_difference = (today - tsw_deeded_date).days // 365
+                logger.debug(f"FL calculation: years_difference={years_difference}")
             else:
                 years_difference = 0
 
@@ -63,20 +67,22 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
             if  orig_price != 0:                
                     if loan_amt <= orig_price:
                         # Case 1: Financed Amount < Original Purchase Price
+                        logger.debug("FL calculation: Case 1 - Financed Amount <= Original Purchase Price")
                         if loan_amt <= 100000:
                             fee = (loan_amt / 1000) * upto_100K_fee
                         elif loan_amt > 100000:
                             fee = (100000 / 1000) * upto_100K_fee + ((loan_amt - 100000) / 1000) * upto_1000k_fee
                     else:
                         # Case 2: Financed Amount > Original Purchase Price, use purchase price
-                        
+                        logger.debug("FL calculation: Case 2 - Financed Amount > Original Purchase Price")
                         if orig_price <= 100000:
                             fee = (purchase_price / 1000) * upto_100K_fee
                         elif orig_price > 100000:
                             fee = (100000 / 1000) * upto_100K_fee + ((purchaseprice - 100000) / 1000) * upto_1000k_fee
-                                              
+            logger.debug(f"FL calculation: fee before min premium={fee}")                                                                    
             # Minimum premium
-            fee = max(60, fee)     
+            fee = max(60, fee)  
+            logger.debug(f"FL calculation: fee after min premium={fee}")   
 
         elif state == "MO":
             funding_institution = request_dict.get('fundingInstitution', None)
@@ -142,7 +148,9 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
         elif state == "TX":
             loan_amt = financed_amount
             principal_balance = request_dict.get("previousPolicy", {}).get("principalBalancePayDown", 0)
+            logger.debug(f"TX calculation: loan_amt={loan_amt}, principal_balance={principal_balance}")
             FTP, credit = get_amounts_from_rate_chart(request_dict['siteId'], loan_amt, principal_balance)
+            logger.debug(f"TX calculation: FTP={FTP}, credit={credit}")
             if FTP is None:
                 logger.error("Failed to get rate chart amount for loan amount")
                 return
@@ -150,38 +158,51 @@ def compute_lenders_title_policy_fee(request_dict, api_response):
                 logger.error("Failed to get credit amount from rate chart for loan amount")
                 return
             LTP = FTP - credit
+            logger.debug(f"TX calculation: LTP={LTP}")
             funding_institution = request_dict.get('fundingInstitution', None)
+            logger.debug(f"TX calculation: funding_institution={funding_institution}")
             if funding_institution != "SL":
-                logger.info("Funding institution is {funding_institution}, Prior Policy issue date is the deeded date in TSW.")
+                logger.info(f"Funding institution is {funding_institution}, Prior Policy issue date is the deeded date in TSW.")
                 tsw_deeded_date = request_dict.get("previousPolicy", {}).get("tswDeededDate", None)
+                logger.debug(f"TX calculation: tsw_deeded_date={tsw_deeded_date}")
                 tsw_deeded_date = datetime.strptime(tsw_deeded_date, "%Y-%m-%d")
                 today = datetime.today()
+                days_diff = (today - tsw_deeded_date).days if tsw_deeded_date else None
+                logger.debug(f"TX calculation: days_diff={days_diff}")
                 # if the deeded date is 0 - 4 years ago – 50% of LTP 
-                if tsw_deeded_date and (today - tsw_deeded_date).days <= 1460:
+                if tsw_deeded_date and days_diff <= 1460:
                     fee = LTP * 0.5
+                    logger.debug(f"TX calculation: fee=50% of LTP={fee}")
                 #if the deeded date is 5 - 8 years ago – 25% of LTP
-                elif tsw_deeded_date and (today - tsw_deeded_date).days <= 2920:
+                elif tsw_deeded_date and days_diff <= 2920:
                     fee = LTP * 0.25
+                    logger.debug(f"TX calculation: fee=25% of LTP={fee}")
                 #Old Policy issued more than 8 years ago? LTP: Take the loan amount and refer to the rate chart; Round down
-                elif tsw_deeded_date and (today - tsw_deeded_date).days > 2920:
+                elif tsw_deeded_date and days_diff > 2920:
                     fee = FTP
+                    logger.debug(f"TX calculation: fee=FTP={fee}")
                 # No outstanding loan balance? LTP: Take the loan amount and refer to the rate chart; Round down.
                 elif principal_balance == 0:
                     fee = FTP
+                    logger.debug(f"TX calculation: principal_balance==0, fee=FTP={fee}")
                 else:
                     #OLCC loans: Prior Policy issue date is the deeded date in TSW. No deeded date in TSW? Charge full premium amount.
                     logger.info("OLCC loans: Prior Policy issue date is the deeded date in TSW. No deeded date in TSW? Charge full premium amount.")
                     fee = FTP
+                    logger.debug(f"TX calculation: fee=FTP={fee}")
             elif funding_institution == "SL":
                 #No previous policy was issued so charge full premium amount.
                 logger.info("Funding institution is SL, No prior policy was issued so charge full premium amount.")
                 fee = FTP
+                logger.debug(f"TX calculation: fee=FTP={fee}")
             else:
                 logger.error("fundingInstitution is not specified or invalid for TX state", funding_institution)
                 return
                 
             #  IF THE POLICY CALCULATES TO LESS THAN $328, THEN CHARGE $328 (MINIMUM CHARGE)            
+            logger.debug(f"TX calculation: fee before min premium={fee}")
             fee = max(328.00, fee)
+            logger.debug(f"TX calculation: fee after min premium={fee}")
                 
 
         else:
