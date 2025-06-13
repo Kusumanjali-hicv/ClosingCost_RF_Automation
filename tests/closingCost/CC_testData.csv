@@ -1,7 +1,7 @@
 *** Test Cases ***;${purchasePrice};${SaleType};${state};${brand};${location};[Tags];[Documentation]
 Sales_Refinance_TX;100000;Sales Refinance;TX;HICV;ALL;Sanity;
 Sales_Refinance_TX;95000;Sales Refinance;TX;HICV;ALL;Sanity;
-Sales_Refinance_TX;487020;Sales Refinance;TX;HICV;ALL;Sanity;
+Sales_Refinance_TX;137020;Sales Refinance;TX;HICV;ALL;Sanity;
 Trust_Sale_TX     ;205090;New            ;TX;HICV;ALL;Sanity;
 Downgrade_TX      ;132756;Downgrade      ;TX;HICV;ALL;Test;
 Reload_TX         ;17635; Reload         ;TX;HICV;ALL;;
@@ -9,9 +9,9 @@ Reload_Equity_TX  ;182031;Reload Equity  ;TX;HICV;ALL;;
 Reload_New_Money_TX;622718;Reload New Money;TX;HICV;ALL;;
 Rewrite_TX        ;125287;Rewrite        ;TX;HICV;ALL;;
 Upgrade_TX        ;527361;Upgrade        ;TX;HICV;ALL;;
-Loan_Refinance_TX ;273687;Loan Refinance ;TX;HICV;ALL;Sanity;
+Loan_Refinance_TX ;113687;Loan Refinance ;TX;HICV;ALL;Sanity;
 Loan_Refinance_TX ;73687;Loan Refinance ;TX;HICV;ALL;Sanity;
-Loan_Refinance_TX ;474608;Loan Refinance ;TX;HICV;ALL;Sanity;
+Loan_Refinance_TX ;134608;Loan Refinance ;TX;HICV;ALL;Sanity;
 Loan_Refinance_TX ;120087;Loan Refinance ;TX;HICV;ALL;Sanity;
 Sales_Refinance_FL;378710;Sales Refinance;FL;HICV;ALL;Refinance;
 Trust_Sale_FL     ;204301;New            ;FL;HICV;ALL;;

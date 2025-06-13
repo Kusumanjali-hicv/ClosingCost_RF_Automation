@@ -5,9 +5,7 @@ ACCEPT_NAME = "Accept"
 ACCEPT_VALUE = "application/json"
 ACCEPT_LANGAUGE_NAME = "Accept-Language"
 ACCEPT_LANGAUGE_VALUE = "en"
-CONTENT_TYPE_NAME = "content-type"
 CONTENT_TYPE_VALUE = "application/json"
-CONTENT_TYPE_VALUE_1 = "application/x-www-form-urlencoded"
 OKTA_USER_AGENT_NAME = "x-okta-user-agent-extended"
 OKTA_USER_AGENT_VALUE = "okta-signin-widget-5.2.1"
 ORIGIN_NAME = "Origin"
@@ -23,8 +21,6 @@ TE_VALUE = "Trailers"
 
 # Authorization Header
 CLIENT_ID_NAME = "client_id"
-CLIENT_ID_VALUE = "10973152685490154025"
-CLIENT_ID_SECRET_VALUE = "62EE72144FCA01D8041CDBCC2C31F09E"
 NONCE_NAME = "nonce"
 NONCE_VALUE = "2ZUYxzHgbWajFMXXvcpZyWOhnsKzGRLGXeRNKI2yhr4EybGzWSFt5eTAr7kF0Je8"
 PROMPT_NAME = "prompt"
@@ -45,15 +41,29 @@ SESSION_NAME = "sessionToken"
 X_ENV_NAME = "X-Env"
 X_ENV_VALUE = "qa"
 AUTHORIZATION_NAME = "Authorization"
-AUTHORIZATION = "Authorization"
 
 BASE_AUTH_URL  = "https://orangelake.okta.com"
 AUTH_URL       = "/api/v1/authn"
 AUTH2_URL      = "/oauth2/aus62qhmnrywYgNdu2p7/v1/authorize"
 
+#QA ENV Parameters
 
-BASE_URL = "https://hicq2180a.olcc.lan:8443"
-AUTH_BASE_URL = "https://hicq2180a.olcc.lan:8443"
+CONTENT_TYPE_NAME = "content-type"
+AUTHORIZATION = "Authorization"
+CONTENT_TYPE_VALUE_1 = "application/x-www-form-urlencoded"
 TOKEN_PATH_URL = "/prweb/PRRestService/oauth2/v1/token"
 CC_PATH_URL ="/prweb/api/CCApi/V1/closingcosts"
 CCUpdatedFlow = ""
+#QA client details
+#CLIENT_ID_VALUE = "10973152685490154025"
+#CLIENT_ID_SECRET_VALUE = "62EE72144FCA01D8041CDBCC2C31F09E"
+
+#BASE_URL = "https://hicq2180a.olcc.lan:8443"
+#AUTH_BASE_URL = "https://hicq2180a.olcc.lan:8443"
+
+#UAT client details 
+CLIENT_ID_VALUE = "28433876333993613112"
+CLIENT_ID_SECRET_VALUE = "0205F0377BC65DFF8B2CACC2D1AC5FCA"
+BASE_URL = "https://hicu2180a.olcc.lan"
+AUTH_BASE_URL = "https://hicu2180a.olcc.lan"
+#https://hicu2180a.olcc.lan/prweb/api/CCApi/V1/closingcosts

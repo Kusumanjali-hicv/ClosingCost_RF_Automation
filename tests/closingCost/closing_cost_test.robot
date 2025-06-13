@@ -29,6 +29,5 @@ loan_refinance_TX                 273687             Loan Refinance       TX    
 Validate ClosingCost Fee  
     [Arguments]    ${purchasePrice}    ${SaleType}    ${state}    ${brand}    ${location}
     ${request}    ${response}=    Send CC API Request    ${purchasePrice}    ${SaleType}    ${state}    ${brand}    ${location}
-    Set Log Level    DEBUG
     Run Keyword And Continue On Failure    Assert Closing Cost Fee    ${request}    ${response}    ${purchasePrice}    ${SaleType}    ${state}    ${brand}
     
