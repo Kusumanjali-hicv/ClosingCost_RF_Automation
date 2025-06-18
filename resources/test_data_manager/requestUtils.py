@@ -16,9 +16,24 @@ NO_OF_PURCHASERS = [3, 4, 5, 6]
 def create_input_json(default_json, request_variables):
     
     contractId = set_contractId()
-    request_variables['contractId'] = contractId
-    sale_type = request_variables.get('saleType', '').lower()
     purchase_price = request_variables.get('purchasePrice', None)
+    request_variables['contractId'] = contractId
+    if request_variables['brand'] == 'Kimpton':
+            finance_amt = int(FINANCED_AMT[random.randint(0, len(FINANCED_AMT)-1)]) * int(request_variables['purchasePrice']) / 100
+            kimpton_data = {
+                "contractId": contractId,
+                "siteId": KC_siteId,
+                "brand": "KIMPTON",
+                "purchasePrice": request_variables['purchasePrice'],
+                "financedAmount": int(finance_amt),
+                "cash": int(request_variables['purchasePrice']) - int(finance_amt),
+            }
+            #create a json out of kimpton data 
+            default_json = json.dumps(kimpton_data, indent=4)
+            return default_json          
+            
+
+    sale_type = request_variables.get('saleType', '').lower()
     financedAmount, cash, points, numberOfPurchasers = set_variables(int(request_variables['purchasePrice']))
     request_variables['financedAmount'] = financedAmount    
     request_variables['cash'] = cash
@@ -28,7 +43,11 @@ def create_input_json(default_json, request_variables):
     if sale_type in ['sales refinance', 'loan refinance']:        
         request_variables = set_siteID(request_variables)
     else:
-        request_variables['siteId'] = HICV_siteId
+        
+        if request_variables['brand'] == 'HICV':
+            request_variables['siteId'] = HICV_siteId
+        else:
+            raise ValueError("Brand not recognized. Please use 'Kimpton' or 'HICV'.")        
 
 
     # Parse the JSON string into a dictionary

@@ -1,4 +1,5 @@
-from CC_Fee_Util import getFeeDetails, round_up_to_nearest_100
+from decimal import ROUND_HALF_UP, Decimal
+from CC_Fee_Util import getFeeDetails, round_up_to_nearest_100, round_fee
 from robot.api.deco import keyword
 from robot.api import logger
 
@@ -15,7 +16,7 @@ def compute_owner_title_fee(request_dict, api_response):
     if purchase_price <= 100000:
         
         fee = purchase_price_rounded * 0.00575
-        fee = MIN_FEE if fee < MIN_FEE else round(fee * 100) / 100
+        fee = MIN_FEE if fee < MIN_FEE else round_fee(fee)
     else:
         fee = (100000 * 0.00575) + ((purchase_price_rounded - 100000)  * 0.0050)
         
@@ -29,8 +30,10 @@ def compute_owner_title_fee(request_dict, api_response):
 
 def assert_owner_title_fee(amount, description, payableTo, fee):
     errors = []
-
-    if round(float(amount), 2) != round(fee, 2):
+    amount = Decimal(str(amount)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    fee = Decimal(str(fee)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    if abs(amount - fee) > Decimal('0.01'):
+    #if round(float(amount), 2) != round(fee, 2):    
         msg = f"Owner's Title Fee amount mismatch: expected {fee:.2f}, got {amount}"
         logger.error(f"<span style='color:red'>{msg}</span>", html=True)
         errors.append(msg)

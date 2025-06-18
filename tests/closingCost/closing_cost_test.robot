@@ -22,8 +22,12 @@ Loan_Refinance_VA                 385000             Loan Refinance       VA    
 Sales_Refinance_FL                175200             Sales Refinance      FL            HICV     ALL
 Loan_Refinace_Va                  106500             Loan Refinance       VA            HICV     ALL
 Sales_Refinance_NC                100000             Rewrite              VA            HICV     ALL
-Sales_Refinance_NC1               100000             Sales Refinance      SC            Kimpton     ALL
-
+Sales_Refinance_NC1               100000             Sales Refinance      SC            Kimpton  ALL
+loan_refinance_TX                 273687             Loan Refinance       TX            HICV      ALL
+Trust_Sale_FL1                     205000            Kimpton              FL            Kimpton     ALL
+Loan_Refinance_IL1                100000             Kimpton              IL            Kimpton     ALL
+Sales_Refinance_AZ1               205000             Kimpton              AZ            Kimpton     ALL
+Trust_Sale_TN1                     125287            Kimpton              TN            Kimpton     ALL
 
 *** Keywords ***
 Validate ClosingCost Fee  
