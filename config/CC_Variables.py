@@ -55,15 +55,15 @@ TOKEN_PATH_URL = "/prweb/PRRestService/oauth2/v1/token"
 CC_PATH_URL ="/prweb/api/CCApi/V1/closingcosts"
 CCUpdatedFlow = ""
 #QA client details
-#CLIENT_ID_VALUE = "10973152685490154025"
-#CLIENT_ID_SECRET_VALUE = "62EE72144FCA01D8041CDBCC2C31F09E"
+CLIENT_ID_VALUE = "10973152685490154025"
+CLIENT_ID_SECRET_VALUE = "62EE72144FCA01D8041CDBCC2C31F09E"
 
-#BASE_URL = "https://hicq2180a.olcc.lan:8443"
-#AUTH_BASE_URL = "https://hicq2180a.olcc.lan:8443"
+BASE_URL = "https://hicq2180a.olcc.lan:8443"
+AUTH_BASE_URL = "https://hicq2180a.olcc.lan:8443"
 
 #UAT client details 
-CLIENT_ID_VALUE = "28433876333993613112"
-CLIENT_ID_SECRET_VALUE = "0205F0377BC65DFF8B2CACC2D1AC5FCA"
-BASE_URL = "https://hicu2180a.olcc.lan"
-AUTH_BASE_URL = "https://hicu2180a.olcc.lan"
+#CLIENT_ID_VALUE = "28433876333993613112"
+#CLIENT_ID_SECRET_VALUE = "0205F0377BC65DFF8B2CACC2D1AC5FCA"
+#BASE_URL = "https://hicu2180a.olcc.lan"
+#AUTH_BASE_URL = "https://hicu2180a.olcc.lan"
 #https://hicu2180a.olcc.lan/prweb/api/CCApi/V1/closingcosts
